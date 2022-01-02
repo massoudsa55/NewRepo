@@ -1,0 +1,632 @@
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\obj\Debug\Gestion Cabinet Medical.csprojAssemblyReference.cache
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.Login.Login_Form.resources
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.Patient.Nouveau_Patient.resources
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.Principale_Form.Principal_Form.resources
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.SplashScrean.SplashScreen.resources
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.User.Add_User.resources
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.User.User_Management.resources
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\obj\Debug\Gestion_Cabinet_Medical.Properties.Resources.resources
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\obj\Debug\Gestion Cabinet Medical.csproj.GenerateResource.cache
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\obj\Debug\Gestion Cabinet Medical.exe.licenses
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\obj\Debug\Gestion Cabinet Medical.csproj.CoreCompileInputs.cache
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\Gestion Cabinet Medical.exe.config
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\Gestion Cabinet Medical.exe
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\Gestion Cabinet Medical.pdb
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\Bunifu.Dataviz.WinForms.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\Bunifu.Licensing.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\Bunifu_UI_v1.5.3.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.BonusSkins.v19.2.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.Charts.v19.2.Core.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.CodeParser.v19.2.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.Data.v19.2.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.DataAccess.v19.2.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.DataAccess.v19.2.UI.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.ExpressApp.v19.2.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.Office.v19.2.Core.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.Persistent.Base.v19.2.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.PivotGrid.v19.2.Core.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.Printing.v19.2.Core.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.RichEdit.v19.2.Core.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.Sparkline.v19.2.Core.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.Utils.v19.2.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.Utils.v19.2.UI.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.Xpo.v19.2.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.XtraBars.v19.2.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.XtraCharts.v19.2.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.XtraCharts.v19.2.Extensions.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.XtraCharts.v19.2.Wizard.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.XtraEditors.v19.2.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.XtraGauges.v19.2.Core.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.XtraGrid.v19.2.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.XtraLayout.v19.2.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.XtraNavBar.v19.2.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.XtraPivotGrid.v19.2.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.XtraPrinting.v19.2.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.XtraReports.v19.2.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.XtraReports.v19.2.Extensions.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.XtraRichEdit.v19.2.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.XtraTreeList.v19.2.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.XtraVerticalGrid.v19.2.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\EntityFramework.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\EntityFramework.SqlServer.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.XtraDiagram.v19.2.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.Diagram.v19.2.Core.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.Images.v19.2.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.Pdf.v19.2.Core.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\Bunifu.Dataviz.WinForms.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\Bunifu_UI_v1.5.3.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.Data.v19.2.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.DataAccess.v19.2.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.DataAccess.v19.2.UI.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.ExpressApp.v19.2.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.Office.v19.2.Core.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.Persistent.Base.v19.2.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.PivotGrid.v19.2.Core.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.RichEdit.v19.2.Core.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.Utils.v19.2.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.Sparkline.v19.2.Core.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.Utils.v19.2.UI.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.Xpo.v19.2.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.XtraBars.v19.2.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.XtraCharts.v19.2.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.XtraCharts.v19.2.Wizard.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.XtraEditors.v19.2.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.Printing.v19.2.Core.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.XtraGauges.v19.2.Core.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.XtraGrid.v19.2.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.XtraLayout.v19.2.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.XtraNavBar.v19.2.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.XtraPivotGrid.v19.2.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.XtraPrinting.v19.2.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.XtraReports.v19.2.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.XtraReports.v19.2.Extensions.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.XtraRichEdit.v19.2.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.XtraTreeList.v19.2.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.XtraVerticalGrid.v19.2.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\EntityFramework.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\EntityFramework.SqlServer.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.XtraDiagram.v19.2.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.Diagram.v19.2.Core.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\DevExpress.Pdf.v19.2.Core.xml
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\de\DevExpress.Data.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\es\DevExpress.Data.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ja\DevExpress.Data.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ru\DevExpress.Data.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\de\DevExpress.DataAccess.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\es\DevExpress.DataAccess.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ja\DevExpress.DataAccess.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ru\DevExpress.DataAccess.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\de\DevExpress.DataAccess.v19.2.UI.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\es\DevExpress.DataAccess.v19.2.UI.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ja\DevExpress.DataAccess.v19.2.UI.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ru\DevExpress.DataAccess.v19.2.UI.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\de\DevExpress.ExpressApp.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\es\DevExpress.ExpressApp.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ja\DevExpress.ExpressApp.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ru\DevExpress.ExpressApp.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\de\DevExpress.Office.v19.2.Core.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\es\DevExpress.Office.v19.2.Core.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ja\DevExpress.Office.v19.2.Core.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ru\DevExpress.Office.v19.2.Core.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\de\DevExpress.PivotGrid.v19.2.Core.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\es\DevExpress.PivotGrid.v19.2.Core.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ja\DevExpress.PivotGrid.v19.2.Core.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ru\DevExpress.PivotGrid.v19.2.Core.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\de\DevExpress.RichEdit.v19.2.Core.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\es\DevExpress.RichEdit.v19.2.Core.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ja\DevExpress.RichEdit.v19.2.Core.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ru\DevExpress.RichEdit.v19.2.Core.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\de\DevExpress.Utils.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\es\DevExpress.Utils.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ja\DevExpress.Utils.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ru\DevExpress.Utils.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\de\DevExpress.Sparkline.v19.2.Core.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\es\DevExpress.Sparkline.v19.2.Core.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ja\DevExpress.Sparkline.v19.2.Core.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ru\DevExpress.Sparkline.v19.2.Core.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\de\DevExpress.Utils.v19.2.UI.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\es\DevExpress.Utils.v19.2.UI.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ja\DevExpress.Utils.v19.2.UI.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ru\DevExpress.Utils.v19.2.UI.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\de\DevExpress.Xpo.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\es\DevExpress.Xpo.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ja\DevExpress.Xpo.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ru\DevExpress.Xpo.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\de\DevExpress.XtraBars.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\es\DevExpress.XtraBars.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ja\DevExpress.XtraBars.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ru\DevExpress.XtraBars.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\de\DevExpress.XtraCharts.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\es\DevExpress.XtraCharts.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ja\DevExpress.XtraCharts.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ru\DevExpress.XtraCharts.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\de\DevExpress.XtraCharts.v19.2.Wizard.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\es\DevExpress.XtraCharts.v19.2.Wizard.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ja\DevExpress.XtraCharts.v19.2.Wizard.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ru\DevExpress.XtraCharts.v19.2.Wizard.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\de\DevExpress.XtraEditors.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\es\DevExpress.XtraEditors.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ja\DevExpress.XtraEditors.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ru\DevExpress.XtraEditors.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\de\DevExpress.Printing.v19.2.Core.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\es\DevExpress.Printing.v19.2.Core.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ja\DevExpress.Printing.v19.2.Core.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ru\DevExpress.Printing.v19.2.Core.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\de\DevExpress.XtraGauges.v19.2.Core.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\es\DevExpress.XtraGauges.v19.2.Core.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ja\DevExpress.XtraGauges.v19.2.Core.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ru\DevExpress.XtraGauges.v19.2.Core.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\de\DevExpress.XtraGrid.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\es\DevExpress.XtraGrid.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ja\DevExpress.XtraGrid.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ru\DevExpress.XtraGrid.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\de\DevExpress.XtraLayout.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\es\DevExpress.XtraLayout.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ja\DevExpress.XtraLayout.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ru\DevExpress.XtraLayout.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\de\DevExpress.XtraNavBar.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\es\DevExpress.XtraNavBar.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ja\DevExpress.XtraNavBar.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ru\DevExpress.XtraNavBar.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\de\DevExpress.XtraPivotGrid.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\es\DevExpress.XtraPivotGrid.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ja\DevExpress.XtraPivotGrid.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ru\DevExpress.XtraPivotGrid.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\de\DevExpress.XtraPrinting.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\es\DevExpress.XtraPrinting.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ja\DevExpress.XtraPrinting.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ru\DevExpress.XtraPrinting.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\de\DevExpress.XtraReports.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\es\DevExpress.XtraReports.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ja\DevExpress.XtraReports.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ru\DevExpress.XtraReports.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\de\DevExpress.XtraReports.v19.2.Extensions.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\es\DevExpress.XtraReports.v19.2.Extensions.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ja\DevExpress.XtraReports.v19.2.Extensions.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ru\DevExpress.XtraReports.v19.2.Extensions.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\de\DevExpress.XtraRichEdit.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\es\DevExpress.XtraRichEdit.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ja\DevExpress.XtraRichEdit.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ru\DevExpress.XtraRichEdit.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\de\DevExpress.XtraTreeList.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\es\DevExpress.XtraTreeList.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ja\DevExpress.XtraTreeList.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ru\DevExpress.XtraTreeList.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\de\DevExpress.XtraVerticalGrid.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\es\DevExpress.XtraVerticalGrid.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ja\DevExpress.XtraVerticalGrid.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ru\DevExpress.XtraVerticalGrid.v19.2.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\de\DevExpress.Diagram.v19.2.Core.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\es\DevExpress.Diagram.v19.2.Core.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ja\DevExpress.Diagram.v19.2.Core.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ru\DevExpress.Diagram.v19.2.Core.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\de\DevExpress.Pdf.v19.2.Core.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\es\DevExpress.Pdf.v19.2.Core.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ja\DevExpress.Pdf.v19.2.Core.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\bin\Debug\ru\DevExpress.Pdf.v19.2.Core.resources.dll
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\obj\Debug\Gestion Cabinet Medical.csproj.CopyComplete
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\obj\Debug\Gestion Cabinet Medical.exe
+E:\Developpement\MyProjects\Gestion Cabinet Medical\Gestion Cabinet Medical\Gestion Cabient Medical\obj\Debug\Gestion Cabinet Medical.pdb
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\Gestion Cabinet Medical.exe.config
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\Gestion Cabinet Medical.exe
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\Gestion Cabinet Medical.pdb
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.BonusSkins.v19.2.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Charts.v19.2.Core.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.CodeParser.v19.2.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Data.v19.2.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.DataAccess.v19.2.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.DataAccess.v19.2.UI.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.ExpressApp.v19.2.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Office.v19.2.Core.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Persistent.Base.v19.2.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.PivotGrid.v19.2.Core.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Printing.v19.2.Core.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.RichEdit.v19.2.Core.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Sparkline.v19.2.Core.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Utils.v19.2.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Utils.v19.2.UI.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Xpo.v19.2.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraBars.v19.2.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraCharts.v19.2.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraCharts.v19.2.Extensions.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraCharts.v19.2.Wizard.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraEditors.v19.2.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraGauges.v19.2.Core.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraGrid.v19.2.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraLayout.v19.2.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraNavBar.v19.2.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraPivotGrid.v19.2.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraPrinting.v19.2.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraReports.v19.2.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraReports.v19.2.Extensions.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraRichEdit.v19.2.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraTreeList.v19.2.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraVerticalGrid.v19.2.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\EntityFramework.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraDiagram.v19.2.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Diagram.v19.2.Core.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Images.v19.2.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Pdf.v19.2.Core.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\Bunifu_UI_v1.5.3.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Data.v19.2.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.DataAccess.v19.2.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.DataAccess.v19.2.UI.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.ExpressApp.v19.2.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Office.v19.2.Core.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Persistent.Base.v19.2.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.PivotGrid.v19.2.Core.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.RichEdit.v19.2.Core.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Utils.v19.2.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Sparkline.v19.2.Core.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Utils.v19.2.UI.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Xpo.v19.2.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraBars.v19.2.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraCharts.v19.2.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraCharts.v19.2.Wizard.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraEditors.v19.2.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Printing.v19.2.Core.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraGauges.v19.2.Core.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraGrid.v19.2.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraLayout.v19.2.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraNavBar.v19.2.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraPivotGrid.v19.2.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraPrinting.v19.2.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraReports.v19.2.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraReports.v19.2.Extensions.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraRichEdit.v19.2.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraTreeList.v19.2.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraVerticalGrid.v19.2.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\EntityFramework.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraDiagram.v19.2.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Diagram.v19.2.Core.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Pdf.v19.2.Core.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.Data.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.Data.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.Data.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.Data.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.DataAccess.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.DataAccess.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.DataAccess.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.DataAccess.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.DataAccess.v19.2.UI.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.DataAccess.v19.2.UI.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.DataAccess.v19.2.UI.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.DataAccess.v19.2.UI.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.ExpressApp.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.ExpressApp.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.ExpressApp.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.ExpressApp.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.Office.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.Office.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.Office.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.Office.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.PivotGrid.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.PivotGrid.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.PivotGrid.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.PivotGrid.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.RichEdit.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.RichEdit.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.RichEdit.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.RichEdit.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.Utils.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.Utils.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.Utils.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.Utils.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.Sparkline.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.Sparkline.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.Sparkline.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.Sparkline.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.Utils.v19.2.UI.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.Utils.v19.2.UI.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.Utils.v19.2.UI.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.Utils.v19.2.UI.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.Xpo.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.Xpo.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.Xpo.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.Xpo.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.XtraBars.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.XtraBars.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.XtraBars.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.XtraBars.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.XtraCharts.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.XtraCharts.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.XtraCharts.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.XtraCharts.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.XtraCharts.v19.2.Wizard.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.XtraCharts.v19.2.Wizard.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.XtraCharts.v19.2.Wizard.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.XtraCharts.v19.2.Wizard.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.XtraEditors.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.XtraEditors.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.XtraEditors.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.XtraEditors.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.Printing.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.Printing.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.Printing.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.Printing.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.XtraGauges.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.XtraGauges.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.XtraGauges.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.XtraGauges.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.XtraGrid.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.XtraGrid.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.XtraGrid.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.XtraGrid.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.XtraLayout.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.XtraLayout.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.XtraLayout.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.XtraLayout.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.XtraNavBar.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.XtraNavBar.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.XtraNavBar.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.XtraNavBar.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.XtraPivotGrid.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.XtraPivotGrid.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.XtraPivotGrid.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.XtraPivotGrid.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.XtraPrinting.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.XtraPrinting.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.XtraPrinting.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.XtraPrinting.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.XtraReports.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.XtraReports.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.XtraReports.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.XtraReports.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.XtraReports.v19.2.Extensions.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.XtraReports.v19.2.Extensions.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.XtraReports.v19.2.Extensions.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.XtraReports.v19.2.Extensions.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.XtraRichEdit.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.XtraRichEdit.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.XtraRichEdit.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.XtraRichEdit.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.XtraTreeList.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.XtraTreeList.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.XtraTreeList.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.XtraTreeList.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.XtraVerticalGrid.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.XtraVerticalGrid.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.XtraVerticalGrid.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.XtraVerticalGrid.v19.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.Diagram.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.Diagram.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.Diagram.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.Diagram.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.Pdf.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.Pdf.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.Pdf.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.Pdf.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.Login.Login_Form.resources
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.Patient.Nouveau_Patient.resources
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.Principale_Form.Principal_Form.resources
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.SplashScrean.SplashScreen.resources
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.User.Add_User.resources
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.User.User_Management.resources
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Properties.Resources.resources
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion Cabinet Medical.csproj.GenerateResource.cache
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion Cabinet Medical.exe.licenses
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion Cabinet Medical.csproj.CoreCompileInputs.cache
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion Cabinet Medical.csproj.CopyComplete
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion Cabinet Medical.exe
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion Cabinet Medical.pdb
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.Patient.Patient_Management.resources
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.Consultation.Consultation_Management.resources
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.Patient.Recherche_Patient.resources
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.Patient.Salle_d_attente.resources
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\Gestion Cabinet Medical.exe.config
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\Gestion Cabinet Medical.exe
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\Gestion Cabinet Medical.pdb
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.BonusSkins.v19.2.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Charts.v19.2.Core.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.CodeParser.v19.2.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Data.v19.2.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.DataAccess.v19.2.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.DataAccess.v19.2.UI.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.ExpressApp.v19.2.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Office.v19.2.Core.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Persistent.Base.v19.2.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.PivotGrid.v19.2.Core.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Printing.v19.2.Core.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.RichEdit.v19.2.Core.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Sparkline.v19.2.Core.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Utils.v19.2.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Utils.v19.2.UI.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Xpo.v19.2.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraBars.v19.2.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraCharts.v19.2.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraCharts.v19.2.Extensions.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraCharts.v19.2.Wizard.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraEditors.v19.2.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraGauges.v19.2.Core.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraGrid.v19.2.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraLayout.v19.2.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraNavBar.v19.2.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraPivotGrid.v19.2.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraPrinting.v19.2.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraReports.v19.2.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraReports.v19.2.Extensions.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraRichEdit.v19.2.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraTreeList.v19.2.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraVerticalGrid.v19.2.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\EntityFramework.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraDiagram.v19.2.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Diagram.v19.2.Core.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Images.v19.2.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Pdf.v19.2.Core.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\Bunifu_UI_v1.5.3.xml
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Data.v19.2.xml
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.DataAccess.v19.2.xml
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.DataAccess.v19.2.UI.xml
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.ExpressApp.v19.2.xml
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Office.v19.2.Core.xml
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Persistent.Base.v19.2.xml
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.PivotGrid.v19.2.Core.xml
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.RichEdit.v19.2.Core.xml
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Utils.v19.2.xml
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Sparkline.v19.2.Core.xml
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Utils.v19.2.UI.xml
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Xpo.v19.2.xml
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraBars.v19.2.xml
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraCharts.v19.2.xml
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraCharts.v19.2.Wizard.xml
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraEditors.v19.2.xml
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Printing.v19.2.Core.xml
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraGauges.v19.2.Core.xml
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraGrid.v19.2.xml
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraLayout.v19.2.xml
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraNavBar.v19.2.xml
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraPivotGrid.v19.2.xml
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraPrinting.v19.2.xml
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraReports.v19.2.xml
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraReports.v19.2.Extensions.xml
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraRichEdit.v19.2.xml
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraTreeList.v19.2.xml
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraVerticalGrid.v19.2.xml
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\EntityFramework.xml
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.XtraDiagram.v19.2.xml
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Diagram.v19.2.Core.xml
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Pdf.v19.2.Core.xml
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.Data.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.Data.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.Data.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.Data.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.DataAccess.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.DataAccess.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.DataAccess.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.DataAccess.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.DataAccess.v19.2.UI.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.DataAccess.v19.2.UI.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.DataAccess.v19.2.UI.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.DataAccess.v19.2.UI.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.ExpressApp.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.ExpressApp.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.ExpressApp.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.ExpressApp.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.Office.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.Office.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.Office.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.Office.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.PivotGrid.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.PivotGrid.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.PivotGrid.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.PivotGrid.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.RichEdit.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.RichEdit.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.RichEdit.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.RichEdit.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.Utils.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.Utils.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.Utils.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.Utils.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.Sparkline.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.Sparkline.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.Sparkline.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.Sparkline.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.Utils.v19.2.UI.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.Utils.v19.2.UI.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.Utils.v19.2.UI.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.Utils.v19.2.UI.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.Xpo.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.Xpo.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.Xpo.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.Xpo.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.XtraBars.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.XtraBars.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.XtraBars.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.XtraBars.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.XtraCharts.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.XtraCharts.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.XtraCharts.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.XtraCharts.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.XtraCharts.v19.2.Wizard.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.XtraCharts.v19.2.Wizard.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.XtraCharts.v19.2.Wizard.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.XtraCharts.v19.2.Wizard.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.XtraEditors.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.XtraEditors.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.XtraEditors.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.XtraEditors.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.Printing.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.Printing.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.Printing.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.Printing.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.XtraGauges.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.XtraGauges.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.XtraGauges.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.XtraGauges.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.XtraGrid.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.XtraGrid.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.XtraGrid.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.XtraGrid.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.XtraLayout.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.XtraLayout.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.XtraLayout.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.XtraLayout.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.XtraNavBar.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.XtraNavBar.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.XtraNavBar.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.XtraNavBar.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.XtraPivotGrid.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.XtraPivotGrid.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.XtraPivotGrid.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.XtraPivotGrid.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.XtraPrinting.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.XtraPrinting.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.XtraPrinting.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.XtraPrinting.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.XtraReports.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.XtraReports.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.XtraReports.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.XtraReports.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.XtraReports.v19.2.Extensions.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.XtraReports.v19.2.Extensions.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.XtraReports.v19.2.Extensions.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.XtraReports.v19.2.Extensions.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.XtraRichEdit.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.XtraRichEdit.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.XtraRichEdit.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.XtraRichEdit.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.XtraTreeList.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.XtraTreeList.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.XtraTreeList.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.XtraTreeList.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.XtraVerticalGrid.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.XtraVerticalGrid.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.XtraVerticalGrid.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.XtraVerticalGrid.v19.2.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.Diagram.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.Diagram.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.Diagram.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.Diagram.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.Pdf.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.Pdf.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.Pdf.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.Pdf.v19.2.Core.resources.dll
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion Cabinet Medical.csprojAssemblyReference.cache
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.Consultation.Consultation_Management.resources
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.Login.Login_Form.resources
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.Patient.Nouveau_Patient.resources
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.Patient.Patient_Management.resources
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.Patient.Recherche_Patient.resources
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.Patient.Salle_d_attente.resources
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.Principale_Form.Principal_Form.resources
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.SplashScrean.SplashScreen.resources
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.User.Add_User.resources
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.User.User_Management.resources
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Properties.Resources.resources
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion Cabinet Medical.csproj.GenerateResource.cache
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion Cabinet Medical.exe.licenses
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion Cabinet Medical.csproj.CoreCompileInputs.cache
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion Cabinet Medical.csproj.CopyComplete
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion Cabinet Medical.exe
+C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion Cabinet Medical.pdb
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.Patient.Fiche_Patient_Attente.resources
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion Cabinet Medical.csproj.AssemblyReference.cache
