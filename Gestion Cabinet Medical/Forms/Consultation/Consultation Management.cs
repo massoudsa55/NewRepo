@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraEditors;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Gestion_Cabinet_Medical.Forms.Consultation
 {
-    public partial class Consultation_Management : DevExpress.XtraEditors.XtraForm
+    public partial class Consultation_Management : XtraForm
     {
         public Consultation_Management()
         {

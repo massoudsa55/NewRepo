@@ -22,9 +22,9 @@ namespace Gestion_Cabinet_Medical
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Forms.SplashScrean.SplashScreen());
+            //Application.Run(new Forms.SplashScrean.SplashScreen());
             //Application.Run(new Forms.Principale_Form.Principal_Form());
-            //Application.Run(new Forms.Patient.Fiche_Patient_Attente());
+            Application.Run(new Forms.Consultation.Consultation_Management());
         }
     }
 }
