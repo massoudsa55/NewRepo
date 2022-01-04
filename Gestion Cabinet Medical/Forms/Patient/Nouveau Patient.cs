@@ -42,6 +42,7 @@ namespace Gestion_Cabinet_Medical.Forms.Patient
                 default:
                     break;
             }
+            #region Events
             linkLabel_ChampOPL.MouseDown += LinkLabel_ChampOPL_MouseDown;
             linkLabel_ChampOPL.MouseUp += LinkLabel_ChampOPL_MouseUp;
             btnFermer.Click += BtnFermer_Click;
@@ -72,6 +73,7 @@ namespace Gestion_Cabinet_Medical.Forms.Patient
             txt_Note.KeyDown += Propertices_KeyDown;
             btnOK.KeyDown += Propertices_KeyDown;
             btnFermer.KeyDown += Propertices_KeyDown;
+            #endregion
         }
 
         private void Propertices_KeyDown(object sender, KeyEventArgs e)

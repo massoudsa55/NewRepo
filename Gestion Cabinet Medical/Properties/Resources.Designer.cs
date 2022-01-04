@@ -123,9 +123,9 @@ namespace Gestion_Cabinet_Medical.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap consultation_16px {
+        internal static System.Drawing.Bitmap consultation_32px {
             get {
-                object obj = ResourceManager.GetObject("consultation_16px", resourceCulture);
+                object obj = ResourceManager.GetObject("consultation_32px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +153,9 @@ namespace Gestion_Cabinet_Medical.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap documents_folder_16px {
+        internal static System.Drawing.Bitmap documents_folder_32px {
             get {
-                object obj = ResourceManager.GetObject("documents_folder_16px", resourceCulture);
+                object obj = ResourceManager.GetObject("documents_folder_32px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -293,9 +293,9 @@ namespace Gestion_Cabinet_Medical.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap radiographie_16px {
+        internal static System.Drawing.Bitmap radiographie_32px {
             get {
-                object obj = ResourceManager.GetObject("radiographie_16px", resourceCulture);
+                object obj = ResourceManager.GetObject("radiographie_32px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -303,9 +303,9 @@ namespace Gestion_Cabinet_Medical.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap radiologie_16px {
+        internal static System.Drawing.Bitmap radiologie_32px {
             get {
-                object obj = ResourceManager.GetObject("radiologie_16px", resourceCulture);
+                object obj = ResourceManager.GetObject("radiologie_32px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -313,9 +313,9 @@ namespace Gestion_Cabinet_Medical.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap RDV {
+        internal static System.Drawing.Bitmap RDV_32px {
             get {
-                object obj = ResourceManager.GetObject("RDV", resourceCulture);
+                object obj = ResourceManager.GetObject("RDV_32px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -353,9 +353,9 @@ namespace Gestion_Cabinet_Medical.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap test_16px {
+        internal static System.Drawing.Bitmap test_32px {
             get {
-                object obj = ResourceManager.GetObject("test_16px", resourceCulture);
+                object obj = ResourceManager.GetObject("test_32px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -373,9 +373,9 @@ namespace Gestion_Cabinet_Medical.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap treatment_16px {
+        internal static System.Drawing.Bitmap treatment_32px {
             get {
-                object obj = ResourceManager.GetObject("treatment_16px", resourceCulture);
+                object obj = ResourceManager.GetObject("treatment_32px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -80,10 +80,10 @@
             this.layoutControl2 = new DevExpress.XtraLayout.LayoutControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.linkLabel_ChampOPL = new System.Windows.Forms.LinkLabel();
-            this.btnOK = new DevExpress.XtraEditors.SimpleButton();
-            this.btnFermer = new DevExpress.XtraEditors.SimpleButton();
             this.layoutControlGroup4 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem20 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.btnOK = new DevExpress.XtraEditors.SimpleButton();
+            this.btnFermer = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Prefession.Properties)).BeginInit();
@@ -194,21 +194,21 @@
             this.txt_Code.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(220)))), ((int)(((byte)(225)))));
             this.txt_Code.Properties.Appearance.Options.UseBackColor = true;
             this.txt_Code.Properties.ReadOnly = true;
-            this.txt_Code.Size = new System.Drawing.Size(387, 20);
+            this.txt_Code.Size = new System.Drawing.Size(367, 20);
             this.txt_Code.StyleController = this.layoutControl1;
             this.txt_Code.TabIndex = 0;
             // 
             // checkEdit_Presume
             // 
-            this.checkEdit_Presume.Location = new System.Drawing.Point(438, 142);
+            this.checkEdit_Presume.Location = new System.Drawing.Point(413, 142);
             this.checkEdit_Presume.Name = "checkEdit_Presume";
-            this.checkEdit_Presume.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(111)))), ((int)(((byte)(1)))));
+            this.checkEdit_Presume.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(131)))), ((int)(((byte)(221)))));
             this.checkEdit_Presume.Properties.Appearance.Options.UseForeColor = true;
             this.checkEdit_Presume.Properties.Caption = "Présumé";
             this.checkEdit_Presume.Properties.CheckBoxOptions.Style = DevExpress.XtraEditors.Controls.CheckBoxStyle.SvgCheckBox1;
-            this.checkEdit_Presume.Properties.CheckBoxOptions.SvgColorChecked = DevExpress.LookAndFeel.DXSkinColors.FillColors.Warning;
-            this.checkEdit_Presume.Properties.CheckBoxOptions.SvgColorUnchecked = DevExpress.LookAndFeel.DXSkinColors.FillColors.Warning;
-            this.checkEdit_Presume.Size = new System.Drawing.Size(70, 22);
+            this.checkEdit_Presume.Properties.CheckBoxOptions.SvgColorChecked = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(131)))), ((int)(((byte)(221)))));
+            this.checkEdit_Presume.Properties.CheckBoxOptions.SvgColorUnchecked = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(131)))), ((int)(((byte)(221)))));
+            this.checkEdit_Presume.Size = new System.Drawing.Size(75, 22);
             this.checkEdit_Presume.StyleController = this.layoutControl1;
             this.checkEdit_Presume.TabIndex = 21;
             this.checkEdit_Presume.TabStop = false;
@@ -317,13 +317,13 @@
             // 
             // lkp_Civilite
             // 
-            this.lkp_Civilite.Location = new System.Drawing.Point(374, 168);
+            this.lkp_Civilite.Location = new System.Drawing.Point(359, 168);
             this.lkp_Civilite.Name = "lkp_Civilite";
             this.lkp_Civilite.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.lkp_Civilite.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.SpinDown)});
             this.lkp_Civilite.Properties.NullText = "";
-            this.lkp_Civilite.Size = new System.Drawing.Size(134, 20);
+            this.lkp_Civilite.Size = new System.Drawing.Size(129, 20);
             this.lkp_Civilite.StyleController = this.layoutControl1;
             this.lkp_Civilite.TabIndex = 6;
             // 
@@ -335,7 +335,7 @@
             this.lkp_Sexe.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.SpinDown)});
             this.lkp_Sexe.Properties.NullText = "";
-            this.lkp_Sexe.Size = new System.Drawing.Size(142, 20);
+            this.lkp_Sexe.Size = new System.Drawing.Size(127, 20);
             this.lkp_Sexe.StyleController = this.layoutControl1;
             this.lkp_Sexe.TabIndex = 5;
             // 
@@ -352,7 +352,7 @@
             this.dateEdit_DOB.Properties.CalendarTimeProperties.ExportMode = DevExpress.XtraEditors.Repository.ExportMode.Value;
             this.dateEdit_DOB.Properties.ShowWeekNumbers = true;
             this.dateEdit_DOB.Properties.VistaCalendarInitialViewStyle = DevExpress.XtraEditors.VistaCalendarInitialViewStyle.YearView;
-            this.dateEdit_DOB.Size = new System.Drawing.Size(142, 20);
+            this.dateEdit_DOB.Size = new System.Drawing.Size(127, 20);
             this.dateEdit_DOB.StyleController = this.layoutControl1;
             this.dateEdit_DOB.TabIndex = 4;
             // 
@@ -360,7 +360,7 @@
             // 
             this.txt_FileDe.Location = new System.Drawing.Point(121, 118);
             this.txt_FileDe.Name = "txt_FileDe";
-            this.txt_FileDe.Size = new System.Drawing.Size(387, 20);
+            this.txt_FileDe.Size = new System.Drawing.Size(367, 20);
             this.txt_FileDe.StyleController = this.layoutControl1;
             this.txt_FileDe.TabIndex = 3;
             // 
@@ -368,7 +368,7 @@
             // 
             this.txt_Prenom.Location = new System.Drawing.Point(121, 94);
             this.txt_Prenom.Name = "txt_Prenom";
-            this.txt_Prenom.Size = new System.Drawing.Size(387, 20);
+            this.txt_Prenom.Size = new System.Drawing.Size(367, 20);
             this.txt_Prenom.StyleController = this.layoutControl1;
             this.txt_Prenom.TabIndex = 2;
             // 
@@ -378,17 +378,17 @@
             this.txt_Nom.Name = "txt_Nom";
             this.txt_Nom.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.txt_Nom.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_Nom.Size = new System.Drawing.Size(387, 20);
+            this.txt_Nom.Size = new System.Drawing.Size(367, 20);
             this.txt_Nom.StyleController = this.layoutControl1;
             this.txt_Nom.TabIndex = 1;
             // 
             // imageEdit_Image
             // 
-            this.imageEdit_Image.Location = new System.Drawing.Point(519, 75);
+            this.imageEdit_Image.Location = new System.Drawing.Point(511, 41);
             this.imageEdit_Image.Name = "imageEdit_Image";
             this.imageEdit_Image.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.imageEdit_Image.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.imageEdit_Image.Size = new System.Drawing.Size(126, 106);
+            this.imageEdit_Image.Size = new System.Drawing.Size(146, 152);
             this.imageEdit_Image.StyleController = this.layoutControl1;
             this.imageEdit_Image.TabIndex = 18;
             this.imageEdit_Image.TabStop = true;
@@ -396,12 +396,12 @@
             // txt_Age
             // 
             this.txt_Age.EditValue = "";
-            this.txt_Age.Location = new System.Drawing.Point(374, 142);
+            this.txt_Age.Location = new System.Drawing.Point(359, 142);
             this.txt_Age.Name = "txt_Age";
             this.txt_Age.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Buffered;
             this.txt_Age.Properties.Mask.EditMask = "d";
             this.txt_Age.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.txt_Age.Size = new System.Drawing.Size(60, 20);
+            this.txt_Age.Size = new System.Drawing.Size(50, 20);
             this.txt_Age.StyleController = this.layoutControl1;
             this.txt_Age.TabIndex = 20;
             this.txt_Age.TabStop = false;
@@ -413,20 +413,20 @@
             this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup1,
             this.layoutControlGroup3,
-            this.layoutControlGroup2});
+            this.layoutControlGroup2,
+            this.layoutControlGroup5});
             this.Root.Name = "Root";
             this.Root.Size = new System.Drawing.Size(676, 487);
             this.Root.TextVisible = false;
             // 
             // layoutControlGroup1
             // 
-            this.layoutControlGroup1.AppearanceGroup.BorderColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Warning;
+            this.layoutControlGroup1.AppearanceGroup.BorderColor = System.Drawing.Color.DarkTurquoise;
             this.layoutControlGroup1.AppearanceGroup.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlGroup1.AppearanceGroup.Options.UseBorderColor = true;
             this.layoutControlGroup1.AppearanceGroup.Options.UseFont = true;
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem1,
-            this.layoutControlGroup5,
             this.layoutControlItem2,
             this.layoutControlItem3,
             this.layoutControlItem4,
@@ -437,7 +437,7 @@
             this.layoutControlItem16});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(656, 192);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(492, 192);
             this.layoutControlGroup1.Text = "Informations générales";
             // 
             // layoutControlItem1
@@ -447,22 +447,22 @@
             this.layoutControlItem1.Control = this.txt_Nom;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(488, 24);
+            this.layoutControlItem1.Size = new System.Drawing.Size(468, 24);
             this.layoutControlItem1.Text = "Nom";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(94, 15);
             // 
             // layoutControlGroup5
             // 
-            this.layoutControlGroup5.AppearanceGroup.BorderColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Primary;
+            this.layoutControlGroup5.AppearanceGroup.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(224)))), ((int)(((byte)(141)))));
             this.layoutControlGroup5.AppearanceGroup.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.layoutControlGroup5.AppearanceGroup.Options.UseBorderColor = true;
             this.layoutControlGroup5.AppearanceGroup.Options.UseFont = true;
             this.layoutControlGroup5.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem13});
-            this.layoutControlGroup5.Location = new System.Drawing.Point(488, 0);
+            this.layoutControlGroup5.Location = new System.Drawing.Point(492, 0);
             this.layoutControlGroup5.Name = "layoutControlGroup5";
             this.layoutControlGroup5.Padding = new DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3);
-            this.layoutControlGroup5.Size = new System.Drawing.Size(144, 146);
+            this.layoutControlGroup5.Size = new System.Drawing.Size(164, 192);
             this.layoutControlGroup5.Spacing = new DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3);
             this.layoutControlGroup5.Text = "Image";
             // 
@@ -472,7 +472,7 @@
             this.layoutControlItem13.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem13.MinSize = new System.Drawing.Size(24, 24);
             this.layoutControlItem13.Name = "layoutControlItem13";
-            this.layoutControlItem13.Size = new System.Drawing.Size(130, 110);
+            this.layoutControlItem13.Size = new System.Drawing.Size(150, 156);
             this.layoutControlItem13.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem13.Text = "Image";
             this.layoutControlItem13.TextSize = new System.Drawing.Size(0, 0);
@@ -485,7 +485,7 @@
             this.layoutControlItem2.Control = this.txt_Prenom;
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 48);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(488, 24);
+            this.layoutControlItem2.Size = new System.Drawing.Size(468, 24);
             this.layoutControlItem2.Text = "Prénom";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(94, 15);
             // 
@@ -496,7 +496,7 @@
             this.layoutControlItem3.Control = this.txt_FileDe;
             this.layoutControlItem3.Location = new System.Drawing.Point(0, 72);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(488, 24);
+            this.layoutControlItem3.Size = new System.Drawing.Size(468, 24);
             this.layoutControlItem3.Text = "File de";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(94, 15);
             // 
@@ -507,7 +507,7 @@
             this.layoutControlItem4.Control = this.dateEdit_DOB;
             this.layoutControlItem4.Location = new System.Drawing.Point(0, 96);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(243, 26);
+            this.layoutControlItem4.Size = new System.Drawing.Size(228, 26);
             this.layoutControlItem4.Text = "Date de naissance";
             this.layoutControlItem4.TextSize = new System.Drawing.Size(94, 15);
             // 
@@ -516,9 +516,9 @@
             this.layoutControlItem5.AppearanceItemCaption.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem5.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem5.Control = this.txt_Age;
-            this.layoutControlItem5.Location = new System.Drawing.Point(243, 96);
+            this.layoutControlItem5.Location = new System.Drawing.Point(228, 96);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(171, 26);
+            this.layoutControlItem5.Size = new System.Drawing.Size(161, 26);
             this.layoutControlItem5.Spacing = new DevExpress.XtraLayout.Utils.Padding(10, 0, 0, 0);
             this.layoutControlItem5.Text = "Age";
             this.layoutControlItem5.TextSize = new System.Drawing.Size(94, 15);
@@ -530,7 +530,7 @@
             this.layoutControlItem6.Control = this.lkp_Sexe;
             this.layoutControlItem6.Location = new System.Drawing.Point(0, 122);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(243, 24);
+            this.layoutControlItem6.Size = new System.Drawing.Size(228, 24);
             this.layoutControlItem6.Text = "Sexe";
             this.layoutControlItem6.TextSize = new System.Drawing.Size(94, 15);
             // 
@@ -539,9 +539,9 @@
             this.layoutControlItem7.AppearanceItemCaption.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem7.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem7.Control = this.lkp_Civilite;
-            this.layoutControlItem7.Location = new System.Drawing.Point(243, 122);
+            this.layoutControlItem7.Location = new System.Drawing.Point(228, 122);
             this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(245, 24);
+            this.layoutControlItem7.Size = new System.Drawing.Size(240, 24);
             this.layoutControlItem7.Spacing = new DevExpress.XtraLayout.Utils.Padding(10, 0, 0, 0);
             this.layoutControlItem7.Text = "Civilité";
             this.layoutControlItem7.TextSize = new System.Drawing.Size(94, 15);
@@ -549,9 +549,9 @@
             // layoutControlItem15
             // 
             this.layoutControlItem15.Control = this.checkEdit_Presume;
-            this.layoutControlItem15.Location = new System.Drawing.Point(414, 96);
+            this.layoutControlItem15.Location = new System.Drawing.Point(389, 96);
             this.layoutControlItem15.Name = "layoutControlItem15";
-            this.layoutControlItem15.Size = new System.Drawing.Size(74, 26);
+            this.layoutControlItem15.Size = new System.Drawing.Size(79, 26);
             this.layoutControlItem15.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem15.TextVisible = false;
             // 
@@ -560,7 +560,7 @@
             this.layoutControlItem16.Control = this.txt_Code;
             this.layoutControlItem16.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem16.Name = "layoutControlItem16";
-            this.layoutControlItem16.Size = new System.Drawing.Size(488, 24);
+            this.layoutControlItem16.Size = new System.Drawing.Size(468, 24);
             this.layoutControlItem16.Text = "Code";
             this.layoutControlItem16.TextSize = new System.Drawing.Size(94, 13);
             // 
@@ -623,7 +623,7 @@
             // 
             // layoutControlGroup2
             // 
-            this.layoutControlGroup2.AppearanceGroup.BorderColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
+            this.layoutControlGroup2.AppearanceGroup.BorderColor = System.Drawing.Color.DarkTurquoise;
             this.layoutControlGroup2.AppearanceGroup.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlGroup2.AppearanceGroup.Options.UseBorderColor = true;
             this.layoutControlGroup2.AppearanceGroup.Options.UseFont = true;
@@ -735,6 +735,25 @@
             this.linkLabel_ChampOPL.TabStop = true;
             this.linkLabel_ChampOPL.Text = "Champs oplégatoires";
             // 
+            // layoutControlGroup4
+            // 
+            this.layoutControlGroup4.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup4.GroupBordersVisible = false;
+            this.layoutControlGroup4.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem20});
+            this.layoutControlGroup4.Name = "layoutControlGroup4";
+            this.layoutControlGroup4.Size = new System.Drawing.Size(676, 81);
+            this.layoutControlGroup4.TextVisible = false;
+            // 
+            // layoutControlItem20
+            // 
+            this.layoutControlItem20.Control = this.panelControl1;
+            this.layoutControlItem20.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem20.Name = "layoutControlItem20";
+            this.layoutControlItem20.Size = new System.Drawing.Size(656, 61);
+            this.layoutControlItem20.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem20.TextVisible = false;
+            // 
             // btnOK
             // 
             this.btnOK.AllowFocus = false;
@@ -768,25 +787,6 @@
             this.btnFermer.TabIndex = 18;
             this.btnFermer.Text = "Fermer";
             this.btnFermer.ToolTip = "Fermer";
-            // 
-            // layoutControlGroup4
-            // 
-            this.layoutControlGroup4.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.layoutControlGroup4.GroupBordersVisible = false;
-            this.layoutControlGroup4.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem20});
-            this.layoutControlGroup4.Name = "layoutControlGroup4";
-            this.layoutControlGroup4.Size = new System.Drawing.Size(676, 81);
-            this.layoutControlGroup4.TextVisible = false;
-            // 
-            // layoutControlItem20
-            // 
-            this.layoutControlItem20.Control = this.panelControl1;
-            this.layoutControlItem20.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem20.Name = "layoutControlItem20";
-            this.layoutControlItem20.Size = new System.Drawing.Size(656, 61);
-            this.layoutControlItem20.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem20.TextVisible = false;
             // 
             // Nouveau_Patient
             // 

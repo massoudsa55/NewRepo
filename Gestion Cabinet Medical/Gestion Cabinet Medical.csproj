@@ -434,28 +434,25 @@
     <None Include="Resources\todo_list_32px.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\consultation_16px.png" />
+    <None Include="Resources\consultation_32px.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\test_16px.png" />
+    <None Include="Resources\radiographie_32px.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\radiologie_16px.png" />
+    <None Include="Resources\radiologie_32px.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\radiographie.png" />
+    <None Include="Resources\RDV_32px.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\radiographie_16px.png" />
+    <None Include="Resources\test_32px.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\documents_folder_16px.png" />
+    <None Include="Resources\treatment_32px.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\treatment_16px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\RDV.png" />
+    <None Include="Resources\documents_folder_32px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
