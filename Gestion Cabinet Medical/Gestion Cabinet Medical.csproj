@@ -454,6 +454,18 @@
   <ItemGroup>
     <None Include="Resources\documents_folder_32px.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart_with_pulse_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_plue_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash_can_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_32px.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

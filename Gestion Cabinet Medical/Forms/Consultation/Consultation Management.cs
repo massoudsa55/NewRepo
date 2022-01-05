@@ -17,5 +17,12 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
         {
             InitializeComponent();
         }
+
+        private void Consultation_Management_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'medical_DBDataSet.Consultations' table. You can move, or remove it, as needed.
+            this.consultationsTableAdapter.Fill(this.medical_DBDataSet.Consultations);
+
+        }
     }
 }
