@@ -47,22 +47,22 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.checkEdit_Presume = new DevExpress.XtraEditors.CheckEdit();
             this.txt_Code = new DevExpress.XtraEditors.TextEdit();
             this.txt_Address = new DevExpress.XtraEditors.TextEdit();
-            this.lkp_SituationFam1 = new DevExpress.XtraEditors.LookUpEdit();
-            this.txt_Prefession1 = new DevExpress.XtraEditors.TextEdit();
-            this.txt_Note1 = new System.Windows.Forms.TextBox();
-            this.lkp_GroupSanguin3 = new DevExpress.XtraEditors.LookUpEdit();
+            this.lkp_SituationFam = new DevExpress.XtraEditors.LookUpEdit();
+            this.txt_Prefession = new DevExpress.XtraEditors.TextEdit();
+            this.txt_Note = new System.Windows.Forms.TextBox();
+            this.lkp_GroupSanguin = new DevExpress.XtraEditors.LookUpEdit();
             this.txt_Prefession3 = new DevExpress.XtraEditors.TextEdit();
-            this.txt_Phon11 = new DevExpress.XtraEditors.TextEdit();
-            this.txt_Email1 = new DevExpress.XtraEditors.TextEdit();
-            this.txt_Phon21 = new DevExpress.XtraEditors.TextEdit();
-            this.slkp_Wilaya1 = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.txt_Phon1 = new DevExpress.XtraEditors.TextEdit();
+            this.txt_Email = new DevExpress.XtraEditors.TextEdit();
+            this.txt_Phon2 = new DevExpress.XtraEditors.TextEdit();
+            this.slkp_Wilaya = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.searchLookUpEdit2View1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.slkp_Wilaya11 = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.slkp_Pays = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.searchLookUpEdit2View11 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.slkp_Wilaya12 = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.slkp_Daira = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.searchLookUpEdit2View12 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.dateEdit_DOB1 = new DevExpress.XtraEditors.DateEdit();
-            this.lkp_SituationFam11 = new DevExpress.XtraEditors.LookUpEdit();
+            this.lkp_Civilite = new DevExpress.XtraEditors.LookUpEdit();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -148,22 +148,22 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit_Presume.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Code.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Address.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lkp_SituationFam1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Prefession1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lkp_GroupSanguin3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lkp_SituationFam.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Prefession.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lkp_GroupSanguin.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Prefession3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Phon11.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Email1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Phon21.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.slkp_Wilaya1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Phon1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Email.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Phon2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slkp_Wilaya.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit2View1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.slkp_Wilaya11.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slkp_Pays.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit2View11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.slkp_Wilaya12.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slkp_Daira.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit2View12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit_DOB1.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit_DOB1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lkp_SituationFam11.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lkp_Civilite.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
@@ -280,19 +280,19 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.layoutControl1.Controls.Add(this.checkEdit_Presume);
             this.layoutControl1.Controls.Add(this.txt_Code);
             this.layoutControl1.Controls.Add(this.txt_Address);
-            this.layoutControl1.Controls.Add(this.lkp_SituationFam1);
-            this.layoutControl1.Controls.Add(this.txt_Prefession1);
-            this.layoutControl1.Controls.Add(this.txt_Note1);
-            this.layoutControl1.Controls.Add(this.lkp_GroupSanguin3);
+            this.layoutControl1.Controls.Add(this.lkp_SituationFam);
+            this.layoutControl1.Controls.Add(this.txt_Prefession);
+            this.layoutControl1.Controls.Add(this.txt_Note);
+            this.layoutControl1.Controls.Add(this.lkp_GroupSanguin);
             this.layoutControl1.Controls.Add(this.txt_Prefession3);
-            this.layoutControl1.Controls.Add(this.txt_Phon11);
-            this.layoutControl1.Controls.Add(this.txt_Email1);
-            this.layoutControl1.Controls.Add(this.txt_Phon21);
-            this.layoutControl1.Controls.Add(this.slkp_Wilaya1);
-            this.layoutControl1.Controls.Add(this.slkp_Wilaya11);
-            this.layoutControl1.Controls.Add(this.slkp_Wilaya12);
+            this.layoutControl1.Controls.Add(this.txt_Phon1);
+            this.layoutControl1.Controls.Add(this.txt_Email);
+            this.layoutControl1.Controls.Add(this.txt_Phon2);
+            this.layoutControl1.Controls.Add(this.slkp_Wilaya);
+            this.layoutControl1.Controls.Add(this.slkp_Pays);
+            this.layoutControl1.Controls.Add(this.slkp_Daira);
             this.layoutControl1.Controls.Add(this.dateEdit_DOB1);
-            this.layoutControl1.Controls.Add(this.lkp_SituationFam11);
+            this.layoutControl1.Controls.Add(this.lkp_Civilite);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
             this.layoutControl1.Name = "layoutControl1";
@@ -425,44 +425,44 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.txt_Address.StyleController = this.layoutControl1;
             this.txt_Address.TabIndex = 7;
             // 
-            // lkp_SituationFam1
+            // lkp_SituationFam
             // 
-            this.lkp_SituationFam1.Location = new System.Drawing.Point(1119, 244);
-            this.lkp_SituationFam1.Name = "lkp_SituationFam1";
-            this.lkp_SituationFam1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.lkp_SituationFam1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.lkp_SituationFam.Location = new System.Drawing.Point(1119, 244);
+            this.lkp_SituationFam.Name = "lkp_SituationFam";
+            this.lkp_SituationFam.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.lkp_SituationFam.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.SpinDown)});
-            this.lkp_SituationFam1.Properties.NullText = "";
-            this.lkp_SituationFam1.Size = new System.Drawing.Size(226, 20);
-            this.lkp_SituationFam1.StyleController = this.layoutControl1;
-            this.lkp_SituationFam1.TabIndex = 14;
+            this.lkp_SituationFam.Properties.NullText = "";
+            this.lkp_SituationFam.Size = new System.Drawing.Size(226, 20);
+            this.lkp_SituationFam.StyleController = this.layoutControl1;
+            this.lkp_SituationFam.TabIndex = 14;
             // 
-            // txt_Prefession1
+            // txt_Prefession
             // 
-            this.txt_Prefession1.Location = new System.Drawing.Point(782, 268);
-            this.txt_Prefession1.Name = "txt_Prefession1";
-            this.txt_Prefession1.Size = new System.Drawing.Size(563, 20);
-            this.txt_Prefession1.StyleController = this.layoutControl1;
-            this.txt_Prefession1.TabIndex = 24;
+            this.txt_Prefession.Location = new System.Drawing.Point(782, 268);
+            this.txt_Prefession.Name = "txt_Prefession";
+            this.txt_Prefession.Size = new System.Drawing.Size(563, 20);
+            this.txt_Prefession.StyleController = this.layoutControl1;
+            this.txt_Prefession.TabIndex = 24;
             // 
-            // txt_Note1
+            // txt_Note
             // 
-            this.txt_Note1.Location = new System.Drawing.Point(782, 292);
-            this.txt_Note1.Name = "txt_Note1";
-            this.txt_Note1.Size = new System.Drawing.Size(563, 20);
-            this.txt_Note1.TabIndex = 25;
+            this.txt_Note.Location = new System.Drawing.Point(782, 292);
+            this.txt_Note.Name = "txt_Note";
+            this.txt_Note.Size = new System.Drawing.Size(563, 20);
+            this.txt_Note.TabIndex = 25;
             // 
-            // lkp_GroupSanguin3
+            // lkp_GroupSanguin
             // 
-            this.lkp_GroupSanguin3.Location = new System.Drawing.Point(114, 229);
-            this.lkp_GroupSanguin3.Name = "lkp_GroupSanguin3";
-            this.lkp_GroupSanguin3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.lkp_GroupSanguin3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.lkp_GroupSanguin.Location = new System.Drawing.Point(114, 229);
+            this.lkp_GroupSanguin.Name = "lkp_GroupSanguin";
+            this.lkp_GroupSanguin.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.lkp_GroupSanguin.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.SpinDown)});
-            this.lkp_GroupSanguin3.Properties.NullText = "";
-            this.lkp_GroupSanguin3.Size = new System.Drawing.Size(227, 20);
-            this.lkp_GroupSanguin3.StyleController = this.layoutControl1;
-            this.lkp_GroupSanguin3.TabIndex = 13;
+            this.lkp_GroupSanguin.Properties.NullText = "";
+            this.lkp_GroupSanguin.Size = new System.Drawing.Size(227, 20);
+            this.lkp_GroupSanguin.StyleController = this.layoutControl1;
+            this.lkp_GroupSanguin.TabIndex = 13;
             // 
             // txt_Prefession3
             // 
@@ -472,47 +472,47 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.txt_Prefession3.StyleController = this.layoutControl1;
             this.txt_Prefession3.TabIndex = 24;
             // 
-            // txt_Phon11
+            // txt_Phon1
             // 
-            this.txt_Phon11.Location = new System.Drawing.Point(782, 42);
-            this.txt_Phon11.Name = "txt_Phon11";
-            this.txt_Phon11.Properties.Mask.EditMask = "9990000000";
-            this.txt_Phon11.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Simple;
-            this.txt_Phon11.Size = new System.Drawing.Size(232, 20);
-            this.txt_Phon11.StyleController = this.layoutControl1;
-            this.txt_Phon11.TabIndex = 10;
+            this.txt_Phon1.Location = new System.Drawing.Point(782, 42);
+            this.txt_Phon1.Name = "txt_Phon1";
+            this.txt_Phon1.Properties.Mask.EditMask = "9990000000";
+            this.txt_Phon1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Simple;
+            this.txt_Phon1.Size = new System.Drawing.Size(232, 20);
+            this.txt_Phon1.StyleController = this.layoutControl1;
+            this.txt_Phon1.TabIndex = 10;
             // 
-            // txt_Email1
+            // txt_Email
             // 
-            this.txt_Email1.Location = new System.Drawing.Point(782, 66);
-            this.txt_Email1.Name = "txt_Email1";
-            this.txt_Email1.Size = new System.Drawing.Size(563, 20);
-            this.txt_Email1.StyleController = this.layoutControl1;
-            this.txt_Email1.TabIndex = 12;
+            this.txt_Email.Location = new System.Drawing.Point(782, 66);
+            this.txt_Email.Name = "txt_Email";
+            this.txt_Email.Size = new System.Drawing.Size(563, 20);
+            this.txt_Email.StyleController = this.layoutControl1;
+            this.txt_Email.TabIndex = 12;
             // 
-            // txt_Phon21
+            // txt_Phon2
             // 
-            this.txt_Phon21.Location = new System.Drawing.Point(1119, 42);
-            this.txt_Phon21.Name = "txt_Phon21";
-            this.txt_Phon21.Properties.Mask.EditMask = "9990000000";
-            this.txt_Phon21.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Simple;
-            this.txt_Phon21.Size = new System.Drawing.Size(226, 20);
-            this.txt_Phon21.StyleController = this.layoutControl1;
-            this.txt_Phon21.TabIndex = 11;
+            this.txt_Phon2.Location = new System.Drawing.Point(1119, 42);
+            this.txt_Phon2.Name = "txt_Phon2";
+            this.txt_Phon2.Properties.Mask.EditMask = "9990000000";
+            this.txt_Phon2.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Simple;
+            this.txt_Phon2.Size = new System.Drawing.Size(226, 20);
+            this.txt_Phon2.StyleController = this.layoutControl1;
+            this.txt_Phon2.TabIndex = 11;
             // 
-            // slkp_Wilaya1
+            // slkp_Wilaya
             // 
-            this.slkp_Wilaya1.EditValue = "";
-            this.slkp_Wilaya1.Location = new System.Drawing.Point(782, 179);
-            this.slkp_Wilaya1.Name = "slkp_Wilaya1";
-            this.slkp_Wilaya1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.slkp_Wilaya1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.slkp_Wilaya.EditValue = "";
+            this.slkp_Wilaya.Location = new System.Drawing.Point(782, 179);
+            this.slkp_Wilaya.Name = "slkp_Wilaya";
+            this.slkp_Wilaya.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.slkp_Wilaya.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.SpinDown)});
-            this.slkp_Wilaya1.Properties.NullText = "";
-            this.slkp_Wilaya1.Properties.PopupView = this.searchLookUpEdit2View1;
-            this.slkp_Wilaya1.Size = new System.Drawing.Size(232, 20);
-            this.slkp_Wilaya1.StyleController = this.layoutControl1;
-            this.slkp_Wilaya1.TabIndex = 8;
+            this.slkp_Wilaya.Properties.NullText = "";
+            this.slkp_Wilaya.Properties.PopupView = this.searchLookUpEdit2View1;
+            this.slkp_Wilaya.Size = new System.Drawing.Size(232, 20);
+            this.slkp_Wilaya.StyleController = this.layoutControl1;
+            this.slkp_Wilaya.TabIndex = 8;
             // 
             // searchLookUpEdit2View1
             // 
@@ -521,19 +521,19 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.searchLookUpEdit2View1.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.searchLookUpEdit2View1.OptionsView.ShowGroupPanel = false;
             // 
-            // slkp_Wilaya11
+            // slkp_Pays
             // 
-            this.slkp_Wilaya11.EditValue = "";
-            this.slkp_Wilaya11.Location = new System.Drawing.Point(782, 155);
-            this.slkp_Wilaya11.Name = "slkp_Wilaya11";
-            this.slkp_Wilaya11.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.slkp_Wilaya11.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.slkp_Pays.EditValue = "";
+            this.slkp_Pays.Location = new System.Drawing.Point(782, 155);
+            this.slkp_Pays.Name = "slkp_Pays";
+            this.slkp_Pays.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.slkp_Pays.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.SpinDown)});
-            this.slkp_Wilaya11.Properties.NullText = "";
-            this.slkp_Wilaya11.Properties.PopupView = this.searchLookUpEdit2View11;
-            this.slkp_Wilaya11.Size = new System.Drawing.Size(563, 20);
-            this.slkp_Wilaya11.StyleController = this.layoutControl1;
-            this.slkp_Wilaya11.TabIndex = 8;
+            this.slkp_Pays.Properties.NullText = "";
+            this.slkp_Pays.Properties.PopupView = this.searchLookUpEdit2View11;
+            this.slkp_Pays.Size = new System.Drawing.Size(563, 20);
+            this.slkp_Pays.StyleController = this.layoutControl1;
+            this.slkp_Pays.TabIndex = 8;
             // 
             // searchLookUpEdit2View11
             // 
@@ -542,19 +542,19 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.searchLookUpEdit2View11.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.searchLookUpEdit2View11.OptionsView.ShowGroupPanel = false;
             // 
-            // slkp_Wilaya12
+            // slkp_Daira
             // 
-            this.slkp_Wilaya12.EditValue = "";
-            this.slkp_Wilaya12.Location = new System.Drawing.Point(1109, 179);
-            this.slkp_Wilaya12.Name = "slkp_Wilaya12";
-            this.slkp_Wilaya12.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.slkp_Wilaya12.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.slkp_Daira.EditValue = "";
+            this.slkp_Daira.Location = new System.Drawing.Point(1109, 179);
+            this.slkp_Daira.Name = "slkp_Daira";
+            this.slkp_Daira.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.slkp_Daira.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.SpinDown)});
-            this.slkp_Wilaya12.Properties.NullText = "";
-            this.slkp_Wilaya12.Properties.PopupView = this.searchLookUpEdit2View12;
-            this.slkp_Wilaya12.Size = new System.Drawing.Size(236, 20);
-            this.slkp_Wilaya12.StyleController = this.layoutControl1;
-            this.slkp_Wilaya12.TabIndex = 8;
+            this.slkp_Daira.Properties.NullText = "";
+            this.slkp_Daira.Properties.PopupView = this.searchLookUpEdit2View12;
+            this.slkp_Daira.Size = new System.Drawing.Size(236, 20);
+            this.slkp_Daira.StyleController = this.layoutControl1;
+            this.slkp_Daira.TabIndex = 8;
             // 
             // searchLookUpEdit2View12
             // 
@@ -580,17 +580,17 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.dateEdit_DOB1.StyleController = this.layoutControl1;
             this.dateEdit_DOB1.TabIndex = 4;
             // 
-            // lkp_SituationFam11
+            // lkp_Civilite
             // 
-            this.lkp_SituationFam11.Location = new System.Drawing.Point(782, 244);
-            this.lkp_SituationFam11.Name = "lkp_SituationFam11";
-            this.lkp_SituationFam11.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.lkp_SituationFam11.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.lkp_Civilite.Location = new System.Drawing.Point(782, 244);
+            this.lkp_Civilite.Name = "lkp_Civilite";
+            this.lkp_Civilite.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.lkp_Civilite.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.SpinDown)});
-            this.lkp_SituationFam11.Properties.NullText = "";
-            this.lkp_SituationFam11.Size = new System.Drawing.Size(232, 20);
-            this.lkp_SituationFam11.StyleController = this.layoutControl1;
-            this.lkp_SituationFam11.TabIndex = 14;
+            this.lkp_Civilite.Properties.NullText = "";
+            this.lkp_Civilite.Size = new System.Drawing.Size(232, 20);
+            this.lkp_Civilite.StyleController = this.layoutControl1;
+            this.lkp_Civilite.TabIndex = 14;
             // 
             // Root
             // 
@@ -739,7 +739,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             // 
             // layoutControlItem8
             // 
-            this.layoutControlItem8.Control = this.txt_Phon11;
+            this.layoutControlItem8.Control = this.txt_Phon1;
             this.layoutControlItem8.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutControlItem8.CustomizationFormText = "Télé. 1";
             this.layoutControlItem8.Location = new System.Drawing.Point(0, 0);
@@ -750,7 +750,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             // 
             // layoutControlItem9
             // 
-            this.layoutControlItem9.Control = this.txt_Email1;
+            this.layoutControlItem9.Control = this.txt_Email;
             this.layoutControlItem9.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutControlItem9.CustomizationFormText = "Email";
             this.layoutControlItem9.Location = new System.Drawing.Point(0, 24);
@@ -761,7 +761,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             // 
             // layoutControlItem17
             // 
-            this.layoutControlItem17.Control = this.txt_Phon21;
+            this.layoutControlItem17.Control = this.txt_Phon2;
             this.layoutControlItem17.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutControlItem17.CustomizationFormText = "Télé. 2";
             this.layoutControlItem17.Location = new System.Drawing.Point(327, 0);
@@ -792,7 +792,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             // 
             // layoutControlItem19
             // 
-            this.layoutControlItem19.Control = this.lkp_SituationFam1;
+            this.layoutControlItem19.Control = this.lkp_SituationFam;
             this.layoutControlItem19.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutControlItem19.CustomizationFormText = "Situation fam";
             this.layoutControlItem19.Location = new System.Drawing.Point(327, 0);
@@ -804,7 +804,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             // 
             // layoutControlItem20
             // 
-            this.layoutControlItem20.Control = this.txt_Prefession1;
+            this.layoutControlItem20.Control = this.txt_Prefession;
             this.layoutControlItem20.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutControlItem20.CustomizationFormText = "Professtion";
             this.layoutControlItem20.Location = new System.Drawing.Point(0, 24);
@@ -815,7 +815,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             // 
             // layoutControlItem23
             // 
-            this.layoutControlItem23.Control = this.txt_Note1;
+            this.layoutControlItem23.Control = this.txt_Note;
             this.layoutControlItem23.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutControlItem23.CustomizationFormText = "Note";
             this.layoutControlItem23.Location = new System.Drawing.Point(0, 48);
@@ -826,7 +826,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             // 
             // layoutControlItem13
             // 
-            this.layoutControlItem13.Control = this.lkp_SituationFam11;
+            this.layoutControlItem13.Control = this.lkp_Civilite;
             this.layoutControlItem13.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutControlItem13.CustomizationFormText = "Civilité";
             this.layoutControlItem13.Location = new System.Drawing.Point(0, 0);
@@ -855,7 +855,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             // 
             // layoutControlItem28
             // 
-            this.layoutControlItem28.Control = this.lkp_GroupSanguin3;
+            this.layoutControlItem28.Control = this.lkp_GroupSanguin;
             this.layoutControlItem28.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutControlItem28.CustomizationFormText = "Groupe sanguin";
             this.layoutControlItem28.Location = new System.Drawing.Point(0, 0);
@@ -920,7 +920,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             // 
             // layoutControlItem10
             // 
-            this.layoutControlItem10.Control = this.slkp_Wilaya1;
+            this.layoutControlItem10.Control = this.slkp_Wilaya;
             this.layoutControlItem10.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutControlItem10.CustomizationFormText = "Wilaya";
             this.layoutControlItem10.Location = new System.Drawing.Point(0, 48);
@@ -931,24 +931,24 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             // 
             // layoutControlItem11
             // 
-            this.layoutControlItem11.Control = this.slkp_Wilaya11;
+            this.layoutControlItem11.Control = this.slkp_Pays;
             this.layoutControlItem11.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.layoutControlItem11.CustomizationFormText = "Wilaya";
+            this.layoutControlItem11.CustomizationFormText = "Pays";
             this.layoutControlItem11.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItem11.Name = "layoutControlItem11";
             this.layoutControlItem11.Size = new System.Drawing.Size(658, 24);
-            this.layoutControlItem11.Text = "Wilaya";
+            this.layoutControlItem11.Text = "Pays";
             this.layoutControlItem11.TextSize = new System.Drawing.Size(88, 13);
             // 
             // layoutControlItem12
             // 
-            this.layoutControlItem12.Control = this.slkp_Wilaya12;
+            this.layoutControlItem12.Control = this.slkp_Daira;
             this.layoutControlItem12.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.layoutControlItem12.CustomizationFormText = "Wilaya";
+            this.layoutControlItem12.CustomizationFormText = "Daira";
             this.layoutControlItem12.Location = new System.Drawing.Point(327, 48);
             this.layoutControlItem12.Name = "layoutControlItem12";
             this.layoutControlItem12.Size = new System.Drawing.Size(331, 24);
-            this.layoutControlItem12.Text = "Wilaya";
+            this.layoutControlItem12.Text = "Daira";
             this.layoutControlItem12.TextSize = new System.Drawing.Size(88, 13);
             // 
             // layoutControlItem21
@@ -1411,22 +1411,22 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit_Presume.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Code.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Address.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lkp_SituationFam1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Prefession1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lkp_GroupSanguin3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lkp_SituationFam.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Prefession.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lkp_GroupSanguin.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Prefession3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Phon11.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Email1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Phon21.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.slkp_Wilaya1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Phon1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Email.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Phon2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slkp_Wilaya.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit2View1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.slkp_Wilaya11.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slkp_Pays.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit2View11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.slkp_Wilaya12.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slkp_Daira.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit2View12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit_DOB1.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit_DOB1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lkp_SituationFam11.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lkp_Civilite.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
@@ -1516,36 +1516,36 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup4;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem14;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup3;
-        private DevExpress.XtraEditors.LookUpEdit lkp_SituationFam1;
-        private DevExpress.XtraEditors.TextEdit txt_Prefession1;
-        private System.Windows.Forms.TextBox txt_Note1;
+        private DevExpress.XtraEditors.LookUpEdit lkp_SituationFam;
+        private DevExpress.XtraEditors.TextEdit txt_Prefession;
+        private System.Windows.Forms.TextBox txt_Note;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup5;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem19;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem20;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem23;
-        private DevExpress.XtraEditors.LookUpEdit lkp_GroupSanguin3;
+        private DevExpress.XtraEditors.LookUpEdit lkp_GroupSanguin;
         private DevExpress.XtraEditors.TextEdit txt_Prefession3;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup7;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem28;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem30;
-        private DevExpress.XtraEditors.TextEdit txt_Phon11;
-        private DevExpress.XtraEditors.TextEdit txt_Email1;
-        private DevExpress.XtraEditors.TextEdit txt_Phon21;
+        private DevExpress.XtraEditors.TextEdit txt_Phon1;
+        private DevExpress.XtraEditors.TextEdit txt_Email;
+        private DevExpress.XtraEditors.TextEdit txt_Phon2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem17;
-        private DevExpress.XtraEditors.SearchLookUpEdit slkp_Wilaya1;
+        private DevExpress.XtraEditors.SearchLookUpEdit slkp_Wilaya;
         private DevExpress.XtraGrid.Views.Grid.GridView searchLookUpEdit2View1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem10;
-        private DevExpress.XtraEditors.SearchLookUpEdit slkp_Wilaya11;
+        private DevExpress.XtraEditors.SearchLookUpEdit slkp_Pays;
         private DevExpress.XtraGrid.Views.Grid.GridView searchLookUpEdit2View11;
-        private DevExpress.XtraEditors.SearchLookUpEdit slkp_Wilaya12;
+        private DevExpress.XtraEditors.SearchLookUpEdit slkp_Daira;
         private DevExpress.XtraGrid.Views.Grid.GridView searchLookUpEdit2View12;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem11;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem12;
         private DevExpress.XtraEditors.DateEdit dateEdit_DOB1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem18;
-        private DevExpress.XtraEditors.LookUpEdit lkp_SituationFam11;
+        private DevExpress.XtraEditors.LookUpEdit lkp_Civilite;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem13;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private System.Windows.Forms.Panel panel1;

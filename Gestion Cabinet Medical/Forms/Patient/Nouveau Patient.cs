@@ -668,7 +668,8 @@ namespace Gestion_Cabinet_Medical.Forms.Patient
             lkp_SituationFam.Text = Master.GetSituationFam(Convert.ToInt32(patient.ID_SF));
             txt_Prefession.Text = patient.Profession;
             txt_Note.Text = patient.Note;
-            imageEdit_Image.Image = Master.GetImageFromByteArray(patient.Image);
+            if (patient.Image != null)
+                imageEdit_Image.Image = Master.GetImageFromByteArray(patient.Image);
         }
 
         public void Save()
