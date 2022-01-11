@@ -1,6 +1,7 @@
 ﻿using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
@@ -132,6 +133,19 @@ namespace Gestion_Cabinet_Medical.Functions
                 var Wilaya = Master.db.Wilaya.First(a => a.ID_Wilaya == id_Wilaya).NameWilaya;
                 if (Wilaya != string.Empty)
                     return Wilaya;
+            }
+            return "";
+        }
+
+        public static string GetPays(int id)
+        {
+            if (id != 0)
+            {
+                int id_Wilaya = (int?)Master.db.Daira.First(a => a.ID_Daira == id).ID_Wilaya ?? 0;
+                int id_pays = (int?)Master.db.Wilaya.First(a => a.ID_Wilaya == id_Wilaya).ID_Pays ?? 0;
+                var payse = Master.db.Pays.First(a => a.ID_Pays == id_pays).NamePay;
+                if (payse != string.Empty)
+                    return payse;
             }
             return "";
         }

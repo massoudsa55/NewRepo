@@ -38,7 +38,9 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             var civilite = Master.db.Civilite.Select(e => e.Type).ToList();
             var groupeSanguin = Master.db.GroupeSanguin.Select(e => e.Type).ToList();
             var situationFam = Master.db.SituationFam.Select(e => e.Type).ToList();
+            var Daira = Master.db.Daira.Select(e => e.NameDaira).ToList();
             var wilaya = Master.db.Wilaya.Select(e => e.NameWilaya).ToList();
+            var Pays = Master.db.Pays.Select(e => e.NamePay).ToList();
             lkp_Sexe.EditValue = sexe[0];
             lkp_Sexe.Properties.DataSource = sexe;
             lkp_Civilite.EditValue = civilite[0];
@@ -47,7 +49,9 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             lkp_GroupSanguin.Properties.DataSource = groupeSanguin;
             lkp_SituationFam.EditValue = situationFam[0];
             lkp_SituationFam.Properties.DataSource = situationFam;
+            slkp_Daira.Properties.DataSource = Daira;
             slkp_Wilaya.Properties.DataSource = wilaya;
+            slkp_Pays.Properties.DataSource = Pays;
         }
 
         public void EditData(int id)
@@ -71,6 +75,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             {
                 slkp_Wilaya.Text = Master.GetWilaya(Convert.ToInt32(patient.ID_Daira));
                 slkp_Daira.Text = Master.GetDaira(Convert.ToInt32(patient.ID_Daira));
+                slkp_Pays.Text = Master.GetPays(Convert.ToInt32(patient.ID_Daira));
             }
             txt_Phon1.Text = patient.Phone1;
             txt_Phon2.Text = patient.Phone2;
