@@ -30,14 +30,26 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Consultation_Management));
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.btn_DossierPatient = new DevExpress.XtraEditors.SimpleButton();
+            this.slkp_Patient = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.searchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.pic_Cancel = new DevExpress.XtraEditors.PictureEdit();
+            this.label8 = new System.Windows.Forms.Label();
+            this.pic_Refresh = new DevExpress.XtraEditors.PictureEdit();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.tabPane1 = new DevExpress.XtraBars.Navigation.TabPane();
             this.tabNavigationPage1 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.btn_EditData = new DevExpress.XtraEditors.SimpleButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.txt_Nom = new DevExpress.XtraEditors.TextEdit();
             this.txt_Prenom = new DevExpress.XtraEditors.TextEdit();
             this.txt_FileDe = new DevExpress.XtraEditors.TextEdit();
@@ -92,6 +104,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem21 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
             this.tabNavigationPage4 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.tabNavigationPage7 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.tabNavigationPage2 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
@@ -130,6 +143,11 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.medical_DBDataSet = new Gestion_Cabinet_Medical.Medical_DBDataSet();
             this.consultationsTableAdapter = new Gestion_Cabinet_Medical.Medical_DBDataSetTableAdapters.ConsultationsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
+            this.panelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.slkp_Patient.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Cancel.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Refresh.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).BeginInit();
@@ -137,7 +155,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.tabNavigationPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Nom.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Prenom.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_FileDe.Properties)).BeginInit();
@@ -193,6 +211,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
             this.tabNavigationPage2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -215,11 +234,103 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             // 
             // panelControl1
             // 
+            this.panelControl1.Controls.Add(this.btn_DossierPatient);
+            this.panelControl1.Controls.Add(this.slkp_Patient);
+            this.panelControl1.Controls.Add(this.pic_Cancel);
+            this.panelControl1.Controls.Add(this.label8);
+            this.panelControl1.Controls.Add(this.pic_Refresh);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(1372, 53);
             this.panelControl1.TabIndex = 0;
+            // 
+            // btn_DossierPatient
+            // 
+            this.btn_DossierPatient.AllowFocus = false;
+            this.btn_DossierPatient.Appearance.BackColor = System.Drawing.Color.White;
+            this.btn_DossierPatient.Appearance.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.btn_DossierPatient.Appearance.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DossierPatient.Appearance.Options.UseBackColor = true;
+            this.btn_DossierPatient.Appearance.Options.UseBorderColor = true;
+            this.btn_DossierPatient.Appearance.Options.UseFont = true;
+            this.btn_DossierPatient.ImageOptions.Image = global::Gestion_Cabinet_Medical.Properties.Resources.user_folder_32px;
+            this.btn_DossierPatient.Location = new System.Drawing.Point(1077, 12);
+            this.btn_DossierPatient.Name = "btn_DossierPatient";
+            this.btn_DossierPatient.Size = new System.Drawing.Size(103, 32);
+            this.btn_DossierPatient.TabIndex = 26;
+            this.btn_DossierPatient.Text = "Dossier";
+            // 
+            // slkp_Patient
+            // 
+            this.slkp_Patient.EditValue = "";
+            this.slkp_Patient.Location = new System.Drawing.Point(157, 12);
+            this.slkp_Patient.Name = "slkp_Patient";
+            this.slkp_Patient.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.slkp_Patient.Properties.Appearance.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold);
+            this.slkp_Patient.Properties.Appearance.Options.UseBackColor = true;
+            this.slkp_Patient.Properties.Appearance.Options.UseFont = true;
+            this.slkp_Patient.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            serializableAppearanceObject1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(151)))), ((int)(((byte)(255)))));
+            serializableAppearanceObject1.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            serializableAppearanceObject1.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            serializableAppearanceObject1.ForeColor = System.Drawing.Color.White;
+            serializableAppearanceObject1.Options.UseBackColor = true;
+            serializableAppearanceObject1.Options.UseFont = true;
+            serializableAppearanceObject1.Options.UseForeColor = true;
+            this.slkp_Patient.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.SpinDown, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.slkp_Patient.Properties.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.slkp_Patient.Properties.NullText = "";
+            this.slkp_Patient.Properties.PopupView = this.searchLookUpEdit1View;
+            this.slkp_Patient.Size = new System.Drawing.Size(864, 32);
+            this.slkp_Patient.TabIndex = 23;
+            // 
+            // searchLookUpEdit1View
+            // 
+            this.searchLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.searchLookUpEdit1View.Name = "searchLookUpEdit1View";
+            this.searchLookUpEdit1View.OptionsBehavior.Editable = false;
+            this.searchLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.searchLookUpEdit1View.OptionsView.AnimationType = DevExpress.XtraGrid.Views.Base.GridAnimationType.AnimateFocusedItem;
+            this.searchLookUpEdit1View.OptionsView.ShowGroupPanel = false;
+            // 
+            // pic_Cancel
+            // 
+            this.pic_Cancel.EditValue = ((object)(resources.GetObject("pic_Cancel.EditValue")));
+            this.pic_Cancel.Location = new System.Drawing.Point(1044, 12);
+            this.pic_Cancel.Name = "pic_Cancel";
+            this.pic_Cancel.Properties.AllowFocused = false;
+            this.pic_Cancel.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.pic_Cancel.Properties.Appearance.Options.UseBackColor = true;
+            this.pic_Cancel.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.pic_Cancel.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pic_Cancel.Size = new System.Drawing.Size(18, 32);
+            this.pic_Cancel.TabIndex = 25;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(25, 15);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(114, 25);
+            this.label8.TabIndex = 22;
+            this.label8.Text = "Patient (F2)";
+            // 
+            // pic_Refresh
+            // 
+            this.pic_Refresh.EditValue = ((object)(resources.GetObject("pic_Refresh.EditValue")));
+            this.pic_Refresh.Location = new System.Drawing.Point(1021, 12);
+            this.pic_Refresh.Name = "pic_Refresh";
+            this.pic_Refresh.Properties.AllowFocused = false;
+            this.pic_Refresh.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.pic_Refresh.Properties.Appearance.Options.UseBackColor = true;
+            this.pic_Refresh.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.pic_Refresh.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pic_Refresh.Size = new System.Drawing.Size(23, 32);
+            this.pic_Refresh.TabIndex = 24;
             // 
             // panelControl2
             // 
@@ -270,6 +381,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             // 
             // layoutControl1
             // 
+            this.layoutControl1.Controls.Add(this.panel9);
             this.layoutControl1.Controls.Add(this.panel1);
             this.layoutControl1.Controls.Add(this.txt_Nom);
             this.layoutControl1.Controls.Add(this.txt_Prenom);
@@ -302,26 +414,34 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.btn_EditData);
+            this.panel9.Location = new System.Drawing.Point(12, 554);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(1344, 83);
+            this.panel9.TabIndex = 28;
+            // 
+            // btn_EditData
+            // 
+            this.btn_EditData.AllowFocus = false;
+            this.btn_EditData.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(224)))), ((int)(((byte)(235)))));
+            this.btn_EditData.Appearance.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_EditData.Appearance.Options.UseBackColor = true;
+            this.btn_EditData.Appearance.Options.UseFont = true;
+            this.btn_EditData.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_EditData.ImageOptions.Image")));
+            this.btn_EditData.Location = new System.Drawing.Point(3, 3);
+            this.btn_EditData.Name = "btn_EditData";
+            this.btn_EditData.Size = new System.Drawing.Size(659, 34);
+            this.btn_EditData.TabIndex = 26;
+            this.btn_EditData.Text = "Modifier les informations";
+            // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.simpleButton1);
-            this.panel1.Location = new System.Drawing.Point(12, 288);
+            this.panel1.Location = new System.Drawing.Point(12, 327);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(664, 349);
+            this.panel1.Size = new System.Drawing.Size(1344, 223);
             this.panel1.TabIndex = 27;
-            // 
-            // simpleButton1
-            // 
-            this.simpleButton1.AllowFocus = false;
-            this.simpleButton1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(224)))), ((int)(((byte)(235)))));
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Nirmala UI", 8F, System.Drawing.FontStyle.Bold);
-            this.simpleButton1.Appearance.Options.UseBackColor = true;
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.Location = new System.Drawing.Point(3, 22);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(126, 22);
-            this.simpleButton1.TabIndex = 26;
-            this.simpleButton1.Text = "Modifier";
             // 
             // txt_Nom
             // 
@@ -545,14 +665,14 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             // slkp_Daira
             // 
             this.slkp_Daira.EditValue = "";
-            this.slkp_Daira.Location = new System.Drawing.Point(1109, 179);
+            this.slkp_Daira.Location = new System.Drawing.Point(1119, 179);
             this.slkp_Daira.Name = "slkp_Daira";
             this.slkp_Daira.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.slkp_Daira.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.SpinDown)});
             this.slkp_Daira.Properties.NullText = "";
             this.slkp_Daira.Properties.PopupView = this.searchLookUpEdit2View12;
-            this.slkp_Daira.Size = new System.Drawing.Size(236, 20);
+            this.slkp_Daira.Size = new System.Drawing.Size(226, 20);
             this.slkp_Daira.StyleController = this.layoutControl1;
             this.slkp_Daira.TabIndex = 8;
             // 
@@ -602,7 +722,8 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.layoutControlGroup5,
             this.layoutControlGroup7,
             this.layoutControlGroup4,
-            this.layoutControlItem21});
+            this.layoutControlItem21,
+            this.layoutControlItem7});
             this.Root.Name = "Root";
             this.Root.Size = new System.Drawing.Size(1368, 649);
             this.Root.TextVisible = false;
@@ -787,7 +908,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.layoutControlGroup5.Location = new System.Drawing.Point(668, 202);
             this.layoutControlGroup5.Name = "layoutControlGroup5";
             this.layoutControlGroup5.Padding = new DevExpress.XtraLayout.Utils.Padding(9, 9, 9, 9);
-            this.layoutControlGroup5.Size = new System.Drawing.Size(680, 427);
+            this.layoutControlGroup5.Size = new System.Drawing.Size(680, 113);
             this.layoutControlGroup5.Text = "Affectation";
             // 
             // layoutControlItem19
@@ -820,7 +941,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.layoutControlItem23.CustomizationFormText = "Note";
             this.layoutControlItem23.Location = new System.Drawing.Point(0, 48);
             this.layoutControlItem23.Name = "layoutControlItem23";
-            this.layoutControlItem23.Size = new System.Drawing.Size(658, 338);
+            this.layoutControlItem23.Size = new System.Drawing.Size(658, 24);
             this.layoutControlItem23.Text = "Note";
             this.layoutControlItem23.TextSize = new System.Drawing.Size(88, 13);
             // 
@@ -850,7 +971,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.layoutControlGroup7.Location = new System.Drawing.Point(0, 187);
             this.layoutControlGroup7.Name = "layoutControlGroup7";
             this.layoutControlGroup7.Padding = new DevExpress.XtraLayout.Utils.Padding(9, 9, 9, 9);
-            this.layoutControlGroup7.Size = new System.Drawing.Size(668, 89);
+            this.layoutControlGroup7.Size = new System.Drawing.Size(668, 128);
             this.layoutControlGroup7.Text = "Groupage";
             // 
             // layoutControlItem28
@@ -884,7 +1005,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.layoutControlItem18.CustomizationFormText = "Groupé le";
             this.layoutControlItem18.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItem18.Name = "layoutControlItem18";
-            this.layoutControlItem18.Size = new System.Drawing.Size(646, 24);
+            this.layoutControlItem18.Size = new System.Drawing.Size(646, 63);
             this.layoutControlItem18.Text = "Groupé le";
             this.layoutControlItem18.TextSize = new System.Drawing.Size(88, 13);
             // 
@@ -948,17 +1069,27 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.layoutControlItem12.Location = new System.Drawing.Point(327, 48);
             this.layoutControlItem12.Name = "layoutControlItem12";
             this.layoutControlItem12.Size = new System.Drawing.Size(331, 24);
+            this.layoutControlItem12.Spacing = new DevExpress.XtraLayout.Utils.Padding(10, 0, 0, 0);
             this.layoutControlItem12.Text = "Daira";
             this.layoutControlItem12.TextSize = new System.Drawing.Size(88, 13);
             // 
             // layoutControlItem21
             // 
             this.layoutControlItem21.Control = this.panel1;
-            this.layoutControlItem21.Location = new System.Drawing.Point(0, 276);
+            this.layoutControlItem21.Location = new System.Drawing.Point(0, 315);
             this.layoutControlItem21.Name = "layoutControlItem21";
-            this.layoutControlItem21.Size = new System.Drawing.Size(668, 353);
+            this.layoutControlItem21.Size = new System.Drawing.Size(1348, 227);
             this.layoutControlItem21.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem21.TextVisible = false;
+            // 
+            // layoutControlItem7
+            // 
+            this.layoutControlItem7.Control = this.panel9;
+            this.layoutControlItem7.Location = new System.Drawing.Point(0, 542);
+            this.layoutControlItem7.Name = "layoutControlItem7";
+            this.layoutControlItem7.Size = new System.Drawing.Size(1348, 87);
+            this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem7.TextVisible = false;
             // 
             // tabNavigationPage4
             // 
@@ -967,7 +1098,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.tabNavigationPage4.ItemShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.ImageAndText;
             this.tabNavigationPage4.Name = "tabNavigationPage4";
             this.tabNavigationPage4.Properties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.ImageAndText;
-            this.tabNavigationPage4.Size = new System.Drawing.Size(905, 347);
+            this.tabNavigationPage4.Size = new System.Drawing.Size(1368, 649);
             // 
             // tabNavigationPage7
             // 
@@ -976,7 +1107,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.tabNavigationPage7.ItemShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.ImageAndText;
             this.tabNavigationPage7.Name = "tabNavigationPage7";
             this.tabNavigationPage7.Properties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.ImageAndText;
-            this.tabNavigationPage7.Size = new System.Drawing.Size(905, 347);
+            this.tabNavigationPage7.Size = new System.Drawing.Size(1368, 649);
             // 
             // tabNavigationPage2
             // 
@@ -1051,6 +1182,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.groupControl1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -1239,6 +1371,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             // 
             // panel7
             // 
+            this.panel7.BackColor = System.Drawing.Color.White;
             this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel7.Location = new System.Drawing.Point(0, 559);
             this.panel7.Name = "panel7";
@@ -1247,6 +1380,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             // 
             // panel6
             // 
+            this.panel6.BackColor = System.Drawing.Color.White;
             this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel6.Location = new System.Drawing.Point(258, 0);
             this.panel6.Name = "panel6";
@@ -1255,6 +1389,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.Controls.Add(this.simpleButton2);
             this.panel4.Controls.Add(this.btn_New);
             this.panel4.Controls.Add(this.btn_Paiement);
@@ -1268,8 +1403,10 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             // simpleButton2
             // 
             this.simpleButton2.AllowFocus = false;
+            this.simpleButton2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.simpleButton2.Appearance.Font = new System.Drawing.Font("Nirmala UI", 11F, System.Drawing.FontStyle.Bold);
             this.simpleButton2.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
+            this.simpleButton2.Appearance.Options.UseBackColor = true;
             this.simpleButton2.Appearance.Options.UseFont = true;
             this.simpleButton2.Appearance.Options.UseForeColor = true;
             this.simpleButton2.ImageOptions.Image = global::Gestion_Cabinet_Medical.Properties.Resources.print_plue_32px;
@@ -1336,7 +1473,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.tabNavigationPage3.ItemShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.ImageAndText;
             this.tabNavigationPage3.Name = "tabNavigationPage3";
             this.tabNavigationPage3.Properties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.ImageAndText;
-            this.tabNavigationPage3.Size = new System.Drawing.Size(905, 347);
+            this.tabNavigationPage3.Size = new System.Drawing.Size(1368, 649);
             // 
             // tabNavigationPage5
             // 
@@ -1345,7 +1482,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.tabNavigationPage5.ItemShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.ImageAndText;
             this.tabNavigationPage5.Name = "tabNavigationPage5";
             this.tabNavigationPage5.Properties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.ImageAndText;
-            this.tabNavigationPage5.Size = new System.Drawing.Size(905, 347);
+            this.tabNavigationPage5.Size = new System.Drawing.Size(1368, 649);
             // 
             // tabNavigationPage6
             // 
@@ -1354,7 +1491,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.tabNavigationPage6.ItemShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.ImageAndText;
             this.tabNavigationPage6.Name = "tabNavigationPage6";
             this.tabNavigationPage6.Properties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.ImageAndText;
-            this.tabNavigationPage6.Size = new System.Drawing.Size(905, 347);
+            this.tabNavigationPage6.Size = new System.Drawing.Size(1368, 649);
             // 
             // tabNavigationPage8
             // 
@@ -1363,7 +1500,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.tabNavigationPage8.ItemShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.ImageAndText;
             this.tabNavigationPage8.Name = "tabNavigationPage8";
             this.tabNavigationPage8.Properties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.ImageAndText;
-            this.tabNavigationPage8.Size = new System.Drawing.Size(905, 347);
+            this.tabNavigationPage8.Size = new System.Drawing.Size(1368, 649);
             // 
             // consultationsBindingSource
             // 
@@ -1393,6 +1530,12 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.Text = "Consultation_Management";
             this.Load += new System.EventHandler(this.Consultation_Management_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
+            this.panelControl1.ResumeLayout(false);
+            this.panelControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.slkp_Patient.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Cancel.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Refresh.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).EndInit();
@@ -1400,7 +1543,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.tabNavigationPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txt_Nom.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Prenom.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_FileDe.Properties)).EndInit();
@@ -1456,6 +1599,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
             this.tabNavigationPage2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
@@ -1547,9 +1691,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem18;
         private DevExpress.XtraEditors.LookUpEdit lkp_Civilite;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem13;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private System.Windows.Forms.Panel panel1;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem21;
+        private DevExpress.XtraEditors.SimpleButton btn_EditData;
         private System.Windows.Forms.Label label1;
         private Medical_DBDataSet medical_DBDataSet;
         private System.Windows.Forms.BindingSource consultationsBindingSource;
@@ -1580,5 +1722,15 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel2;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel1;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem21;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
+        private System.Windows.Forms.Label label8;
+        private DevExpress.XtraEditors.SearchLookUpEdit slkp_Patient;
+        private DevExpress.XtraGrid.Views.Grid.GridView searchLookUpEdit1View;
+        private DevExpress.XtraEditors.PictureEdit pic_Refresh;
+        private DevExpress.XtraEditors.PictureEdit pic_Cancel;
+        private DevExpress.XtraEditors.SimpleButton btn_DossierPatient;
     }
 }

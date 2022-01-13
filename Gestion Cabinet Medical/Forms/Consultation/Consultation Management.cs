@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -28,7 +29,30 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
 
         private void Consultation_Management_Load(object sender, EventArgs e)
         {
+            LoadPatient();
             EditData(_ID_Patient);
+            btn_EditData.Click += Btn_EditData_Click;
+        }
+
+        private void Btn_EditData_Click(object sender, EventArgs e)
+        {
+            if (!IsDataValide())
+                return;
+            Edit();
+        }
+
+        private void LoadPatient()
+        {
+            var query = from patient in Master.db.Patient
+                        select new
+                        {
+                            patient.Code,
+                            patient.Nom,
+                            patient.Prenom,
+                            DateNaissance = patient.DOB,
+                            patient.Phone1,
+                        };
+            slkp_Patient.Properties.DataSource = query.ToList();
         }
 
         public void GetData()
@@ -41,13 +65,9 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             var Daira = Master.db.Daira.Select(e => e.NameDaira).ToList();
             var wilaya = Master.db.Wilaya.Select(e => e.NameWilaya).ToList();
             var Pays = Master.db.Pays.Select(e => e.NamePay).ToList();
-            lkp_Sexe.EditValue = sexe[0];
             lkp_Sexe.Properties.DataSource = sexe;
-            lkp_Civilite.EditValue = civilite[0];
             lkp_Civilite.Properties.DataSource = civilite;
-            lkp_GroupSanguin.EditValue = groupeSanguin[0];
             lkp_GroupSanguin.Properties.DataSource = groupeSanguin;
-            lkp_SituationFam.EditValue = situationFam[0];
             lkp_SituationFam.Properties.DataSource = situationFam;
             slkp_Daira.Properties.DataSource = Daira;
             slkp_Wilaya.Properties.DataSource = wilaya;
@@ -84,6 +104,102 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             lkp_SituationFam.Text = Master.GetSituationFam(Convert.ToInt32(patient.ID_SF));
             txt_Prefession.Text = patient.Profession;
             txt_Note.Text = patient.Note;
+        }
+
+        public void Edit()
+        {
+            SetData();
+            Master.db.Entry(patient).State = EntityState.Modified;
+            Master.db.SaveChanges();
+            MessageBox.Show("Edited Succesffuly", "Edit", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        public void GetIdDaira()
+        {
+            if (slkp_Daira.EditValue != null && slkp_Daira.Text != string.Empty)
+            {
+                var id_Daira = (int?)Master.db.Daira.First(a => a.NameDaira == slkp_Daira.Text).ID_Daira ?? 0;
+                if (id_Daira > 0)
+                    _ID_Daira = id_Daira;
+            }
+        }
+
+        public void GetIdSexe()
+        {
+            if (lkp_Sexe.EditValue != null && lkp_Sexe.Text != string.Empty)
+            {
+                var id_Sexe = (int?)Master.db.Sexe.First(a => a.Type == lkp_Sexe.Text).ID_Sexe ?? 0;
+                if (id_Sexe > 0)
+                    _ID_Sexe = id_Sexe;
+            }
+        }
+
+        public void GetIdCivilite()
+        {
+            if (lkp_Civilite.EditValue != null && lkp_Civilite.Text != string.Empty)
+            {
+                var id_Civilite = (int?)Master.db.Civilite.First(a => a.Type == lkp_Civilite.Text).ID_Civilite ?? 0;
+                if (id_Civilite > 0)
+                    _ID_Civilite = id_Civilite;
+            }
+        }
+
+        public void GetIdGroupeSanguin()
+        {
+            if (lkp_GroupSanguin.EditValue != null && lkp_GroupSanguin.Text != string.Empty)
+            {
+                var id_GroupeSanguin = (int?)Master.db.GroupeSanguin.First(a => a.Type == lkp_GroupSanguin.Text).ID_GroupeSanguin ?? 0;
+                if (id_GroupeSanguin > 0)
+                    _ID_GroupeSanguin = id_GroupeSanguin;
+            }
+        }
+
+        public void GetIdSituationFam()
+        {
+            if (lkp_SituationFam.EditValue != null && lkp_SituationFam.Text != string.Empty)
+            {
+                var id_SituationFam = (int?)Master.db.SituationFam.First(a => a.Type == lkp_SituationFam.Text).ID_SF ?? 0;
+                if (id_SituationFam > 0)
+                    _ID_SituationFam = id_SituationFam;
+            }
+        }
+
+        public bool IsDataValide()
+        {
+            int NumberOfErrors = 0;
+            NumberOfErrors += Master.IsTextValide(txt_Code) ? 0 : 1;
+            NumberOfErrors += Master.IsTextValide(txt_Nom) ? 0 : 1;
+            NumberOfErrors += Master.IsTextValide(txt_Prenom) ? 0 : 1;
+            NumberOfErrors += Master.IsTextValide(txt_Phon1) ? 0 : 1;
+            NumberOfErrors += Master.IsDateValide(dateEdit_DOB) ? 0 : 1;
+            return (NumberOfErrors == 0);
+        }
+
+        public void SetData()
+        {
+            GetIdDaira();
+            GetIdSexe();
+            GetIdCivilite();
+            GetIdGroupeSanguin();
+            GetIdSituationFam();
+            patient.Code = txt_Code.Text;
+            patient.Nom = txt_Nom.Text;
+            patient.Prenom = txt_Prenom.Text;
+            patient.FileDe = txt_FileDe.Text;
+            patient.DOB = dateEdit_DOB.DateTime;
+            patient.Age = Convert.ToInt32(txt_Age.EditValue);
+            patient.ID_Sexe = _ID_Sexe;
+            patient.ID_Civilite = _ID_Civilite;
+            patient.Address = txt_Address.Text;
+            if (_ID_Daira != 0)
+                patient.ID_Daira = _ID_Daira;
+            patient.Phone1 = txt_Phon1.Text;
+            patient.Phone2 = txt_Phon2.Text;
+            patient.Email = txt_Email.Text;
+            patient.ID_GroupeSanguin = _ID_GroupeSanguin;
+            patient.ID_SF = _ID_SituationFam;
+            patient.Profession = txt_Prefession.Text;
+            patient.Note = txt_Note.Text;
         }
     }
 }
