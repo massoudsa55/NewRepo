@@ -13,7 +13,7 @@ using System.Windows.Forms;
 
 namespace Gestion_Cabinet_Medical.Forms.Patient
 {
-    public partial class Fiche_Patient_Attente : DevExpress.XtraEditors.XtraForm
+    public partial class Fiche_Patient_Attente : XtraForm
     {
         public int _ID_Patient;
         public int _ID_EM;

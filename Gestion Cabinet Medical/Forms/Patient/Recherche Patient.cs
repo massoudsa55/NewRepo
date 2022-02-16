@@ -72,7 +72,7 @@ namespace Gestion_Cabinet_Medical.Forms.Patient
 
         void EditableGridControl()
         {
-             gridView1.Columns["Action"].OptionsColumn.AllowEdit = true;
+            gridView1.Columns["Action"].OptionsColumn.AllowEdit = true;
             gridView1.Columns["Code"].OptionsColumn.AllowEdit = false;
             gridView1.Columns["Nom"].OptionsColumn.AllowEdit = false;
             gridView1.Columns["Prenom"].OptionsColumn.AllowEdit = false;
@@ -265,7 +265,7 @@ namespace Gestion_Cabinet_Medical.Forms.Patient
                         break;
                 }
             }
-            else if (sender is DevExpress.XtraEditors.PictureEdit sendPIC && sendPIC.Name == "pic_RDV")
+            else if (sender is PictureEdit sendPIC && sendPIC.Name == "pic_RDV")
                 RDV();
         }
 

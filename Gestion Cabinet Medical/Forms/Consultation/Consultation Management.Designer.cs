@@ -39,6 +39,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.btn_DossierPatient = new DevExpress.XtraEditors.SimpleButton();
             this.slkp_Patient = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.medical_DBDataSet = new Gestion_Cabinet_Medical.Medical_DBDataSet();
             this.searchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.pic_Cancel = new DevExpress.XtraEditors.PictureEdit();
             this.label8 = new System.Windows.Forms.Label();
@@ -140,11 +141,11 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.tabNavigationPage6 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.tabNavigationPage8 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.consultationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.medical_DBDataSet = new Gestion_Cabinet_Medical.Medical_DBDataSet();
             this.consultationsTableAdapter = new Gestion_Cabinet_Medical.Medical_DBDataSetTableAdapters.ConsultationsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.slkp_Patient.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medical_DBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Cancel.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Refresh.Properties)).BeginInit();
@@ -229,7 +230,6 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.consultationsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medical_DBDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
@@ -285,6 +285,11 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.slkp_Patient.Properties.PopupView = this.searchLookUpEdit1View;
             this.slkp_Patient.Size = new System.Drawing.Size(864, 32);
             this.slkp_Patient.TabIndex = 23;
+            // 
+            // medical_DBDataSet
+            // 
+            this.medical_DBDataSet.DataSetName = "Medical_DBDataSet";
+            this.medical_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // searchLookUpEdit1View
             // 
@@ -1507,11 +1512,6 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.consultationsBindingSource.DataMember = "Consultations";
             this.consultationsBindingSource.DataSource = this.medical_DBDataSet;
             // 
-            // medical_DBDataSet
-            // 
-            this.medical_DBDataSet.DataSetName = "Medical_DBDataSet";
-            this.medical_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // consultationsTableAdapter
             // 
             this.consultationsTableAdapter.ClearBeforeFill = true;
@@ -1533,6 +1533,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.slkp_Patient.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medical_DBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Cancel.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Refresh.Properties)).EndInit();
@@ -1619,7 +1620,6 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.consultationsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medical_DBDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }

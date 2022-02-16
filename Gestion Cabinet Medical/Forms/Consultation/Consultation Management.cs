@@ -32,6 +32,21 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             LoadPatient();
             EditData(_ID_Patient);
             btn_EditData.Click += Btn_EditData_Click;
+            slkp_Patient.EditValueChanged += Slkp_Patient_EditValueChanged;
+            slkp_Patient.CustomDisplayText += Slkp_Patient_CustomDisplayText;
+        }
+
+        private void Slkp_Patient_CustomDisplayText(object sender, DevExpress.XtraEditors.Controls.CustomDisplayTextEventArgs e)
+        {
+            SearchLookUpEdit edit = sender as SearchLookUpEdit;
+            DAL.Patient ptn = edit.Properties.GetRowByKeyValue(edit.EditValue) as DAL.Patient;
+            if (ptn != null)
+                e.DisplayText = string.Concat(e.DisplayText, " ", ptn.Prenom);
+        }
+
+        private void Slkp_Patient_EditValueChanged(object sender, EventArgs e)
+        {
+            //var id_PTN = Master.db.Patient.First(a => a.Nom == slkp_Patient.EditValue.ToString()).ID_Patient;
         }
 
         private void Btn_EditData_Click(object sender, EventArgs e)
@@ -53,6 +68,8 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
                             patient.Phone1,
                         };
             slkp_Patient.Properties.DataSource = query.ToList();
+            slkp_Patient.Properties.ValueMember = nameof(DAL.Patient.ID_Patient);
+            slkp_Patient.Properties.DisplayMember = nameof(DAL.Patient.Nom);
         }
 
         public void GetData()
