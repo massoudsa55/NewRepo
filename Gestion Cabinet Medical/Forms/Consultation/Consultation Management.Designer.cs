@@ -39,11 +39,11 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.btn_DossierPatient = new DevExpress.XtraEditors.SimpleButton();
             this.slkp_Patient = new DevExpress.XtraEditors.SearchLookUpEdit();
-            this.medical_DBDataSet = new Gestion_Cabinet_Medical.Medical_DBDataSet();
             this.searchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.pic_Cancel = new DevExpress.XtraEditors.PictureEdit();
             this.label8 = new System.Windows.Forms.Label();
             this.pic_Refresh = new DevExpress.XtraEditors.PictureEdit();
+            this.medical_DBDataSet = new Gestion_Cabinet_Medical.Medical_DBDataSet();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.tabPane1 = new DevExpress.XtraBars.Navigation.TabPane();
             this.tabNavigationPage1 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
@@ -145,10 +145,10 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.slkp_Patient.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medical_DBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Cancel.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Refresh.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medical_DBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).BeginInit();
@@ -286,11 +286,6 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.slkp_Patient.Size = new System.Drawing.Size(864, 32);
             this.slkp_Patient.TabIndex = 23;
             // 
-            // medical_DBDataSet
-            // 
-            this.medical_DBDataSet.DataSetName = "Medical_DBDataSet";
-            this.medical_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // searchLookUpEdit1View
             // 
             this.searchLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
@@ -336,6 +331,11 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.pic_Refresh.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pic_Refresh.Size = new System.Drawing.Size(23, 32);
             this.pic_Refresh.TabIndex = 24;
+            // 
+            // medical_DBDataSet
+            // 
+            this.medical_DBDataSet.DataSetName = "Medical_DBDataSet";
+            this.medical_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // panelControl2
             // 
@@ -430,7 +430,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             // btn_EditData
             // 
             this.btn_EditData.AllowFocus = false;
-            this.btn_EditData.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(224)))), ((int)(((byte)(235)))));
+            this.btn_EditData.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_EditData.Appearance.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_EditData.Appearance.Options.UseBackColor = true;
             this.btn_EditData.Appearance.Options.UseFont = true;
@@ -1533,10 +1533,10 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.slkp_Patient.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medical_DBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Cancel.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Refresh.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medical_DBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).EndInit();

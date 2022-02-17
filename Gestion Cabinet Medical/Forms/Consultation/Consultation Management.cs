@@ -20,7 +20,9 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
         int _ID_Civilite;
         int _ID_GroupeSanguin;
         int _ID_SituationFam;
-        public int _ID_Patient=1;
+        public int _ID_Patient;
+        string _PTN_Nom;
+        string _PTN_Prenom;
         DAL.Patient patient;
         public Consultation_Management()
         {
@@ -30,23 +32,31 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
         private void Consultation_Management_Load(object sender, EventArgs e)
         {
             LoadPatient();
-            EditData(_ID_Patient);
             btn_EditData.Click += Btn_EditData_Click;
-            slkp_Patient.EditValueChanged += Slkp_Patient_EditValueChanged;
             slkp_Patient.CustomDisplayText += Slkp_Patient_CustomDisplayText;
         }
 
         private void Slkp_Patient_CustomDisplayText(object sender, DevExpress.XtraEditors.Controls.CustomDisplayTextEventArgs e)
         {
+            int i = 9;
+            string code = "";
             SearchLookUpEdit edit = sender as SearchLookUpEdit;
-            DAL.Patient ptn = edit.Properties.GetRowByKeyValue(edit.EditValue) as DAL.Patient;
+            var ptn = edit.Properties.GetRowByKeyValue(edit.EditValue);
             if (ptn != null)
-                e.DisplayText = string.Concat(e.DisplayText, " ", ptn.Prenom);
-        }
+            {
+                while (ptn.ToString()[i] != ',')
+                {
+                    code += ptn.ToString()[i];
+                    i++;
+                }
+                _ID_Patient = (int?)Master.db.Patient.First(a => a.Code == code).ID_Patient ?? 1;
+                _PTN_Nom = Master.db.Patient.First(a => a.ID_Patient == _ID_Patient).Nom;
+                _PTN_Prenom = Master.db.Patient.First(a => a.ID_Patient == _ID_Patient).Prenom;
+                e.DisplayText = string.Concat(_PTN_Nom, " ", _PTN_Prenom);
+                EditData(_ID_Patient);
+            }
+            
 
-        private void Slkp_Patient_EditValueChanged(object sender, EventArgs e)
-        {
-            //var id_PTN = Master.db.Patient.First(a => a.Nom == slkp_Patient.EditValue.ToString()).ID_Patient;
         }
 
         private void Btn_EditData_Click(object sender, EventArgs e)
@@ -68,8 +78,6 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
                             patient.Phone1,
                         };
             slkp_Patient.Properties.DataSource = query.ToList();
-            slkp_Patient.Properties.ValueMember = nameof(DAL.Patient.ID_Patient);
-            slkp_Patient.Properties.DisplayMember = nameof(DAL.Patient.Nom);
         }
 
         public void GetData()
