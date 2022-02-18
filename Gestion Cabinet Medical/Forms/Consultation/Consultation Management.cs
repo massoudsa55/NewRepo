@@ -34,6 +34,44 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             LoadPatient();
             btn_EditData.Click += Btn_EditData_Click;
             slkp_Patient.CustomDisplayText += Slkp_Patient_CustomDisplayText;
+            DefultTextEdit();
+            txt_Poids.GotFocus += TextEdit_GotFocus;
+            txt_Taille.GotFocus += TextEdit_GotFocus;
+            txt_Temperator.GotFocus += TextEdit_GotFocus;
+            txt_FCardiaque.GotFocus += TextEdit_GotFocus;
+            txt_Glycemie.GotFocus += TextEdit_GotFocus;
+            txt_PressionArterielle.GotFocus += TextEdit_GotFocus;
+        }
+
+        private void TextEdit_GotFocus(object sender, EventArgs e)
+        {
+            //txt_Temperator.Text = string.Empty;
+            if (sender is TextEdit sendTXT)
+            {
+                switch (sendTXT.Name)
+                {
+                    case "txt_Poids":
+                        ClearTextFromBox(txt_Poids);
+                        break;
+                    case "txt_Taille":
+                        ClearTextFromBox(txt_Taille);
+                        break;
+                    case "txt_Temperator":
+                        ClearTextFromBox(txt_Temperator);
+                        break;
+                    case "txt_FCardiaque":
+                        ClearTextFromBox(txt_FCardiaque);
+                        break;
+                    case "txt_Glycemie":
+                        ClearTextFromBox(txt_Glycemie);
+                        break;
+                    case "txt_PressionArterielle":
+                        ClearTextFromBox(txt_PressionArterielle);
+                        break;
+                    default:
+                        break;
+                }
+            }
         }
 
         private void Slkp_Patient_CustomDisplayText(object sender, DevExpress.XtraEditors.Controls.CustomDisplayTextEventArgs e)
@@ -55,7 +93,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
                 e.DisplayText = string.Concat(_PTN_Nom, " ", _PTN_Prenom);
                 EditData(_ID_Patient);
             }
-            
+
 
         }
 
@@ -65,6 +103,19 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
                 return;
             Edit();
         }
+
+        public void DefultTextEdit()
+        {
+            txt_Poids.Text = "0";
+            txt_Taille.Text = "0";
+            txt_Temperator.Text = "Ex 36";
+            txt_FCardiaque.Text = "Ex 70";
+            txt_Glycemie.Text = "Ex 1.4";
+            txt_PressionArterielle.Text = "Ex 8/12";
+        }
+
+        public void ClearTextFromBox(TextEdit text) => text.Text = string.Empty;
+        
 
         private void LoadPatient()
         {
@@ -225,6 +276,6 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             patient.ID_SF = _ID_SituationFam;
             patient.Profession = txt_Prefession.Text;
             patient.Note = txt_Note.Text;
-        }
-    }
+        } 
+    } 
 }

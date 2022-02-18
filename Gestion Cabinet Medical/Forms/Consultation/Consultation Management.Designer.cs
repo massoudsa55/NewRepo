@@ -117,15 +117,15 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
+            this.txt_PressionArterielle = new DevExpress.XtraEditors.TextEdit();
             this.label7 = new System.Windows.Forms.Label();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
+            this.txt_Glycemie = new DevExpress.XtraEditors.TextEdit();
             this.label6 = new System.Windows.Forms.Label();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
+            this.txt_FCardiaque = new DevExpress.XtraEditors.TextEdit();
             this.label5 = new System.Windows.Forms.Label();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.txt_Taille = new DevExpress.XtraEditors.TextEdit();
+            this.txt_Poids = new DevExpress.XtraEditors.TextEdit();
+            this.txt_Temperator = new DevExpress.XtraEditors.TextEdit();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -222,12 +222,12 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_PressionArterielle.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Glycemie.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_FCardiaque.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Taille.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Poids.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Temperator.Properties)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.consultationsBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -1202,15 +1202,15 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.groupControl1.AppearanceCaption.Options.UseBorderColor = true;
             this.groupControl1.AppearanceCaption.Options.UseFont = true;
             this.groupControl1.CaptionImageOptions.Image = global::Gestion_Cabinet_Medical.Properties.Resources.heart_with_pulse_30px;
-            this.groupControl1.Controls.Add(this.textEdit6);
+            this.groupControl1.Controls.Add(this.txt_PressionArterielle);
             this.groupControl1.Controls.Add(this.label7);
-            this.groupControl1.Controls.Add(this.textEdit5);
+            this.groupControl1.Controls.Add(this.txt_Glycemie);
             this.groupControl1.Controls.Add(this.label6);
-            this.groupControl1.Controls.Add(this.textEdit4);
+            this.groupControl1.Controls.Add(this.txt_FCardiaque);
             this.groupControl1.Controls.Add(this.label5);
-            this.groupControl1.Controls.Add(this.textEdit3);
-            this.groupControl1.Controls.Add(this.textEdit2);
-            this.groupControl1.Controls.Add(this.textEdit1);
+            this.groupControl1.Controls.Add(this.txt_Taille);
+            this.groupControl1.Controls.Add(this.txt_Poids);
+            this.groupControl1.Controls.Add(this.txt_Temperator);
             this.groupControl1.Controls.Add(this.label4);
             this.groupControl1.Controls.Add(this.label3);
             this.groupControl1.Controls.Add(this.label2);
@@ -1222,19 +1222,23 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.groupControl1.TabIndex = 2;
             this.groupControl1.Text = "Constants Vitales";
             // 
-            // textEdit6
+            // txt_PressionArterielle
             // 
-            this.textEdit6.EditValue = "Ex 8/12";
-            this.textEdit6.Location = new System.Drawing.Point(139, 264);
-            this.textEdit6.Name = "textEdit6";
-            this.textEdit6.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.textEdit6.Properties.Appearance.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.textEdit6.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit6.Properties.Appearance.Options.UseFont = true;
-            this.textEdit6.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.textEdit6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textEdit6.Size = new System.Drawing.Size(70, 22);
-            this.textEdit6.TabIndex = 17;
+            this.txt_PressionArterielle.EditValue = "";
+            this.txt_PressionArterielle.Location = new System.Drawing.Point(139, 264);
+            this.txt_PressionArterielle.Name = "txt_PressionArterielle";
+            this.txt_PressionArterielle.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.txt_PressionArterielle.Properties.Appearance.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.txt_PressionArterielle.Properties.Appearance.Options.UseBackColor = true;
+            this.txt_PressionArterielle.Properties.Appearance.Options.UseFont = true;
+            this.txt_PressionArterielle.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.txt_PressionArterielle.Properties.Mask.BeepOnError = true;
+            this.txt_PressionArterielle.Properties.Mask.EditMask = "y";
+            this.txt_PressionArterielle.Properties.NullText = "Ex 8/12";
+            this.txt_PressionArterielle.Properties.NullValuePrompt = "Ex 8/12";
+            this.txt_PressionArterielle.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txt_PressionArterielle.Size = new System.Drawing.Size(70, 22);
+            this.txt_PressionArterielle.TabIndex = 17;
             // 
             // label7
             // 
@@ -1246,21 +1250,23 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.label7.TabIndex = 16;
             this.label7.Text = "Pression artérielle";
             // 
-            // textEdit5
+            // txt_Glycemie
             // 
-            this.textEdit5.EditValue = "Ex 1.4";
-            this.textEdit5.Location = new System.Drawing.Point(139, 223);
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.textEdit5.Properties.Appearance.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.textEdit5.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit5.Properties.Appearance.Options.UseFont = true;
-            this.textEdit5.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.textEdit5.Properties.Mask.EditMask = "n";
-            this.textEdit5.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.textEdit5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textEdit5.Size = new System.Drawing.Size(70, 22);
-            this.textEdit5.TabIndex = 15;
+            this.txt_Glycemie.EditValue = "";
+            this.txt_Glycemie.Location = new System.Drawing.Point(139, 223);
+            this.txt_Glycemie.Name = "txt_Glycemie";
+            this.txt_Glycemie.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.txt_Glycemie.Properties.Appearance.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.txt_Glycemie.Properties.Appearance.Options.UseBackColor = true;
+            this.txt_Glycemie.Properties.Appearance.Options.UseFont = true;
+            this.txt_Glycemie.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.txt_Glycemie.Properties.Mask.EditMask = "n";
+            this.txt_Glycemie.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.txt_Glycemie.Properties.NullText = "Ex 1.4";
+            this.txt_Glycemie.Properties.NullValuePrompt = "Ex 1.4";
+            this.txt_Glycemie.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txt_Glycemie.Size = new System.Drawing.Size(70, 22);
+            this.txt_Glycemie.TabIndex = 15;
             // 
             // label6
             // 
@@ -1272,21 +1278,23 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.label6.TabIndex = 14;
             this.label6.Text = "Glycemie (g/l)";
             // 
-            // textEdit4
+            // txt_FCardiaque
             // 
-            this.textEdit4.EditValue = "Ex 70";
-            this.textEdit4.Location = new System.Drawing.Point(157, 182);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.textEdit4.Properties.Appearance.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.textEdit4.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit4.Properties.Appearance.Options.UseFont = true;
-            this.textEdit4.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.textEdit4.Properties.Mask.EditMask = "d";
-            this.textEdit4.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.textEdit4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textEdit4.Size = new System.Drawing.Size(52, 22);
-            this.textEdit4.TabIndex = 13;
+            this.txt_FCardiaque.EditValue = "";
+            this.txt_FCardiaque.Location = new System.Drawing.Point(157, 182);
+            this.txt_FCardiaque.Name = "txt_FCardiaque";
+            this.txt_FCardiaque.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.txt_FCardiaque.Properties.Appearance.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.txt_FCardiaque.Properties.Appearance.Options.UseBackColor = true;
+            this.txt_FCardiaque.Properties.Appearance.Options.UseFont = true;
+            this.txt_FCardiaque.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.txt_FCardiaque.Properties.Mask.EditMask = "d";
+            this.txt_FCardiaque.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.txt_FCardiaque.Properties.NullText = "Ex 70";
+            this.txt_FCardiaque.Properties.NullValuePrompt = "Ex 70";
+            this.txt_FCardiaque.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txt_FCardiaque.Size = new System.Drawing.Size(52, 22);
+            this.txt_FCardiaque.TabIndex = 13;
             // 
             // label5
             // 
@@ -1298,51 +1306,55 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.label5.TabIndex = 12;
             this.label5.Text = "Fréquence cardiaque";
             // 
-            // textEdit3
+            // txt_Taille
             // 
-            this.textEdit3.EditValue = "0";
-            this.textEdit3.Location = new System.Drawing.Point(114, 100);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.textEdit3.Properties.Appearance.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEdit3.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit3.Properties.Appearance.Options.UseFont = true;
-            this.textEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.textEdit3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textEdit3.Size = new System.Drawing.Size(95, 22);
-            this.textEdit3.TabIndex = 11;
+            this.txt_Taille.EditValue = "";
+            this.txt_Taille.Location = new System.Drawing.Point(114, 100);
+            this.txt_Taille.Name = "txt_Taille";
+            this.txt_Taille.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.txt_Taille.Properties.Appearance.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Taille.Properties.Appearance.Options.UseBackColor = true;
+            this.txt_Taille.Properties.Appearance.Options.UseFont = true;
+            this.txt_Taille.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.txt_Taille.Properties.NullText = "0";
+            this.txt_Taille.Properties.NullValuePrompt = "0";
+            this.txt_Taille.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txt_Taille.Size = new System.Drawing.Size(95, 22);
+            this.txt_Taille.TabIndex = 11;
             // 
-            // textEdit2
+            // txt_Poids
             // 
-            this.textEdit2.EditValue = "0";
-            this.textEdit2.Location = new System.Drawing.Point(97, 59);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEdit2.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit2.Properties.Appearance.Options.UseFont = true;
-            this.textEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.textEdit2.Properties.NullText = "0";
-            this.textEdit2.Properties.NullValuePrompt = "0";
-            this.textEdit2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textEdit2.Size = new System.Drawing.Size(112, 22);
-            this.textEdit2.TabIndex = 10;
+            this.txt_Poids.EditValue = "";
+            this.txt_Poids.Location = new System.Drawing.Point(97, 59);
+            this.txt_Poids.Name = "txt_Poids";
+            this.txt_Poids.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.txt_Poids.Properties.Appearance.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Poids.Properties.Appearance.Options.UseBackColor = true;
+            this.txt_Poids.Properties.Appearance.Options.UseFont = true;
+            this.txt_Poids.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.txt_Poids.Properties.NullText = "0";
+            this.txt_Poids.Properties.NullValuePrompt = "0";
+            this.txt_Poids.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txt_Poids.Size = new System.Drawing.Size(112, 22);
+            this.txt_Poids.TabIndex = 10;
             // 
-            // textEdit1
+            // txt_Temperator
             // 
-            this.textEdit1.EditValue = "Ex 36";
-            this.textEdit1.Location = new System.Drawing.Point(139, 141);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.textEdit1.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.textEdit1.Properties.Mask.EditMask = "d";
-            this.textEdit1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.textEdit1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textEdit1.Size = new System.Drawing.Size(70, 22);
-            this.textEdit1.TabIndex = 9;
+            this.txt_Temperator.EditValue = "";
+            this.txt_Temperator.Location = new System.Drawing.Point(139, 141);
+            this.txt_Temperator.Name = "txt_Temperator";
+            this.txt_Temperator.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.txt_Temperator.Properties.Appearance.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.txt_Temperator.Properties.Appearance.Options.UseBackColor = true;
+            this.txt_Temperator.Properties.Appearance.Options.UseFont = true;
+            this.txt_Temperator.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.txt_Temperator.Properties.Mask.EditMask = "d";
+            this.txt_Temperator.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.txt_Temperator.Properties.NullText = "Ex 36";
+            this.txt_Temperator.Properties.NullValuePrompt = "Ex 36";
+            this.txt_Temperator.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txt_Temperator.Size = new System.Drawing.Size(70, 22);
+            this.txt_Temperator.TabIndex = 9;
             // 
             // label4
             // 
@@ -1408,10 +1420,8 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             // simpleButton2
             // 
             this.simpleButton2.AllowFocus = false;
-            this.simpleButton2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.simpleButton2.Appearance.Font = new System.Drawing.Font("Nirmala UI", 11F, System.Drawing.FontStyle.Bold);
             this.simpleButton2.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
-            this.simpleButton2.Appearance.Options.UseBackColor = true;
             this.simpleButton2.Appearance.Options.UseFont = true;
             this.simpleButton2.Appearance.Options.UseForeColor = true;
             this.simpleButton2.ImageOptions.Image = global::Gestion_Cabinet_Medical.Properties.Resources.print_plue_32px;
@@ -1612,12 +1622,12 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_PressionArterielle.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Glycemie.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_FCardiaque.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Taille.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Poids.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Temperator.Properties)).EndInit();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.consultationsBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -1700,14 +1710,14 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
+        private DevExpress.XtraEditors.TextEdit txt_Temperator;
+        private DevExpress.XtraEditors.TextEdit txt_Taille;
+        private DevExpress.XtraEditors.TextEdit txt_Poids;
+        private DevExpress.XtraEditors.TextEdit txt_FCardiaque;
         private System.Windows.Forms.Label label5;
-        private DevExpress.XtraEditors.TextEdit textEdit6;
+        private DevExpress.XtraEditors.TextEdit txt_PressionArterielle;
         private System.Windows.Forms.Label label7;
-        private DevExpress.XtraEditors.TextEdit textEdit5;
+        private DevExpress.XtraEditors.TextEdit txt_Glycemie;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
