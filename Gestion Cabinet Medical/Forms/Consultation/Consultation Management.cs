@@ -87,14 +87,33 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
                     code += ptn.ToString()[i];
                     i++;
                 }
-                _ID_Patient = (int?)Master.db.Patient.First(a => a.Code == code).ID_Patient ?? 1;
+                _ID_Patient = (int?)Master.db.Patient.FirstOrDefault(a => a.Code == code).ID_Patient ?? 1;
                 _PTN_Nom = Master.db.Patient.First(a => a.ID_Patient == _ID_Patient).Nom;
                 _PTN_Prenom = Master.db.Patient.First(a => a.ID_Patient == _ID_Patient).Prenom;
                 e.DisplayText = string.Concat(_PTN_Nom, " ", _PTN_Prenom);
                 EditData(_ID_Patient);
+                LoadConsultation(_ID_Patient);
             }
 
 
+        }
+
+        public void LoadConsultation(int id)
+        {
+            var query = from consult in Master.db.Consultations
+                        join paiment in Master.db.Paiement on consult.ID_Patient equals paiment.ID_Paiment
+                        into p
+                        from paiment in p.DefaultIfEmpty()
+                        select new
+                        {
+                            consult.ID_Consultation,
+                            consult.DateTime,
+                            consult.ID_Motifs,
+                            paiment.Montant_Iniale,
+                            paiment.Versement,
+                            paiment.RestePayer
+                        };
+            gridControl_Consultation.DataSource = query;
         }
 
         private void Btn_EditData_Click(object sender, EventArgs e)
@@ -116,7 +135,6 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
 
         public void ClearTextFromBox(TextEdit text) => text.Text = string.Empty;
         
-
         private void LoadPatient()
         {
             var query = from patient in Master.db.Patient

@@ -29,12 +29,11 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Consultation_Management));
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.btn_DossierPatient = new DevExpress.XtraEditors.SimpleButton();
@@ -43,7 +42,6 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.pic_Cancel = new DevExpress.XtraEditors.PictureEdit();
             this.label8 = new System.Windows.Forms.Label();
             this.pic_Refresh = new DevExpress.XtraEditors.PictureEdit();
-            this.medical_DBDataSet = new Gestion_Cabinet_Medical.Medical_DBDataSet();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.tabPane1 = new DevExpress.XtraBars.Navigation.TabPane();
             this.tabNavigationPage1 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
@@ -110,7 +108,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.tabNavigationPage7 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.tabNavigationPage2 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridControl_Consultation = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -140,15 +138,12 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.tabNavigationPage5 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.tabNavigationPage6 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.tabNavigationPage8 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
-            this.consultationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.consultationsTableAdapter = new Gestion_Cabinet_Medical.Medical_DBDataSetTableAdapters.ConsultationsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.slkp_Patient.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Cancel.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Refresh.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medical_DBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).BeginInit();
@@ -215,7 +210,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
             this.tabNavigationPage2.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_Consultation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.panel8.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -229,7 +224,6 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             ((System.ComponentModel.ISupportInitialize)(this.txt_Poids.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Temperator.Properties)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.consultationsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
@@ -271,15 +265,15 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.slkp_Patient.Properties.Appearance.Options.UseBackColor = true;
             this.slkp_Patient.Properties.Appearance.Options.UseFont = true;
             this.slkp_Patient.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            serializableAppearanceObject1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(151)))), ((int)(((byte)(255)))));
-            serializableAppearanceObject1.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            serializableAppearanceObject1.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            serializableAppearanceObject1.ForeColor = System.Drawing.Color.White;
-            serializableAppearanceObject1.Options.UseBackColor = true;
-            serializableAppearanceObject1.Options.UseFont = true;
-            serializableAppearanceObject1.Options.UseForeColor = true;
+            serializableAppearanceObject5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(151)))), ((int)(((byte)(255)))));
+            serializableAppearanceObject5.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            serializableAppearanceObject5.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            serializableAppearanceObject5.ForeColor = System.Drawing.Color.White;
+            serializableAppearanceObject5.Options.UseBackColor = true;
+            serializableAppearanceObject5.Options.UseFont = true;
+            serializableAppearanceObject5.Options.UseForeColor = true;
             this.slkp_Patient.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.SpinDown, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.SpinDown, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.slkp_Patient.Properties.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.slkp_Patient.Properties.NullText = "";
             this.slkp_Patient.Properties.PopupView = this.searchLookUpEdit1View;
@@ -331,11 +325,6 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.pic_Refresh.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pic_Refresh.Size = new System.Drawing.Size(23, 32);
             this.pic_Refresh.TabIndex = 24;
-            // 
-            // medical_DBDataSet
-            // 
-            this.medical_DBDataSet.DataSetName = "Medical_DBDataSet";
-            this.medical_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // panelControl2
             // 
@@ -1127,7 +1116,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.gridControl1);
+            this.panel3.Controls.Add(this.gridControl_Consultation);
             this.panel3.Controls.Add(this.panel8);
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.panel4);
@@ -1137,21 +1126,16 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.panel3.Size = new System.Drawing.Size(1368, 649);
             this.panel3.TabIndex = 3;
             // 
-            // gridControl1
+            // gridControl_Consultation
             // 
-            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.Location = new System.Drawing.Point(0, 97);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1095, 552);
-            this.gridControl1.TabIndex = 4;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridControl_Consultation.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_Consultation.Location = new System.Drawing.Point(0, 97);
+            this.gridControl_Consultation.MainView = this.gridView1;
+            this.gridControl_Consultation.Name = "gridControl_Consultation";
+            this.gridControl_Consultation.Size = new System.Drawing.Size(1095, 552);
+            this.gridControl_Consultation.TabIndex = 4;
+            this.gridControl_Consultation.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
-            // 
-            // gridView1
-            // 
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.Name = "gridView1";
             // 
             // panel8
             // 
@@ -1517,15 +1501,6 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.tabNavigationPage8.Properties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.ImageAndText;
             this.tabNavigationPage8.Size = new System.Drawing.Size(1368, 649);
             // 
-            // consultationsBindingSource
-            // 
-            this.consultationsBindingSource.DataMember = "Consultations";
-            this.consultationsBindingSource.DataSource = this.medical_DBDataSet;
-            // 
-            // consultationsTableAdapter
-            // 
-            this.consultationsTableAdapter.ClearBeforeFill = true;
-            // 
             // Consultation_Management
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1546,7 +1521,6 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Cancel.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Refresh.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medical_DBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).EndInit();
@@ -1613,7 +1587,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
             this.tabNavigationPage2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_Consultation)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
@@ -1629,7 +1603,6 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             ((System.ComponentModel.ISupportInitialize)(this.txt_Poids.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Temperator.Properties)).EndInit();
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.consultationsBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1703,9 +1676,6 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem13;
         private DevExpress.XtraEditors.SimpleButton btn_EditData;
         private System.Windows.Forms.Label label1;
-        private Medical_DBDataSet medical_DBDataSet;
-        private System.Windows.Forms.BindingSource consultationsBindingSource;
-        private Medical_DBDataSetTableAdapters.ConsultationsTableAdapter consultationsTableAdapter;
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
@@ -1727,7 +1697,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
-        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.GridControl gridControl_Consultation;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel2;
