@@ -33,9 +33,9 @@ namespace Gestion_Cabinet_Medical.DAL
 
         public int? FrequenceCardiaque { get; set; }
 
-        public double? Glycecmie { get; set; }
+        public string Glycecmie { get; set; }
 
-        public double? PressionArterielle { get; set; }
+        public string PressionArterielle { get; set; }
 
         public string Note { get; set; }
 

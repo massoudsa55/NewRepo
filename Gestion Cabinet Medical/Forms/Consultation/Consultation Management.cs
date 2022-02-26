@@ -1,4 +1,6 @@
 ﻿using DevExpress.XtraEditors;
+using DevExpress.XtraEditors.Controls;
+using DevExpress.XtraEditors.Repository;
 using Gestion_Cabinet_Medical.Functions;
 using System;
 using System.Collections.Generic;
@@ -31,16 +33,29 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
 
         private void Consultation_Management_Load(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Maximized;
             LoadPatient();
+            DefultTextEdit();
+            #region Evants
             btn_EditData.Click += Btn_EditData_Click;
             slkp_Patient.CustomDisplayText += Slkp_Patient_CustomDisplayText;
-            DefultTextEdit();
             txt_Poids.GotFocus += TextEdit_GotFocus;
             txt_Taille.GotFocus += TextEdit_GotFocus;
             txt_Temperator.GotFocus += TextEdit_GotFocus;
             txt_FCardiaque.GotFocus += TextEdit_GotFocus;
             txt_Glycemie.GotFocus += TextEdit_GotFocus;
             txt_PressionArterielle.GotFocus += TextEdit_GotFocus;
+            #endregion
+            #region RepositoryItem
+            RepositoryItemButtonEdit riButton = new RepositoryItemButtonEdit();
+            riButton.TextEditStyle = TextEditStyles.HideTextEditor;
+            riButton.Buttons[0].Kind = ButtonPredefines.Glyph;
+            riButton.Buttons[0].Image = Properties.Resources.add_16px;
+            riButton.Buttons.Add(new EditorButton(ButtonPredefines.Glyph));
+            gridControl_Consultation.RepositoryItems.Add(riButton);
+            //gridView1.Columns["Action"].ColumnEdit = riButton;
+            //riButton.ButtonPressed += RiButton_ButtonClick;
+            #endregion
         }
 
         private void TextEdit_GotFocus(object sender, EventArgs e)
@@ -100,20 +115,42 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
 
         public void LoadConsultation(int id)
         {
+            DefultTextEdit();
+            if (!Master.db.Consultations.Any(a => a.ID_Patient == id)) 
+            {
+                gridControl_Consultation.DataSource = null;
+                return;
+            }
+            var idConsult = Master.db.Consultations.FirstOrDefault(a => a.ID_Patient == id).ID_Consultation;
+            DefultTextEdit(idConsult);
             var query = from consult in Master.db.Consultations
-                        join paiment in Master.db.Paiement on consult.ID_Patient equals paiment.ID_Paiment
-                        into p
-                        from paiment in p.DefaultIfEmpty()
+                        join paiment in Master.db.Paiement on consult.ID_Consultation equals paiment.ID_Consultation
+                        into p from paiment in p.DefaultIfEmpty()
+                        join motifs in Master.db.Motifs on consult.ID_Motifs equals motifs.ID_Motifs
+                        into m from motifs in m.DefaultIfEmpty()
+                        where (consult.ID_Consultation == idConsult)
                         select new
                         {
-                            consult.ID_Consultation,
                             consult.DateTime,
-                            consult.ID_Motifs,
-                            paiment.Montant_Iniale,
+                            ID_Motifs = motifs.Libelle,
+                            paiment.Montant_Actuel,
                             paiment.Versement,
                             paiment.RestePayer
                         };
-            gridControl_Consultation.DataSource = query;
+            gridControl_Consultation.DataSource = query.ToList();
+        }
+
+        public void DefultTextEdit(int id)
+        {
+            var consult = Master.db.Consultations.FirstOrDefault(a => a.ID_Consultation == id);
+            if (consult == null)
+                return;
+            txt_Poids.Text = consult.Poids.ToString();
+            txt_Taille.Text = consult.Taille.ToString();
+            txt_Temperator.Text = consult.Temperature.ToString();
+            txt_FCardiaque.Text = consult.FrequenceCardiaque.ToString();
+            txt_Glycemie.Text = consult.Glycecmie.ToString();
+            txt_PressionArterielle.Text = consult.PressionArterielle.ToString();
         }
 
         private void Btn_EditData_Click(object sender, EventArgs e)
