@@ -46,16 +46,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             txt_Glycemie.GotFocus += TextEdit_GotFocus;
             txt_PressionArterielle.GotFocus += TextEdit_GotFocus;
             #endregion
-            #region RepositoryItem
-            RepositoryItemButtonEdit riButton = new RepositoryItemButtonEdit();
-            riButton.TextEditStyle = TextEditStyles.HideTextEditor;
-            riButton.Buttons[0].Kind = ButtonPredefines.Glyph;
-            riButton.Buttons[0].Image = Properties.Resources.add_16px;
-            riButton.Buttons.Add(new EditorButton(ButtonPredefines.Glyph));
-            gridControl_Consultation.RepositoryItems.Add(riButton);
-            //gridView1.Columns["Action"].ColumnEdit = riButton;
-            //riButton.ButtonPressed += RiButton_ButtonClick;
-            #endregion
+            
         }
 
         private void TextEdit_GotFocus(object sender, EventArgs e)
@@ -131,13 +122,25 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
                         where (consult.ID_Consultation == idConsult)
                         select new
                         {
+                            consult.ID_Consultation,
                             consult.DateTime,
-                            ID_Motifs = motifs.Libelle,
-                            paiment.Montant_Actuel,
-                            paiment.Versement,
-                            paiment.RestePayer
+                            Motifs = motifs.Libelle,
+                            Montant = paiment.Montant_Actuel,
+                            Versement = paiment.Versement,
+                            Reste = paiment.RestePayer
                         };
             gridControl_Consultation.DataSource = query.ToList();
+            #region RepositoryItem
+            RepositoryItemButtonEdit riButton = new RepositoryItemButtonEdit();
+            riButton.TextEditStyle = TextEditStyles.HideTextEditor;
+            riButton.Buttons[0].Kind = ButtonPredefines.Glyph;
+            riButton.Buttons[0].Image = Properties.Resources.add_16px;
+            riButton.Buttons.Add(new EditorButton(ButtonPredefines.Glyph));
+            gridControl_Consultation.RepositoryItems.Add(riButton);
+            gridView1.Columns.ColumnByFieldName(nameof(DAL.Consultations.ID_Consultation)).Caption = "Action";
+            gridView1.Columns[nameof(DAL.Consultations.ID_Consultation)].ColumnEdit = riButton;
+            //riButton.ButtonPressed += RiButton_ButtonClick;
+            #endregion
         }
 
         public void DefultTextEdit(int id)

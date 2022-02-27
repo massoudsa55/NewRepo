@@ -29,7 +29,6 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
@@ -110,24 +109,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.tabNavigationPage2 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.panel3 = new System.Windows.Forms.Panel();
             this.gridControl_Consultation = new DevExpress.XtraGrid.GridControl();
-            this.consultationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.medical_DBDataSet = new Gestion_Cabinet_Medical.Medical_DBDataSet();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colID_Consultation = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colID_Patient = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDateTime = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colID_Motifs = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPoids = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colTaille = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colTemperature = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colFrequenceCardiaque = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colGlycecmie = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPressionArterielle = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNote = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colID_Antecedent = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -156,8 +138,6 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.tabNavigationPage5 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.tabNavigationPage6 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.tabNavigationPage8 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
-            this.consultationsTableAdapter = new Gestion_Cabinet_Medical.Medical_DBDataSetTableAdapters.ConsultationsTableAdapter();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.slkp_Patient.Properties)).BeginInit();
@@ -231,8 +211,6 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.tabNavigationPage2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_Consultation)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.consultationsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medical_DBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.panel8.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -1150,7 +1128,6 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             // 
             // gridControl_Consultation
             // 
-            this.gridControl_Consultation.DataSource = this.consultationsBindingSource;
             this.gridControl_Consultation.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl_Consultation.Location = new System.Drawing.Point(0, 97);
             this.gridControl_Consultation.MainView = this.gridView1;
@@ -1160,125 +1137,10 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.gridControl_Consultation.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
-            // consultationsBindingSource
-            // 
-            this.consultationsBindingSource.DataMember = "Consultations";
-            this.consultationsBindingSource.DataSource = this.medical_DBDataSet;
-            // 
-            // medical_DBDataSet
-            // 
-            this.medical_DBDataSet.DataSetName = "Medical_DBDataSet";
-            this.medical_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // gridView1
             // 
-            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colID_Consultation,
-            this.colID_Patient,
-            this.colDateTime,
-            this.colID_Motifs,
-            this.colPoids,
-            this.colTaille,
-            this.colTemperature,
-            this.colFrequenceCardiaque,
-            this.colGlycecmie,
-            this.colPressionArterielle,
-            this.colNote,
-            this.colID_Antecedent,
-            this.gridColumn1,
-            this.gridColumn2,
-            this.gridColumn3,
-            this.gridColumn4});
             this.gridView1.GridControl = this.gridControl_Consultation;
             this.gridView1.Name = "gridView1";
-            // 
-            // colID_Consultation
-            // 
-            this.colID_Consultation.FieldName = "ID_Consultation";
-            this.colID_Consultation.Name = "colID_Consultation";
-            // 
-            // colID_Patient
-            // 
-            this.colID_Patient.FieldName = "ID_Patient";
-            this.colID_Patient.Name = "colID_Patient";
-            // 
-            // colDateTime
-            // 
-            this.colDateTime.FieldName = "DateTime";
-            this.colDateTime.Name = "colDateTime";
-            this.colDateTime.Visible = true;
-            this.colDateTime.VisibleIndex = 1;
-            // 
-            // colID_Motifs
-            // 
-            this.colID_Motifs.Caption = "Motifs";
-            this.colID_Motifs.FieldName = "ID_Motifs";
-            this.colID_Motifs.Name = "colID_Motifs";
-            this.colID_Motifs.Visible = true;
-            this.colID_Motifs.VisibleIndex = 2;
-            // 
-            // colPoids
-            // 
-            this.colPoids.FieldName = "Poids";
-            this.colPoids.Name = "colPoids";
-            // 
-            // colTaille
-            // 
-            this.colTaille.FieldName = "Taille";
-            this.colTaille.Name = "colTaille";
-            // 
-            // colTemperature
-            // 
-            this.colTemperature.FieldName = "Temperature";
-            this.colTemperature.Name = "colTemperature";
-            // 
-            // colFrequenceCardiaque
-            // 
-            this.colFrequenceCardiaque.FieldName = "FrequenceCardiaque";
-            this.colFrequenceCardiaque.Name = "colFrequenceCardiaque";
-            // 
-            // colGlycecmie
-            // 
-            this.colGlycecmie.FieldName = "Glycecmie";
-            this.colGlycecmie.Name = "colGlycecmie";
-            // 
-            // colPressionArterielle
-            // 
-            this.colPressionArterielle.FieldName = "PressionArterielle";
-            this.colPressionArterielle.Name = "colPressionArterielle";
-            // 
-            // colNote
-            // 
-            this.colNote.FieldName = "Note";
-            this.colNote.Name = "colNote";
-            // 
-            // colID_Antecedent
-            // 
-            this.colID_Antecedent.FieldName = "ID_Antecedent";
-            this.colID_Antecedent.Name = "colID_Antecedent";
-            // 
-            // gridColumn1
-            // 
-            this.gridColumn1.FieldName = "FK_Paiement_Consultations.Montant_Actuel";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 3;
-            // 
-            // gridColumn2
-            // 
-            this.gridColumn2.Caption = "Versement";
-            this.gridColumn2.FieldName = "FK_Paiement_Consultations.Versement";
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 4;
-            // 
-            // gridColumn3
-            // 
-            this.gridColumn3.Caption = "Reste";
-            this.gridColumn3.FieldName = "FK_Paiement_Consultations.RestePayer";
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 5;
             // 
             // panel8
             // 
@@ -1644,17 +1506,6 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.tabNavigationPage8.Properties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.ImageAndText;
             this.tabNavigationPage8.Size = new System.Drawing.Size(1368, 649);
             // 
-            // consultationsTableAdapter
-            // 
-            this.consultationsTableAdapter.ClearBeforeFill = true;
-            // 
-            // gridColumn4
-            // 
-            this.gridColumn4.Caption = "Action";
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 0;
-            // 
             // Consultation_Management
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1742,8 +1593,6 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.tabNavigationPage2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_Consultation)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.consultationsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medical_DBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
@@ -1868,24 +1717,5 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
         private DevExpress.XtraEditors.PictureEdit pic_Refresh;
         private DevExpress.XtraEditors.PictureEdit pic_Cancel;
         private DevExpress.XtraEditors.SimpleButton btn_DossierPatient;
-        private Medical_DBDataSet medical_DBDataSet;
-        private System.Windows.Forms.BindingSource consultationsBindingSource;
-        private Medical_DBDataSetTableAdapters.ConsultationsTableAdapter consultationsTableAdapter;
-        private DevExpress.XtraGrid.Columns.GridColumn colID_Consultation;
-        private DevExpress.XtraGrid.Columns.GridColumn colID_Patient;
-        private DevExpress.XtraGrid.Columns.GridColumn colDateTime;
-        private DevExpress.XtraGrid.Columns.GridColumn colID_Motifs;
-        private DevExpress.XtraGrid.Columns.GridColumn colPoids;
-        private DevExpress.XtraGrid.Columns.GridColumn colTaille;
-        private DevExpress.XtraGrid.Columns.GridColumn colTemperature;
-        private DevExpress.XtraGrid.Columns.GridColumn colFrequenceCardiaque;
-        private DevExpress.XtraGrid.Columns.GridColumn colGlycecmie;
-        private DevExpress.XtraGrid.Columns.GridColumn colPressionArterielle;
-        private DevExpress.XtraGrid.Columns.GridColumn colNote;
-        private DevExpress.XtraGrid.Columns.GridColumn colID_Antecedent;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
     }
 }
