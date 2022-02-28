@@ -36,6 +36,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.WindowState = FormWindowState.Maximized;
             LoadPatient();
             DefultTextEdit();
+            btn_New.Click += Btn_New_Click;
             #region Evants
             btn_EditData.Click += Btn_EditData_Click;
             slkp_Patient.CustomDisplayText += Slkp_Patient_CustomDisplayText;
@@ -47,6 +48,12 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             txt_PressionArterielle.GotFocus += TextEdit_GotFocus;
             #endregion
             
+        }
+
+        private void Btn_New_Click(object sender, EventArgs e)
+        {
+            Nouvelle_Consultation nouvelle_Consultation = new Nouvelle_Consultation();
+            nouvelle_Consultation.ShowDialog();
         }
 
         private void TextEdit_GotFocus(object sender, EventArgs e)

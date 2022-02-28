@@ -174,12 +174,6 @@
     <Compile Include="Forms\Consultation\Motifs.Designer.cs">
       <DependentUpon>Motifs.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Consultation\Nouveau Consultations.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Consultation\Nouveau Consultations.Designer.cs">
-      <DependentUpon>Nouveau Consultations.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Consultation\Nouvelle Consultation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -275,8 +269,8 @@
     <EmbeddedResource Include="Forms\Consultation\Consultation Management.resx">
       <DependentUpon>Consultation Management.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Consultation\Nouveau Consultations.resx">
-      <DependentUpon>Nouveau Consultations.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Consultation\Nouvelle Consultation.resx">
+      <DependentUpon>Nouvelle Consultation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login\Login Form.resx">
       <DependentUpon>Login Form.cs</DependentUpon>
