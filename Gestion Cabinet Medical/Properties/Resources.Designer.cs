@@ -253,9 +253,9 @@ namespace Gestion_Cabinet_Medical.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap IMC_32px {
+        internal static System.Drawing.Bitmap IMC_20px {
             get {
-                object obj = ResourceManager.GetObject("IMC_32px", resourceCulture);
+                object obj = ResourceManager.GetObject("IMC_20px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

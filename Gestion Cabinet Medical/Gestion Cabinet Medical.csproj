@@ -473,7 +473,7 @@
     <None Include="Resources\user_folder_32px.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\IMC_32px.png" />
+    <None Include="Resources\IMC_20px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
