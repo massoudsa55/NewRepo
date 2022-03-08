@@ -17,5 +17,10 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
         {
             InitializeComponent();
         }
+
+        private void Nouvelle_Consultation_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
