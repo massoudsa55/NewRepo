@@ -53,6 +53,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
         private void Btn_New_Click(object sender, EventArgs e)
         {
             Nouvelle_Consultation nouvelle_Consultation = new Nouvelle_Consultation();
+            nouvelle_Consultation._ID_Patient = _ID_Patient;
             nouvelle_Consultation.ShowDialog();
         }
 
@@ -87,7 +88,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             }
         }
 
-        private void Slkp_Patient_CustomDisplayText(object sender, DevExpress.XtraEditors.Controls.CustomDisplayTextEventArgs e)
+        private void Slkp_Patient_CustomDisplayText(object sender, CustomDisplayTextEventArgs e)
         {
             int i = 9;
             string code = "";

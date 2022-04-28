@@ -77,6 +77,21 @@
             this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
+            this.label12 = new System.Windows.Forms.Label();
+            this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
+            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
+            this.label11 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label_NomPrenom = new System.Windows.Forms.Label();
+            this.pic_ImagePatient = new DevExpress.XtraEditors.PictureEdit();
+            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label_NumbreConsultation = new System.Windows.Forms.Label();
+            this.label_SalleAttente = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
@@ -115,6 +130,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_ImagePatient.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -122,13 +145,14 @@
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.layoutControl1, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.65891F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 89.34109F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(788, 530);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(788, 627);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // layoutControl1
@@ -146,11 +170,11 @@
             this.layoutControl1.Controls.Add(this.textEdit1);
             this.layoutControl1.Controls.Add(this.textEdit2);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutControl1.Location = new System.Drawing.Point(3, 59);
+            this.layoutControl1.Location = new System.Drawing.Point(3, 128);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(0, 231, 650, 400);
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(782, 468);
+            this.layoutControl1.Size = new System.Drawing.Size(782, 496);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -161,7 +185,7 @@
             this.simpleButton2.Appearance.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold);
             this.simpleButton2.Appearance.Options.UseBackColor = true;
             this.simpleButton2.Appearance.Options.UseFont = true;
-            this.simpleButton2.Location = new System.Drawing.Point(660, 412);
+            this.simpleButton2.Location = new System.Drawing.Point(660, 440);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Size = new System.Drawing.Size(98, 32);
             this.simpleButton2.StyleController = this.layoutControl1;
@@ -175,7 +199,7 @@
             this.simpleButton1.Appearance.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton1.Appearance.Options.UseBackColor = true;
             this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.Location = new System.Drawing.Point(558, 412);
+            this.simpleButton1.Location = new System.Drawing.Point(558, 440);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(98, 32);
             this.simpleButton1.StyleController = this.layoutControl1;
@@ -184,7 +208,7 @@
             // 
             // checkEdit1
             // 
-            this.checkEdit1.Location = new System.Drawing.Point(558, 389);
+            this.checkEdit1.Location = new System.Drawing.Point(558, 417);
             this.checkEdit1.Name = "checkEdit1";
             this.checkEdit1.Properties.Appearance.Font = new System.Drawing.Font("Nirmala UI", 8F);
             this.checkEdit1.Properties.Appearance.Options.UseFont = true;
@@ -453,25 +477,25 @@
             // 
             // memoEdit4
             // 
-            this.memoEdit4.Location = new System.Drawing.Point(24, 368);
+            this.memoEdit4.Location = new System.Drawing.Point(24, 389);
             this.memoEdit4.Name = "memoEdit4";
-            this.memoEdit4.Size = new System.Drawing.Size(269, 76);
+            this.memoEdit4.Size = new System.Drawing.Size(269, 83);
             this.memoEdit4.StyleController = this.layoutControl1;
             this.memoEdit4.TabIndex = 7;
             // 
             // memoEdit3
             // 
-            this.memoEdit3.Location = new System.Drawing.Point(24, 272);
+            this.memoEdit3.Location = new System.Drawing.Point(24, 286);
             this.memoEdit3.Name = "memoEdit3";
-            this.memoEdit3.Size = new System.Drawing.Size(269, 76);
+            this.memoEdit3.Size = new System.Drawing.Size(269, 83);
             this.memoEdit3.StyleController = this.layoutControl1;
             this.memoEdit3.TabIndex = 6;
             // 
             // memoEdit2
             // 
-            this.memoEdit2.Location = new System.Drawing.Point(24, 176);
+            this.memoEdit2.Location = new System.Drawing.Point(24, 183);
             this.memoEdit2.Name = "memoEdit2";
-            this.memoEdit2.Size = new System.Drawing.Size(269, 76);
+            this.memoEdit2.Size = new System.Drawing.Size(269, 83);
             this.memoEdit2.StyleController = this.layoutControl1;
             this.memoEdit2.TabIndex = 5;
             // 
@@ -479,13 +503,13 @@
             // 
             this.memoEdit1.Location = new System.Drawing.Point(24, 80);
             this.memoEdit1.Name = "memoEdit1";
-            this.memoEdit1.Size = new System.Drawing.Size(269, 76);
+            this.memoEdit1.Size = new System.Drawing.Size(269, 83);
             this.memoEdit1.StyleController = this.layoutControl1;
             this.memoEdit1.TabIndex = 4;
             // 
             // textEdit11
             // 
-            this.textEdit11.Location = new System.Drawing.Point(619, 324);
+            this.textEdit11.Location = new System.Drawing.Point(619, 352);
             this.textEdit11.Name = "textEdit11";
             this.textEdit11.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.textEdit11.Properties.Appearance.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
@@ -499,7 +523,7 @@
             // 
             // textEdit21
             // 
-            this.textEdit21.Location = new System.Drawing.Point(618, 358);
+            this.textEdit21.Location = new System.Drawing.Point(618, 386);
             this.textEdit21.Name = "textEdit21";
             this.textEdit21.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.textEdit21.Properties.Appearance.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
@@ -523,7 +547,7 @@
             // 
             this.textEdit2.Location = new System.Drawing.Point(558, 166);
             this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(200, 33);
+            this.textEdit2.Size = new System.Drawing.Size(200, 47);
             this.textEdit2.StyleController = this.layoutControl1;
             this.textEdit2.TabIndex = 9;
             // 
@@ -537,7 +561,7 @@
             this.layoutControlGroup2,
             this.layoutControlGroup4});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(782, 468);
+            this.Root.Size = new System.Drawing.Size(782, 496);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem11
@@ -545,7 +569,7 @@
             this.layoutControlItem11.Control = this.groupControl1;
             this.layoutControlItem11.Location = new System.Drawing.Point(297, 0);
             this.layoutControlItem11.Name = "layoutControlItem11";
-            this.layoutControlItem11.Size = new System.Drawing.Size(237, 448);
+            this.layoutControlItem11.Size = new System.Drawing.Size(237, 476);
             this.layoutControlItem11.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem11.TextVisible = false;
             // 
@@ -563,7 +587,7 @@
             this.layoutControlItem4});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(297, 448);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(297, 476);
             this.layoutControlGroup1.Text = "Antécédents";
             // 
             // layoutControlItem1
@@ -571,7 +595,7 @@
             this.layoutControlItem1.Control = this.memoEdit1;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(273, 96);
+            this.layoutControlItem1.Size = new System.Drawing.Size(273, 103);
             this.layoutControlItem1.Text = "Medicaux";
             this.layoutControlItem1.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem1.TextSize = new System.Drawing.Size(138, 13);
@@ -579,9 +603,9 @@
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.memoEdit2;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 96);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 103);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(273, 96);
+            this.layoutControlItem2.Size = new System.Drawing.Size(273, 103);
             this.layoutControlItem2.Text = "Chirurgicaux";
             this.layoutControlItem2.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem2.TextSize = new System.Drawing.Size(138, 13);
@@ -589,9 +613,9 @@
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.memoEdit3;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 192);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 206);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(273, 96);
+            this.layoutControlItem3.Size = new System.Drawing.Size(273, 103);
             this.layoutControlItem3.Text = "Familiales";
             this.layoutControlItem3.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem3.TextSize = new System.Drawing.Size(138, 13);
@@ -599,9 +623,9 @@
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.memoEdit4;
-            this.layoutControlItem4.Location = new System.Drawing.Point(0, 288);
+            this.layoutControlItem4.Location = new System.Drawing.Point(0, 309);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(273, 96);
+            this.layoutControlItem4.Size = new System.Drawing.Size(273, 103);
             this.layoutControlItem4.Text = "Autres";
             this.layoutControlItem4.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem4.TextSize = new System.Drawing.Size(138, 13);
@@ -618,7 +642,7 @@
             this.emptySpaceItem1});
             this.layoutControlGroup2.Location = new System.Drawing.Point(534, 0);
             this.layoutControlGroup2.Name = "layoutControlGroup2";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(228, 257);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(228, 285);
             this.layoutControlGroup2.Text = "Résultat";
             // 
             // layoutControlItem5
@@ -641,7 +665,7 @@
             this.layoutControlItem6.MaxSize = new System.Drawing.Size(204, 0);
             this.layoutControlItem6.MinSize = new System.Drawing.Size(204, 37);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(204, 53);
+            this.layoutControlItem6.Size = new System.Drawing.Size(204, 67);
             this.layoutControlItem6.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem6.Text = "Diagnostique médicale";
             this.layoutControlItem6.TextLocation = DevExpress.Utils.Locations.Top;
@@ -650,9 +674,9 @@
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 139);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 153);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(204, 54);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(204, 68);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlGroup4
@@ -668,7 +692,7 @@
             this.layoutControlItem9,
             this.layoutControlItem10,
             this.layoutControlItem12});
-            this.layoutControlGroup4.Location = new System.Drawing.Point(534, 257);
+            this.layoutControlGroup4.Location = new System.Drawing.Point(534, 285);
             this.layoutControlGroup4.Name = "layoutControlGroup4";
             this.layoutControlGroup4.Size = new System.Drawing.Size(228, 191);
             this.layoutControlGroup4.Text = "Payement";
@@ -738,11 +762,199 @@
             this.layoutControlItem12.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem12.TextVisible = false;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.dateEdit1);
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.pictureEdit3);
+            this.panel1.Controls.Add(this.lookUpEdit1);
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.pictureEdit1);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(782, 119);
+            this.panel1.TabIndex = 1;
+            // 
+            // dateEdit1
+            // 
+            this.dateEdit1.EditValue = null;
+            this.dateEdit1.Location = new System.Drawing.Point(658, 47);
+            this.dateEdit1.Name = "dateEdit1";
+            this.dateEdit1.Properties.Appearance.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dateEdit1.Properties.Appearance.Options.UseFont = true;
+            this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateEdit1.Size = new System.Drawing.Size(112, 24);
+            this.dateEdit1.TabIndex = 8;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label12.Font = new System.Drawing.Font("Nirmala UI", 8F, System.Drawing.FontStyle.Bold);
+            this.label12.Location = new System.Drawing.Point(655, 31);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(115, 13);
+            this.label12.TabIndex = 7;
+            this.label12.Text = "Date consultation (*)";
+            // 
+            // pictureEdit3
+            // 
+            this.pictureEdit3.EditValue = ((object)(resources.GetObject("pictureEdit3.EditValue")));
+            this.pictureEdit3.Location = new System.Drawing.Point(746, 79);
+            this.pictureEdit3.Name = "pictureEdit3";
+            this.pictureEdit3.Properties.AllowFocused = false;
+            this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit3.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit3.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit3.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit3.Size = new System.Drawing.Size(29, 27);
+            this.pictureEdit3.TabIndex = 6;
+            // 
+            // lookUpEdit1
+            // 
+            this.lookUpEdit1.Location = new System.Drawing.Point(435, 81);
+            this.lookUpEdit1.Name = "lookUpEdit1";
+            this.lookUpEdit1.Properties.Appearance.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lookUpEdit1.Properties.Appearance.Options.UseFont = true;
+            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lookUpEdit1.Properties.NullText = "-- Motifs --";
+            this.lookUpEdit1.Size = new System.Drawing.Size(315, 24);
+            this.lookUpEdit1.TabIndex = 5;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label11.Font = new System.Drawing.Font("Nirmala UI", 8F, System.Drawing.FontStyle.Bold);
+            this.label11.Location = new System.Drawing.Point(311, 84);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(121, 13);
+            this.label11.TabIndex = 4;
+            this.label11.Text = "Motif du consultation";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Controls.Add(this.label_SalleAttente);
+            this.panel2.Controls.Add(this.label_NumbreConsultation);
+            this.panel2.Controls.Add(this.label14);
+            this.panel2.Controls.Add(this.label10);
+            this.panel2.Controls.Add(this.label_NomPrenom);
+            this.panel2.Controls.Add(this.pic_ImagePatient);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(305, 119);
+            this.panel2.TabIndex = 3;
+            // 
+            // label_NomPrenom
+            // 
+            this.label_NomPrenom.AutoSize = true;
+            this.label_NomPrenom.BackColor = System.Drawing.Color.Transparent;
+            this.label_NomPrenom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label_NomPrenom.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label_NomPrenom.ForeColor = System.Drawing.Color.White;
+            this.label_NomPrenom.Location = new System.Drawing.Point(138, 15);
+            this.label_NomPrenom.Name = "label_NomPrenom";
+            this.label_NomPrenom.Size = new System.Drawing.Size(104, 17);
+            this.label_NomPrenom.TabIndex = 3;
+            this.label_NomPrenom.Text = "Nome Prénome";
+            // 
+            // pic_ImagePatient
+            // 
+            this.pic_ImagePatient.Location = new System.Drawing.Point(9, 9);
+            this.pic_ImagePatient.Name = "pic_ImagePatient";
+            this.pic_ImagePatient.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pic_ImagePatient.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pic_ImagePatient.Size = new System.Drawing.Size(100, 96);
+            this.pic_ImagePatient.TabIndex = 2;
+            // 
+            // pictureEdit1
+            // 
+            this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
+            this.pictureEdit1.Location = new System.Drawing.Point(328, 0);
+            this.pictureEdit1.Name = "pictureEdit1";
+            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit1.Size = new System.Drawing.Size(32, 32);
+            this.pictureEdit1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(366, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(123, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Fiche Consultation";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label10.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold);
+            this.label10.ForeColor = System.Drawing.Color.Green;
+            this.label10.Location = new System.Drawing.Point(117, 50);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(142, 15);
+            this.label10.TabIndex = 4;
+            this.label10.Text = "Numbre du Consultation";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label14.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold);
+            this.label14.ForeColor = System.Drawing.Color.Green;
+            this.label14.Location = new System.Drawing.Point(117, 79);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(129, 15);
+            this.label14.TabIndex = 5;
+            this.label14.Text = "Dans la salle d\'attente";
+            // 
+            // label_NumbreConsultation
+            // 
+            this.label_NumbreConsultation.AutoSize = true;
+            this.label_NumbreConsultation.BackColor = System.Drawing.Color.Transparent;
+            this.label_NumbreConsultation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label_NumbreConsultation.Font = new System.Drawing.Font("NSimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_NumbreConsultation.ForeColor = System.Drawing.Color.Red;
+            this.label_NumbreConsultation.Location = new System.Drawing.Point(258, 43);
+            this.label_NumbreConsultation.Name = "label_NumbreConsultation";
+            this.label_NumbreConsultation.Size = new System.Drawing.Size(36, 24);
+            this.label_NumbreConsultation.TabIndex = 6;
+            this.label_NumbreConsultation.Text = "00";
+            // 
+            // label_SalleAttente
+            // 
+            this.label_SalleAttente.AutoSize = true;
+            this.label_SalleAttente.BackColor = System.Drawing.Color.Transparent;
+            this.label_SalleAttente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label_SalleAttente.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold);
+            this.label_SalleAttente.ForeColor = System.Drawing.Color.Red;
+            this.label_SalleAttente.Location = new System.Drawing.Point(259, 79);
+            this.label_SalleAttente.Name = "label_SalleAttente";
+            this.label_SalleAttente.Size = new System.Drawing.Size(30, 15);
+            this.label_SalleAttente.TabIndex = 7;
+            this.label_SalleAttente.Text = "Non";
+            // 
             // Nouvelle_Consultation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(788, 530);
+            this.ClientSize = new System.Drawing.Size(788, 627);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Nouvelle_Consultation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
@@ -787,6 +999,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_ImagePatient.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -841,5 +1063,20 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private DevExpress.XtraEditors.PictureEdit pic_ImagePatient;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit1;
+        private System.Windows.Forms.Label label1;
+        private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label_NomPrenom;
+        private DevExpress.XtraEditors.DateEdit dateEdit1;
+        private System.Windows.Forms.Label label12;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit3;
+        private System.Windows.Forms.Label label_NumbreConsultation;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label_SalleAttente;
     }
 }
