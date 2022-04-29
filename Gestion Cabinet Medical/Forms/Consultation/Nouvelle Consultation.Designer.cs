@@ -28,18 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Nouvelle_Consultation));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Valid = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Annuler = new DevExpress.XtraEditors.SimpleButton();
             this.checkEdit1 = new DevExpress.XtraEditors.CheckEdit();
+            this.memoEdit4 = new DevExpress.XtraEditors.MemoEdit();
+            this.memoEdit3 = new DevExpress.XtraEditors.MemoEdit();
+            this.memoEdit2 = new DevExpress.XtraEditors.MemoEdit();
+            this.memoEdit1 = new DevExpress.XtraEditors.MemoEdit();
+            this.textEdit11 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit21 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit1 = new DevExpress.XtraEditors.MemoEdit();
+            this.textEdit2 = new DevExpress.XtraEditors.MemoEdit();
+            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
+            this.label12 = new System.Windows.Forms.Label();
+            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
+            this.label11 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label_SalleAttente = new System.Windows.Forms.Label();
+            this.label_NumbreConsultation = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label_NomPrenom = new System.Windows.Forms.Label();
+            this.pic_ImagePatient = new DevExpress.XtraEditors.PictureEdit();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.label_IMC_Value = new System.Windows.Forms.Label();
+            this.label_IMC_Status = new System.Windows.Forms.Label();
             this.memoEdit5 = new DevExpress.XtraEditors.MemoEdit();
             this.label9 = new System.Windows.Forms.Label();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_CalcIMC = new DevExpress.XtraEditors.SimpleButton();
             this.txt_PressionArterielle = new DevExpress.XtraEditors.TextEdit();
             this.label7 = new System.Windows.Forms.Label();
             this.txt_Glycemie = new DevExpress.XtraEditors.TextEdit();
@@ -52,15 +79,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.memoEdit4 = new DevExpress.XtraEditors.MemoEdit();
-            this.memoEdit3 = new DevExpress.XtraEditors.MemoEdit();
-            this.memoEdit2 = new DevExpress.XtraEditors.MemoEdit();
-            this.memoEdit1 = new DevExpress.XtraEditors.MemoEdit();
-            this.textEdit11 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit21 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit1 = new DevExpress.XtraEditors.MemoEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.MemoEdit();
-            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -77,34 +95,12 @@
             this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
-            this.label12 = new System.Windows.Forms.Label();
-            this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
-            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
-            this.label11 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label_NomPrenom = new System.Windows.Forms.Label();
-            this.pic_ImagePatient = new DevExpress.XtraEditors.PictureEdit();
+            this.pic_AddMotifs = new DevExpress.XtraEditors.PictureEdit();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label_NumbreConsultation = new System.Windows.Forms.Label();
-            this.label_SalleAttente = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
-            this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_PressionArterielle.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Glycemie.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_FCardiaque.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Taille.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Poids.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Temperator.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.memoEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.memoEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.memoEdit2.Properties)).BeginInit();
@@ -114,6 +110,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_ImagePatient.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
+            this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.memoEdit5.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_PressionArterielle.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Glycemie.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_FCardiaque.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Taille.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Poids.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Temperator.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
@@ -130,13 +141,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_ImagePatient.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_AddMotifs.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
@@ -152,13 +157,13 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(788, 627);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(788, 592);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // layoutControl1
             // 
-            this.layoutControl1.Controls.Add(this.simpleButton2);
-            this.layoutControl1.Controls.Add(this.simpleButton1);
+            this.layoutControl1.Controls.Add(this.btn_Valid);
+            this.layoutControl1.Controls.Add(this.btn_Annuler);
             this.layoutControl1.Controls.Add(this.checkEdit1);
             this.layoutControl1.Controls.Add(this.groupControl1);
             this.layoutControl1.Controls.Add(this.memoEdit4);
@@ -170,45 +175,45 @@
             this.layoutControl1.Controls.Add(this.textEdit1);
             this.layoutControl1.Controls.Add(this.textEdit2);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutControl1.Location = new System.Drawing.Point(3, 128);
+            this.layoutControl1.Location = new System.Drawing.Point(3, 121);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(0, 231, 650, 400);
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(782, 496);
+            this.layoutControl1.Size = new System.Drawing.Size(782, 468);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
-            // simpleButton2
+            // btn_Valid
             // 
-            this.simpleButton2.AllowFocus = false;
-            this.simpleButton2.Appearance.BackColor = System.Drawing.Color.LimeGreen;
-            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold);
-            this.simpleButton2.Appearance.Options.UseBackColor = true;
-            this.simpleButton2.Appearance.Options.UseFont = true;
-            this.simpleButton2.Location = new System.Drawing.Point(660, 440);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(98, 32);
-            this.simpleButton2.StyleController = this.layoutControl1;
-            this.simpleButton2.TabIndex = 17;
-            this.simpleButton2.Text = "Valider";
+            this.btn_Valid.AllowFocus = false;
+            this.btn_Valid.Appearance.BackColor = System.Drawing.Color.LimeGreen;
+            this.btn_Valid.Appearance.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btn_Valid.Appearance.Options.UseBackColor = true;
+            this.btn_Valid.Appearance.Options.UseFont = true;
+            this.btn_Valid.Location = new System.Drawing.Point(660, 412);
+            this.btn_Valid.Name = "btn_Valid";
+            this.btn_Valid.Size = new System.Drawing.Size(98, 32);
+            this.btn_Valid.StyleController = this.layoutControl1;
+            this.btn_Valid.TabIndex = 17;
+            this.btn_Valid.Text = "Valider";
             // 
-            // simpleButton1
+            // btn_Annuler
             // 
-            this.simpleButton1.AllowFocus = false;
-            this.simpleButton1.Appearance.BackColor = System.Drawing.Color.Red;
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton1.Appearance.Options.UseBackColor = true;
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.Location = new System.Drawing.Point(558, 440);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(98, 32);
-            this.simpleButton1.StyleController = this.layoutControl1;
-            this.simpleButton1.TabIndex = 16;
-            this.simpleButton1.Text = "Annuler";
+            this.btn_Annuler.AllowFocus = false;
+            this.btn_Annuler.Appearance.BackColor = System.Drawing.Color.Red;
+            this.btn_Annuler.Appearance.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Annuler.Appearance.Options.UseBackColor = true;
+            this.btn_Annuler.Appearance.Options.UseFont = true;
+            this.btn_Annuler.Location = new System.Drawing.Point(558, 412);
+            this.btn_Annuler.Name = "btn_Annuler";
+            this.btn_Annuler.Size = new System.Drawing.Size(98, 32);
+            this.btn_Annuler.StyleController = this.layoutControl1;
+            this.btn_Annuler.TabIndex = 16;
+            this.btn_Annuler.Text = "Annuler";
             // 
             // checkEdit1
             // 
-            this.checkEdit1.Location = new System.Drawing.Point(558, 417);
+            this.checkEdit1.Location = new System.Drawing.Point(558, 389);
             this.checkEdit1.Name = "checkEdit1";
             this.checkEdit1.Properties.Appearance.Font = new System.Drawing.Font("Nirmala UI", 8F);
             this.checkEdit1.Properties.Appearance.Options.UseFont = true;
@@ -217,6 +222,275 @@
             this.checkEdit1.StyleController = this.layoutControl1;
             this.checkEdit1.TabIndex = 15;
             // 
+            // memoEdit4
+            // 
+            this.memoEdit4.Location = new System.Drawing.Point(24, 368);
+            this.memoEdit4.Name = "memoEdit4";
+            this.memoEdit4.Size = new System.Drawing.Size(269, 76);
+            this.memoEdit4.StyleController = this.layoutControl1;
+            this.memoEdit4.TabIndex = 7;
+            // 
+            // memoEdit3
+            // 
+            this.memoEdit3.Location = new System.Drawing.Point(24, 272);
+            this.memoEdit3.Name = "memoEdit3";
+            this.memoEdit3.Size = new System.Drawing.Size(269, 76);
+            this.memoEdit3.StyleController = this.layoutControl1;
+            this.memoEdit3.TabIndex = 6;
+            // 
+            // memoEdit2
+            // 
+            this.memoEdit2.Location = new System.Drawing.Point(24, 176);
+            this.memoEdit2.Name = "memoEdit2";
+            this.memoEdit2.Size = new System.Drawing.Size(269, 76);
+            this.memoEdit2.StyleController = this.layoutControl1;
+            this.memoEdit2.TabIndex = 5;
+            // 
+            // memoEdit1
+            // 
+            this.memoEdit1.Location = new System.Drawing.Point(24, 80);
+            this.memoEdit1.Name = "memoEdit1";
+            this.memoEdit1.Size = new System.Drawing.Size(269, 76);
+            this.memoEdit1.StyleController = this.layoutControl1;
+            this.memoEdit1.TabIndex = 4;
+            // 
+            // textEdit11
+            // 
+            this.textEdit11.Location = new System.Drawing.Point(619, 324);
+            this.textEdit11.Name = "textEdit11";
+            this.textEdit11.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.textEdit11.Properties.Appearance.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.textEdit11.Properties.Appearance.Options.UseBackColor = true;
+            this.textEdit11.Properties.Appearance.Options.UseFont = true;
+            this.textEdit11.Properties.Mask.EditMask = "c";
+            this.textEdit11.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.textEdit11.Size = new System.Drawing.Size(136, 24);
+            this.textEdit11.StyleController = this.layoutControl1;
+            this.textEdit11.TabIndex = 8;
+            // 
+            // textEdit21
+            // 
+            this.textEdit21.Location = new System.Drawing.Point(618, 358);
+            this.textEdit21.Name = "textEdit21";
+            this.textEdit21.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.textEdit21.Properties.Appearance.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.textEdit21.Properties.Appearance.Options.UseBackColor = true;
+            this.textEdit21.Properties.Appearance.Options.UseFont = true;
+            this.textEdit21.Properties.Mask.EditMask = "c";
+            this.textEdit21.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.textEdit21.Size = new System.Drawing.Size(137, 24);
+            this.textEdit21.StyleController = this.layoutControl1;
+            this.textEdit21.TabIndex = 9;
+            // 
+            // textEdit1
+            // 
+            this.textEdit1.Location = new System.Drawing.Point(558, 80);
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Size = new System.Drawing.Size(200, 66);
+            this.textEdit1.StyleController = this.layoutControl1;
+            this.textEdit1.TabIndex = 8;
+            // 
+            // textEdit2
+            // 
+            this.textEdit2.Location = new System.Drawing.Point(558, 166);
+            this.textEdit2.Name = "textEdit2";
+            this.textEdit2.Size = new System.Drawing.Size(200, 77);
+            this.textEdit2.StyleController = this.layoutControl1;
+            this.textEdit2.TabIndex = 9;
+            // 
+            // Root
+            // 
+            this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.Root.GroupBordersVisible = false;
+            this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem11,
+            this.layoutControlGroup1,
+            this.layoutControlGroup2,
+            this.layoutControlGroup4});
+            this.Root.Name = "Root";
+            this.Root.Size = new System.Drawing.Size(782, 468);
+            this.Root.TextVisible = false;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.dateEdit1);
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.pic_AddMotifs);
+            this.panel1.Controls.Add(this.lookUpEdit1);
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.pictureEdit1);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(782, 112);
+            this.panel1.TabIndex = 1;
+            // 
+            // dateEdit1
+            // 
+            this.dateEdit1.EditValue = null;
+            this.dateEdit1.Location = new System.Drawing.Point(658, 47);
+            this.dateEdit1.Name = "dateEdit1";
+            this.dateEdit1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dateEdit1.Properties.Appearance.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dateEdit1.Properties.Appearance.Options.UseBackColor = true;
+            this.dateEdit1.Properties.Appearance.Options.UseFont = true;
+            this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateEdit1.Size = new System.Drawing.Size(112, 24);
+            this.dateEdit1.TabIndex = 8;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Black;
+            this.label12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label12.Font = new System.Drawing.Font("Nirmala UI", 8F, System.Drawing.FontStyle.Bold);
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(655, 31);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(115, 13);
+            this.label12.TabIndex = 7;
+            this.label12.Text = "Date consultation (*)";
+            // 
+            // lookUpEdit1
+            // 
+            this.lookUpEdit1.Location = new System.Drawing.Point(435, 81);
+            this.lookUpEdit1.Name = "lookUpEdit1";
+            this.lookUpEdit1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.lookUpEdit1.Properties.Appearance.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lookUpEdit1.Properties.Appearance.Options.UseBackColor = true;
+            this.lookUpEdit1.Properties.Appearance.Options.UseFont = true;
+            this.lookUpEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            serializableAppearanceObject5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(172)))), ((int)(((byte)(217)))));
+            serializableAppearanceObject5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(224)))), ((int)(((byte)(230)))));
+            serializableAppearanceObject5.Options.UseBackColor = true;
+            serializableAppearanceObject5.Options.UseForeColor = true;
+            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.SpinDown, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.lookUpEdit1.Properties.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.lookUpEdit1.Properties.NullText = "-- Motifs --";
+            this.lookUpEdit1.Size = new System.Drawing.Size(315, 26);
+            this.lookUpEdit1.TabIndex = 5;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Black;
+            this.label11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label11.Font = new System.Drawing.Font("Nirmala UI", 8F, System.Drawing.FontStyle.Bold);
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(311, 84);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(121, 13);
+            this.label11.TabIndex = 4;
+            this.label11.Text = "Motif du consultation";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Controls.Add(this.label_SalleAttente);
+            this.panel2.Controls.Add(this.label_NumbreConsultation);
+            this.panel2.Controls.Add(this.label14);
+            this.panel2.Controls.Add(this.label10);
+            this.panel2.Controls.Add(this.label_NomPrenom);
+            this.panel2.Controls.Add(this.pic_ImagePatient);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(782, 112);
+            this.panel2.TabIndex = 3;
+            // 
+            // label_SalleAttente
+            // 
+            this.label_SalleAttente.AutoSize = true;
+            this.label_SalleAttente.BackColor = System.Drawing.Color.Transparent;
+            this.label_SalleAttente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label_SalleAttente.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold);
+            this.label_SalleAttente.ForeColor = System.Drawing.Color.Red;
+            this.label_SalleAttente.Location = new System.Drawing.Point(259, 79);
+            this.label_SalleAttente.Name = "label_SalleAttente";
+            this.label_SalleAttente.Size = new System.Drawing.Size(30, 15);
+            this.label_SalleAttente.TabIndex = 7;
+            this.label_SalleAttente.Text = "Non";
+            // 
+            // label_NumbreConsultation
+            // 
+            this.label_NumbreConsultation.AutoSize = true;
+            this.label_NumbreConsultation.BackColor = System.Drawing.Color.Transparent;
+            this.label_NumbreConsultation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label_NumbreConsultation.Font = new System.Drawing.Font("NSimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_NumbreConsultation.ForeColor = System.Drawing.Color.Red;
+            this.label_NumbreConsultation.Location = new System.Drawing.Point(258, 43);
+            this.label_NumbreConsultation.Name = "label_NumbreConsultation";
+            this.label_NumbreConsultation.Size = new System.Drawing.Size(36, 24);
+            this.label_NumbreConsultation.TabIndex = 6;
+            this.label_NumbreConsultation.Text = "00";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label14.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold);
+            this.label14.ForeColor = System.Drawing.Color.Green;
+            this.label14.Location = new System.Drawing.Point(117, 79);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(129, 15);
+            this.label14.TabIndex = 5;
+            this.label14.Text = "Dans la salle d\'attente";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label10.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold);
+            this.label10.ForeColor = System.Drawing.Color.Green;
+            this.label10.Location = new System.Drawing.Point(117, 50);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(142, 15);
+            this.label10.TabIndex = 4;
+            this.label10.Text = "Numbre du Consultation";
+            // 
+            // label_NomPrenom
+            // 
+            this.label_NomPrenom.AutoSize = true;
+            this.label_NomPrenom.BackColor = System.Drawing.Color.Transparent;
+            this.label_NomPrenom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label_NomPrenom.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label_NomPrenom.ForeColor = System.Drawing.Color.White;
+            this.label_NomPrenom.Location = new System.Drawing.Point(138, 15);
+            this.label_NomPrenom.Name = "label_NomPrenom";
+            this.label_NomPrenom.Size = new System.Drawing.Size(104, 17);
+            this.label_NomPrenom.TabIndex = 3;
+            this.label_NomPrenom.Text = "Nome Prénome";
+            // 
+            // pic_ImagePatient
+            // 
+            this.pic_ImagePatient.Location = new System.Drawing.Point(9, 9);
+            this.pic_ImagePatient.Name = "pic_ImagePatient";
+            this.pic_ImagePatient.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pic_ImagePatient.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pic_ImagePatient.Size = new System.Drawing.Size(100, 96);
+            this.pic_ImagePatient.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Nirmala UI", 10.75F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(366, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(138, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Fiche Consultation";
+            // 
             // groupControl1
             // 
             this.groupControl1.AppearanceCaption.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
@@ -224,11 +498,11 @@
             this.groupControl1.AppearanceCaption.Options.UseBorderColor = true;
             this.groupControl1.AppearanceCaption.Options.UseFont = true;
             this.groupControl1.CaptionImageOptions.Image = global::Gestion_Cabinet_Medical.Properties.Resources.heart_with_pulse_30px;
-            this.groupControl1.Controls.Add(this.label8);
-            this.groupControl1.Controls.Add(this.label13);
+            this.groupControl1.Controls.Add(this.label_IMC_Value);
+            this.groupControl1.Controls.Add(this.label_IMC_Status);
             this.groupControl1.Controls.Add(this.memoEdit5);
             this.groupControl1.Controls.Add(this.label9);
-            this.groupControl1.Controls.Add(this.simpleButton3);
+            this.groupControl1.Controls.Add(this.btn_CalcIMC);
             this.groupControl1.Controls.Add(this.txt_PressionArterielle);
             this.groupControl1.Controls.Add(this.label7);
             this.groupControl1.Controls.Add(this.txt_Glycemie);
@@ -250,66 +524,67 @@
             this.groupControl1.TabIndex = 14;
             this.groupControl1.Text = "Constants Vitales";
             // 
-            // label8
+            // label_IMC_Value
             // 
-            this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label8.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
-            this.label8.Location = new System.Drawing.Point(27, 316);
-            this.label8.Name = "label8";
-            this.label8.Padding = new System.Windows.Forms.Padding(3);
-            this.label8.Size = new System.Drawing.Size(53, 35);
-            this.label8.TabIndex = 24;
-            this.label8.Text = "22";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_IMC_Value.BackColor = System.Drawing.Color.White;
+            this.label_IMC_Value.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_IMC_Value.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label_IMC_Value.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label_IMC_Value.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
+            this.label_IMC_Value.Location = new System.Drawing.Point(6, 315);
+            this.label_IMC_Value.Name = "label_IMC_Value";
+            this.label_IMC_Value.Padding = new System.Windows.Forms.Padding(3);
+            this.label_IMC_Value.Size = new System.Drawing.Size(53, 35);
+            this.label_IMC_Value.TabIndex = 24;
+            this.label_IMC_Value.Text = "22";
+            this.label_IMC_Value.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label13
+            // label_IMC_Status
             // 
-            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label13.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
-            this.label13.Location = new System.Drawing.Point(86, 316);
-            this.label13.Name = "label13";
-            this.label13.Padding = new System.Windows.Forms.Padding(3);
-            this.label13.Size = new System.Drawing.Size(123, 35);
-            this.label13.TabIndex = 23;
-            this.label13.Text = "Normale";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_IMC_Status.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.label_IMC_Status.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_IMC_Status.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label_IMC_Status.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label_IMC_Status.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
+            this.label_IMC_Status.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label_IMC_Status.Location = new System.Drawing.Point(65, 316);
+            this.label_IMC_Status.Name = "label_IMC_Status";
+            this.label_IMC_Status.Padding = new System.Windows.Forms.Padding(3);
+            this.label_IMC_Status.Size = new System.Drawing.Size(163, 35);
+            this.label_IMC_Status.TabIndex = 23;
+            this.label_IMC_Status.Text = "Normale";
+            this.label_IMC_Status.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // memoEdit5
             // 
-            this.memoEdit5.Location = new System.Drawing.Point(27, 381);
+            this.memoEdit5.Location = new System.Drawing.Point(6, 381);
             this.memoEdit5.Name = "memoEdit5";
-            this.memoEdit5.Size = new System.Drawing.Size(182, 51);
+            this.memoEdit5.Size = new System.Drawing.Size(222, 51);
             this.memoEdit5.TabIndex = 22;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(24, 363);
+            this.label9.Location = new System.Drawing.Point(5, 363);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(35, 15);
             this.label9.TabIndex = 21;
             this.label9.Text = "Note";
             // 
-            // simpleButton3
+            // btn_CalcIMC
             // 
-            this.simpleButton3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.simpleButton3.Appearance.Options.UseBackColor = true;
-            this.simpleButton3.Appearance.Options.UseFont = true;
-            this.simpleButton3.ImageOptions.Image = global::Gestion_Cabinet_Medical.Properties.Resources.IMC_20px;
-            this.simpleButton3.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.RightCenter;
-            this.simpleButton3.Location = new System.Drawing.Point(27, 278);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(182, 35);
-            this.simpleButton3.TabIndex = 18;
-            this.simpleButton3.Text = "Calcule IMC         ";
+            this.btn_CalcIMC.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btn_CalcIMC.Appearance.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btn_CalcIMC.Appearance.Options.UseBackColor = true;
+            this.btn_CalcIMC.Appearance.Options.UseFont = true;
+            this.btn_CalcIMC.ImageOptions.Image = global::Gestion_Cabinet_Medical.Properties.Resources.IMC_20px;
+            this.btn_CalcIMC.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.RightCenter;
+            this.btn_CalcIMC.Location = new System.Drawing.Point(5, 278);
+            this.btn_CalcIMC.Name = "btn_CalcIMC";
+            this.btn_CalcIMC.Size = new System.Drawing.Size(223, 35);
+            this.btn_CalcIMC.TabIndex = 18;
+            this.btn_CalcIMC.Text = "Calcule IMC         ";
             // 
             // txt_PressionArterielle
             // 
@@ -405,6 +680,8 @@
             this.txt_Taille.Properties.Appearance.Options.UseBackColor = true;
             this.txt_Taille.Properties.Appearance.Options.UseFont = true;
             this.txt_Taille.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.txt_Taille.Properties.Mask.EditMask = "d";
+            this.txt_Taille.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txt_Taille.Properties.NullText = "0";
             this.txt_Taille.Properties.NullValuePrompt = "0";
             this.txt_Taille.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -421,6 +698,8 @@
             this.txt_Poids.Properties.Appearance.Options.UseBackColor = true;
             this.txt_Poids.Properties.Appearance.Options.UseFont = true;
             this.txt_Poids.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.txt_Poids.Properties.Mask.EditMask = "d";
+            this.txt_Poids.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txt_Poids.Properties.NullText = "0";
             this.txt_Poids.Properties.NullValuePrompt = "0";
             this.txt_Poids.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -475,101 +754,12 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Poids (kg)";
             // 
-            // memoEdit4
-            // 
-            this.memoEdit4.Location = new System.Drawing.Point(24, 389);
-            this.memoEdit4.Name = "memoEdit4";
-            this.memoEdit4.Size = new System.Drawing.Size(269, 83);
-            this.memoEdit4.StyleController = this.layoutControl1;
-            this.memoEdit4.TabIndex = 7;
-            // 
-            // memoEdit3
-            // 
-            this.memoEdit3.Location = new System.Drawing.Point(24, 286);
-            this.memoEdit3.Name = "memoEdit3";
-            this.memoEdit3.Size = new System.Drawing.Size(269, 83);
-            this.memoEdit3.StyleController = this.layoutControl1;
-            this.memoEdit3.TabIndex = 6;
-            // 
-            // memoEdit2
-            // 
-            this.memoEdit2.Location = new System.Drawing.Point(24, 183);
-            this.memoEdit2.Name = "memoEdit2";
-            this.memoEdit2.Size = new System.Drawing.Size(269, 83);
-            this.memoEdit2.StyleController = this.layoutControl1;
-            this.memoEdit2.TabIndex = 5;
-            // 
-            // memoEdit1
-            // 
-            this.memoEdit1.Location = new System.Drawing.Point(24, 80);
-            this.memoEdit1.Name = "memoEdit1";
-            this.memoEdit1.Size = new System.Drawing.Size(269, 83);
-            this.memoEdit1.StyleController = this.layoutControl1;
-            this.memoEdit1.TabIndex = 4;
-            // 
-            // textEdit11
-            // 
-            this.textEdit11.Location = new System.Drawing.Point(619, 352);
-            this.textEdit11.Name = "textEdit11";
-            this.textEdit11.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.textEdit11.Properties.Appearance.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.textEdit11.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit11.Properties.Appearance.Options.UseFont = true;
-            this.textEdit11.Properties.Mask.EditMask = "c";
-            this.textEdit11.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.textEdit11.Size = new System.Drawing.Size(136, 24);
-            this.textEdit11.StyleController = this.layoutControl1;
-            this.textEdit11.TabIndex = 8;
-            // 
-            // textEdit21
-            // 
-            this.textEdit21.Location = new System.Drawing.Point(618, 386);
-            this.textEdit21.Name = "textEdit21";
-            this.textEdit21.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.textEdit21.Properties.Appearance.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.textEdit21.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit21.Properties.Appearance.Options.UseFont = true;
-            this.textEdit21.Properties.Mask.EditMask = "c";
-            this.textEdit21.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.textEdit21.Size = new System.Drawing.Size(137, 24);
-            this.textEdit21.StyleController = this.layoutControl1;
-            this.textEdit21.TabIndex = 9;
-            // 
-            // textEdit1
-            // 
-            this.textEdit1.Location = new System.Drawing.Point(558, 80);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(200, 66);
-            this.textEdit1.StyleController = this.layoutControl1;
-            this.textEdit1.TabIndex = 8;
-            // 
-            // textEdit2
-            // 
-            this.textEdit2.Location = new System.Drawing.Point(558, 166);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(200, 47);
-            this.textEdit2.StyleController = this.layoutControl1;
-            this.textEdit2.TabIndex = 9;
-            // 
-            // Root
-            // 
-            this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.Root.GroupBordersVisible = false;
-            this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem11,
-            this.layoutControlGroup1,
-            this.layoutControlGroup2,
-            this.layoutControlGroup4});
-            this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(782, 496);
-            this.Root.TextVisible = false;
-            // 
             // layoutControlItem11
             // 
             this.layoutControlItem11.Control = this.groupControl1;
             this.layoutControlItem11.Location = new System.Drawing.Point(297, 0);
             this.layoutControlItem11.Name = "layoutControlItem11";
-            this.layoutControlItem11.Size = new System.Drawing.Size(237, 476);
+            this.layoutControlItem11.Size = new System.Drawing.Size(237, 448);
             this.layoutControlItem11.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem11.TextVisible = false;
             // 
@@ -587,7 +777,7 @@
             this.layoutControlItem4});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(297, 476);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(297, 448);
             this.layoutControlGroup1.Text = "Antécédents";
             // 
             // layoutControlItem1
@@ -595,7 +785,7 @@
             this.layoutControlItem1.Control = this.memoEdit1;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(273, 103);
+            this.layoutControlItem1.Size = new System.Drawing.Size(273, 96);
             this.layoutControlItem1.Text = "Medicaux";
             this.layoutControlItem1.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem1.TextSize = new System.Drawing.Size(138, 13);
@@ -603,9 +793,9 @@
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.memoEdit2;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 103);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 96);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(273, 103);
+            this.layoutControlItem2.Size = new System.Drawing.Size(273, 96);
             this.layoutControlItem2.Text = "Chirurgicaux";
             this.layoutControlItem2.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem2.TextSize = new System.Drawing.Size(138, 13);
@@ -613,9 +803,9 @@
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.memoEdit3;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 206);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 192);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(273, 103);
+            this.layoutControlItem3.Size = new System.Drawing.Size(273, 96);
             this.layoutControlItem3.Text = "Familiales";
             this.layoutControlItem3.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem3.TextSize = new System.Drawing.Size(138, 13);
@@ -623,9 +813,9 @@
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.memoEdit4;
-            this.layoutControlItem4.Location = new System.Drawing.Point(0, 309);
+            this.layoutControlItem4.Location = new System.Drawing.Point(0, 288);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(273, 103);
+            this.layoutControlItem4.Size = new System.Drawing.Size(273, 96);
             this.layoutControlItem4.Text = "Autres";
             this.layoutControlItem4.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem4.TextSize = new System.Drawing.Size(138, 13);
@@ -642,7 +832,7 @@
             this.emptySpaceItem1});
             this.layoutControlGroup2.Location = new System.Drawing.Point(534, 0);
             this.layoutControlGroup2.Name = "layoutControlGroup2";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(228, 285);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(228, 257);
             this.layoutControlGroup2.Text = "Résultat";
             // 
             // layoutControlItem5
@@ -665,7 +855,7 @@
             this.layoutControlItem6.MaxSize = new System.Drawing.Size(204, 0);
             this.layoutControlItem6.MinSize = new System.Drawing.Size(204, 37);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(204, 67);
+            this.layoutControlItem6.Size = new System.Drawing.Size(204, 97);
             this.layoutControlItem6.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem6.Text = "Diagnostique médicale";
             this.layoutControlItem6.TextLocation = DevExpress.Utils.Locations.Top;
@@ -674,9 +864,9 @@
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 153);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 183);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(204, 68);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(204, 10);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlGroup4
@@ -692,7 +882,7 @@
             this.layoutControlItem9,
             this.layoutControlItem10,
             this.layoutControlItem12});
-            this.layoutControlGroup4.Location = new System.Drawing.Point(534, 285);
+            this.layoutControlGroup4.Location = new System.Drawing.Point(534, 257);
             this.layoutControlGroup4.Name = "layoutControlGroup4";
             this.layoutControlGroup4.Size = new System.Drawing.Size(228, 191);
             this.layoutControlGroup4.Text = "Payement";
@@ -740,7 +930,7 @@
             // 
             // layoutControlItem10
             // 
-            this.layoutControlItem10.Control = this.simpleButton1;
+            this.layoutControlItem10.Control = this.btn_Annuler;
             this.layoutControlItem10.Location = new System.Drawing.Point(0, 91);
             this.layoutControlItem10.MaxSize = new System.Drawing.Size(0, 36);
             this.layoutControlItem10.MinSize = new System.Drawing.Size(85, 36);
@@ -752,7 +942,7 @@
             // 
             // layoutControlItem12
             // 
-            this.layoutControlItem12.Control = this.simpleButton2;
+            this.layoutControlItem12.Control = this.btn_Valid;
             this.layoutControlItem12.Location = new System.Drawing.Point(102, 91);
             this.layoutControlItem12.MaxSize = new System.Drawing.Size(0, 36);
             this.layoutControlItem12.MinSize = new System.Drawing.Size(76, 36);
@@ -762,199 +952,38 @@
             this.layoutControlItem12.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem12.TextVisible = false;
             // 
-            // panel1
+            // pic_AddMotifs
             // 
-            this.panel1.Controls.Add(this.dateEdit1);
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.pictureEdit3);
-            this.panel1.Controls.Add(this.lookUpEdit1);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.pictureEdit1);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(782, 119);
-            this.panel1.TabIndex = 1;
-            // 
-            // dateEdit1
-            // 
-            this.dateEdit1.EditValue = null;
-            this.dateEdit1.Location = new System.Drawing.Point(658, 47);
-            this.dateEdit1.Name = "dateEdit1";
-            this.dateEdit1.Properties.Appearance.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dateEdit1.Properties.Appearance.Options.UseFont = true;
-            this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Size = new System.Drawing.Size(112, 24);
-            this.dateEdit1.TabIndex = 8;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label12.Font = new System.Drawing.Font("Nirmala UI", 8F, System.Drawing.FontStyle.Bold);
-            this.label12.Location = new System.Drawing.Point(655, 31);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(115, 13);
-            this.label12.TabIndex = 7;
-            this.label12.Text = "Date consultation (*)";
-            // 
-            // pictureEdit3
-            // 
-            this.pictureEdit3.EditValue = ((object)(resources.GetObject("pictureEdit3.EditValue")));
-            this.pictureEdit3.Location = new System.Drawing.Point(746, 79);
-            this.pictureEdit3.Name = "pictureEdit3";
-            this.pictureEdit3.Properties.AllowFocused = false;
-            this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit3.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit3.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit3.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit3.Size = new System.Drawing.Size(29, 27);
-            this.pictureEdit3.TabIndex = 6;
-            // 
-            // lookUpEdit1
-            // 
-            this.lookUpEdit1.Location = new System.Drawing.Point(435, 81);
-            this.lookUpEdit1.Name = "lookUpEdit1";
-            this.lookUpEdit1.Properties.Appearance.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lookUpEdit1.Properties.Appearance.Options.UseFont = true;
-            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit1.Properties.NullText = "-- Motifs --";
-            this.lookUpEdit1.Size = new System.Drawing.Size(315, 24);
-            this.lookUpEdit1.TabIndex = 5;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label11.Font = new System.Drawing.Font("Nirmala UI", 8F, System.Drawing.FontStyle.Bold);
-            this.label11.Location = new System.Drawing.Point(311, 84);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(121, 13);
-            this.label11.TabIndex = 4;
-            this.label11.Text = "Motif du consultation";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Controls.Add(this.label_SalleAttente);
-            this.panel2.Controls.Add(this.label_NumbreConsultation);
-            this.panel2.Controls.Add(this.label14);
-            this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.label_NomPrenom);
-            this.panel2.Controls.Add(this.pic_ImagePatient);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(305, 119);
-            this.panel2.TabIndex = 3;
-            // 
-            // label_NomPrenom
-            // 
-            this.label_NomPrenom.AutoSize = true;
-            this.label_NomPrenom.BackColor = System.Drawing.Color.Transparent;
-            this.label_NomPrenom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label_NomPrenom.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label_NomPrenom.ForeColor = System.Drawing.Color.White;
-            this.label_NomPrenom.Location = new System.Drawing.Point(138, 15);
-            this.label_NomPrenom.Name = "label_NomPrenom";
-            this.label_NomPrenom.Size = new System.Drawing.Size(104, 17);
-            this.label_NomPrenom.TabIndex = 3;
-            this.label_NomPrenom.Text = "Nome Prénome";
-            // 
-            // pic_ImagePatient
-            // 
-            this.pic_ImagePatient.Location = new System.Drawing.Point(9, 9);
-            this.pic_ImagePatient.Name = "pic_ImagePatient";
-            this.pic_ImagePatient.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pic_ImagePatient.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pic_ImagePatient.Size = new System.Drawing.Size(100, 96);
-            this.pic_ImagePatient.TabIndex = 2;
+            this.pic_AddMotifs.EditValue = ((object)(resources.GetObject("pic_AddMotifs.EditValue")));
+            this.pic_AddMotifs.Location = new System.Drawing.Point(749, 80);
+            this.pic_AddMotifs.Name = "pic_AddMotifs";
+            this.pic_AddMotifs.Properties.AllowFocused = false;
+            this.pic_AddMotifs.Properties.Appearance.BackColor = System.Drawing.Color.Black;
+            this.pic_AddMotifs.Properties.Appearance.Options.UseBackColor = true;
+            this.pic_AddMotifs.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pic_AddMotifs.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pic_AddMotifs.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pic_AddMotifs.Size = new System.Drawing.Size(29, 27);
+            this.pic_AddMotifs.TabIndex = 6;
             // 
             // pictureEdit1
             // 
             this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
-            this.pictureEdit1.Location = new System.Drawing.Point(328, 0);
+            this.pictureEdit1.Location = new System.Drawing.Point(336, 1);
             this.pictureEdit1.Name = "pictureEdit1";
+            this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Black;
+            this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
             this.pictureEdit1.Size = new System.Drawing.Size(32, 32);
             this.pictureEdit1.TabIndex = 1;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(366, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Fiche Consultation";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label10.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold);
-            this.label10.ForeColor = System.Drawing.Color.Green;
-            this.label10.Location = new System.Drawing.Point(117, 50);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(142, 15);
-            this.label10.TabIndex = 4;
-            this.label10.Text = "Numbre du Consultation";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label14.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold);
-            this.label14.ForeColor = System.Drawing.Color.Green;
-            this.label14.Location = new System.Drawing.Point(117, 79);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(129, 15);
-            this.label14.TabIndex = 5;
-            this.label14.Text = "Dans la salle d\'attente";
-            // 
-            // label_NumbreConsultation
-            // 
-            this.label_NumbreConsultation.AutoSize = true;
-            this.label_NumbreConsultation.BackColor = System.Drawing.Color.Transparent;
-            this.label_NumbreConsultation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label_NumbreConsultation.Font = new System.Drawing.Font("NSimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_NumbreConsultation.ForeColor = System.Drawing.Color.Red;
-            this.label_NumbreConsultation.Location = new System.Drawing.Point(258, 43);
-            this.label_NumbreConsultation.Name = "label_NumbreConsultation";
-            this.label_NumbreConsultation.Size = new System.Drawing.Size(36, 24);
-            this.label_NumbreConsultation.TabIndex = 6;
-            this.label_NumbreConsultation.Text = "00";
-            // 
-            // label_SalleAttente
-            // 
-            this.label_SalleAttente.AutoSize = true;
-            this.label_SalleAttente.BackColor = System.Drawing.Color.Transparent;
-            this.label_SalleAttente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label_SalleAttente.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold);
-            this.label_SalleAttente.ForeColor = System.Drawing.Color.Red;
-            this.label_SalleAttente.Location = new System.Drawing.Point(259, 79);
-            this.label_SalleAttente.Name = "label_SalleAttente";
-            this.label_SalleAttente.Size = new System.Drawing.Size(30, 15);
-            this.label_SalleAttente.TabIndex = 7;
-            this.label_SalleAttente.Text = "Non";
-            // 
             // Nouvelle_Consultation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(788, 627);
+            this.ClientSize = new System.Drawing.Size(788, 592);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Nouvelle_Consultation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
@@ -964,6 +993,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.memoEdit4.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.memoEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.memoEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit21.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_ImagePatient.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
@@ -974,15 +1020,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txt_Taille.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Poids.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Temperator.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit21.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
@@ -999,15 +1036,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_ImagePatient.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_AddMotifs.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
 
@@ -1039,8 +1068,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem11;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton btn_Valid;
+        private DevExpress.XtraEditors.SimpleButton btn_Annuler;
         private DevExpress.XtraEditors.CheckEdit checkEdit1;
         private DevExpress.XtraEditors.TextEdit textEdit11;
         private DevExpress.XtraEditors.TextEdit textEdit21;
@@ -1054,10 +1083,10 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem12;
         private DevExpress.XtraEditors.MemoEdit memoEdit5;
         private System.Windows.Forms.Label label9;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
+        private DevExpress.XtraEditors.SimpleButton btn_CalcIMC;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label_IMC_Value;
+        private System.Windows.Forms.Label label_IMC_Status;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
@@ -1073,7 +1102,7 @@
         private System.Windows.Forms.Label label_NomPrenom;
         private DevExpress.XtraEditors.DateEdit dateEdit1;
         private System.Windows.Forms.Label label12;
-        private DevExpress.XtraEditors.PictureEdit pictureEdit3;
+        private DevExpress.XtraEditors.PictureEdit pic_AddMotifs;
         private System.Windows.Forms.Label label_NumbreConsultation;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label10;

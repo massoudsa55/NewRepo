@@ -52,14 +52,18 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
 
         private void Btn_New_Click(object sender, EventArgs e)
         {
-            Nouvelle_Consultation nouvelle_Consultation = new Nouvelle_Consultation();
-            nouvelle_Consultation._ID_Patient = _ID_Patient;
-            nouvelle_Consultation.ShowDialog();
+            if (slkp_Patient.Text == string.Empty)
+                MessageBox.Show("Choisire un sule patient s'il vous plait", "msg", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+            {
+                Nouvelle_Consultation nouvelle_Consultation = new Nouvelle_Consultation();
+                nouvelle_Consultation._ID_Patient = _ID_Patient;
+                nouvelle_Consultation.ShowDialog();
+            }
         }
 
         private void TextEdit_GotFocus(object sender, EventArgs e)
         {
-            //txt_Temperator.Text = string.Empty;
             if (sender is TextEdit sendTXT)
             {
                 switch (sendTXT.Name)

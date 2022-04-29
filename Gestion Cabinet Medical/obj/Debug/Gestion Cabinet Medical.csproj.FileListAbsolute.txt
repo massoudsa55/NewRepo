@@ -631,3 +631,4 @@ C:\Users\masso\Desktop\Copy 1\Gestion Cabinet Medical\Gestion Cabinet Medical\ob
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.Patient.Fiche_Patient_Attente.resources
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion Cabinet Medical.csproj.AssemblyReference.cache
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.Consultation.Nouvelle_Consultation.resources
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.Consultation.Nouveau_Motif.resources
