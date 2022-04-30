@@ -15,7 +15,9 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
     public partial class Nouvelle_Consultation : XtraForm
     {
         public int _ID_Patient;
+        int _ID_Motif;
         DAL.Patient patient;
+        DAL.Consultations consultations;
         public string _libelleMotif = "";
         public Nouvelle_Consultation()
         {
@@ -28,6 +30,8 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             pic_AddMotifs.Click += Pic_AddMotifs_Click;
             txt_Taille.KeyUp += Txt_Taille_KeyUp;
             btn_CalcIMC.Click += Btn_CalcIMC_Click;
+            btn_Valid.Click += Btn_Valid_Click;
+            btn_Annuler.Click += Btn_Annuler_Click;
             #region Evants TextFocused
             txt_Poids.GotFocus += TextEdit_GotFocus;
             txt_Taille.GotFocus += TextEdit_GotFocus;
@@ -37,6 +41,17 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             txt_PressionArterielle.GotFocus += TextEdit_GotFocus;
             #endregion
         }
+
+        private void Btn_Annuler_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void Btn_Valid_Click(object sender, EventArgs e)
+        {
+            Save();
+        }
+
         private void Btn_CalcIMC_Click(object sender, EventArgs e)
         {
             calcIMC();
@@ -118,9 +133,15 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
                 label_SalleAttente.Text = "Non";
         }
 
+        public bool TextBoxIsNotDigit(TextEdit textEdit) => System.Text.RegularExpressions.Regex.IsMatch(textEdit.Text, "[^0-9]");
+
         public void calcIMC()
         {
-            double tailleMitre = double.Parse(txt_Taille.Text)/100;
+            if (TextBoxIsNotDigit(txt_Poids) || TextBoxIsNotDigit(txt_Taille))
+                return;
+            if ((txt_Poids.Text == string.Empty || txt_Taille.Text == string.Empty))
+                return;
+            double tailleMitre = double.Parse(txt_Taille.Text) / 100;
             double IMC = int.Parse(txt_Poids.Text) / (tailleMitre * tailleMitre);
             label_IMC_Value.Text = IMC.ToString("0.0");
             if (IMC < 18.5)
@@ -128,6 +149,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
                 // no9s lwazen
                 // Insuffisance pondérale
                 label_IMC_Status.Text = "Insuffisance pondérale";
+                label_IMC_Status.BackColor = Color.Blue;
             }
             else
             {
@@ -136,6 +158,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
                     // naturelle
                     // Poids normal
                     label_IMC_Status.Text = "Poids normal";
+                    label_IMC_Status.BackColor = Color.FromArgb(128, 255, 128);
                 }
                 else
                 {
@@ -144,6 +167,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
                         // wazen zaaid
                         // Surpoids
                         label_IMC_Status.Text = "Surpoids";
+                        label_IMC_Status.BackColor = Color.Orange;
                     }
                     else
                     {
@@ -152,22 +176,65 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
                             // somna
                             // Obésité
                             label_IMC_Status.Text = "Obésité";
+                            label_IMC_Status.BackColor = Color.Red;
                         }
                     }
                 }
             }
         }
 
-        public void DefultTextEdit()
+        public void ClearTextFromBox(TextEdit text) => text.Text = string.Empty;
+
+        public void GetIdMotifs()
         {
-            txt_Poids.Text = "0";
-            txt_Taille.Text = "0";
-            txt_Temperator.Text = "Ex 36";
-            txt_FCardiaque.Text = "Ex 70";
-            txt_Glycemie.Text = "Ex 1.4";
-            txt_PressionArterielle.Text = "Ex 8/12";
+            if (lookUpEdit1.EditValue != null && lookUpEdit1.Text != string.Empty)
+            {
+                var id_Motif = (int?)Master.db.Motifs.First(a => a.Libelle == lookUpEdit1.Text).ID_Motifs ?? 0;
+                if (id_Motif > 0)
+                    _ID_Motif = id_Motif;
+            }
         }
 
-        public void ClearTextFromBox(TextEdit text) => text.Text = string.Empty;
+        public void SetData()
+        {
+            GetIdMotifs();
+            /*DAL.Antecedents ante = new DAL.Antecedents();
+            ante.Anti_Medicaux = me_Anti_Medicaux.Text;
+            ante.Anti_Chirurgicaux = me_Anti_Chirurgicaux.Text;
+            ante.Anti_Familiales = me_Anti_Familiale.Text;
+            ante.Autres_Anti = me_Anti_Autre.Text;*/
+
+            ////// يحتاج للتصليح
+            consultations = new DAL.Consultations
+            {
+                
+                ID_Patient = _ID_Patient,
+                DateTime = dateEdit1.DateTime,
+                ID_Motifs = _ID_Motif,
+                Poids = int.Parse(txt_Poids.Text),
+                Taille = int.Parse(txt_Taille.Text),
+                Temperature = int.Parse(txt_Temperator.Text),
+                FrequenceCardiaque = int.Parse(txt_FCardiaque.Text),
+                Glycecmie = txt_Glycemie.Text,
+                PressionArterielle = txt_PressionArterielle.Text,
+                Note = me_Note.Text,
+                Antecedents = new DAL.Antecedents
+                {
+                    Anti_Medicaux = me_Anti_Medicaux.Text,
+                    Anti_Chirurgicaux = me_Anti_Chirurgicaux.Text,
+                    Anti_Familiales = me_Anti_Familiale.Text,
+                    Autres_Anti = me_Anti_Autre.Text
+                }
+            };
+            //consultations.Antecedents.A
+        }
+
+        public void Save()
+        {
+            SetData();
+            Master.db.Consultations.Add(consultations);
+            Master.db.SaveChanges();
+            MessageBox.Show("Saved Succesffuly", "Save", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

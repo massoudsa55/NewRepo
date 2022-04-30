@@ -75,6 +75,7 @@ namespace Gestion_Cabinet_Medical.Forms.Principale_Form
             barBtnNewConsult.ItemClick += Bar_ItemClick;
             barBtnMotifs.ItemClick += Bar_ItemClick;
             barBtnConsultManag.ItemClick += Bar_ItemClick;
+            barStaticItem3.Caption = "Bienvenue sur Cabinet Medical " + DateTime.Now.Date.Year;
 
         }
 
