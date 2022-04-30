@@ -198,16 +198,9 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
         public void SetData()
         {
             GetIdMotifs();
-            /*DAL.Antecedents ante = new DAL.Antecedents();
-            ante.Anti_Medicaux = me_Anti_Medicaux.Text;
-            ante.Anti_Chirurgicaux = me_Anti_Chirurgicaux.Text;
-            ante.Anti_Familiales = me_Anti_Familiale.Text;
-            ante.Autres_Anti = me_Anti_Autre.Text;*/
-
-            ////// يحتاج للتصليح
-            consultations = new DAL.Consultations
+            /*consultations = new DAL.Consultations
             {
-                
+
                 ID_Patient = _ID_Patient,
                 DateTime = dateEdit1.DateTime,
                 ID_Motifs = _ID_Motif,
@@ -225,9 +218,24 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
                     Anti_Familiales = me_Anti_Familiale.Text,
                     Autres_Anti = me_Anti_Autre.Text
                 }
-            };
-            //consultations.Antecedents.A
+            };*/
+            consultations = new DAL.Consultations();
+            consultations.ID_Patient = _ID_Patient;
+            consultations.DateTime = dateEdit1.DateTime;
+            consultations.ID_Motifs = _ID_Motif;
+            consultations.Poids = int.Parse(txt_Poids.Text);
+            consultations.Taille = int.Parse(txt_Taille.Text);
+            consultations.Temperature = TextBoxIsNotDigit(txt_Temperator) ? 0 : int.Parse(txt_Temperator.Text);
+            consultations.FrequenceCardiaque = TextBoxIsNotDigit(txt_FCardiaque) ? 0 : int.Parse(txt_FCardiaque.Text);
+            consultations.Glycecmie = txt_Glycemie.Text;
+            consultations.PressionArterielle = txt_PressionArterielle.Text;
+            consultations.Note = me_Note.Text;
+            consultations.Antecedents.Anti_Medicaux = me_Anti_Medicaux.Text;
+            consultations.Antecedents.Anti_Chirurgicaux = me_Anti_Chirurgicaux.Text;
+            consultations.Antecedents.Anti_Familiales = me_Anti_Familiale.Text;
+            consultations.Antecedents.Autres_Anti = me_Anti_Autre.Text;
         }
+                
 
         public void Save()
         {

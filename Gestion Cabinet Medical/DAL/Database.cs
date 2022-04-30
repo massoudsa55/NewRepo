@@ -1,10 +1,10 @@
+using System;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Entity;
+using System.Linq;
+
 namespace Gestion_Cabinet_Medical.DAL
 {
-    using System;
-    using System.Data.Entity;
-    using System.ComponentModel.DataAnnotations.Schema;
-    using System.Linq;
-
     public partial class Database : DbContext
     {
         public Database()
@@ -13,7 +13,6 @@ namespace Gestion_Cabinet_Medical.DAL
         }
 
         public virtual DbSet<Analyse> Analyse { get; set; }
-        public virtual DbSet<Antecedents> Antecedents { get; set; }
         public virtual DbSet<Attende> Attende { get; set; }
         public virtual DbSet<Bilans> Bilans { get; set; }
         public virtual DbSet<BilansCategories> BilansCategories { get; set; }
@@ -48,6 +47,7 @@ namespace Gestion_Cabinet_Medical.DAL
         public virtual DbSet<Users> Users { get; set; }
         public virtual DbSet<Vaccins> Vaccins { get; set; }
         public virtual DbSet<Wilaya> Wilaya { get; set; }
+        public virtual DbSet<Antecedents> Antecedents { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

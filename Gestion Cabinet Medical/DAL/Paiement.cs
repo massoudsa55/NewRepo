@@ -10,14 +10,13 @@ namespace Gestion_Cabinet_Medical.DAL
     public partial class Paiement
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ID_Paiment { get; set; }
 
         public int ID_User { get; set; }
 
         public double? Montant_Iniale { get; set; }
 
-        public double Montant_Actuel { get; set; }
+        public double? Montant_Actuel { get; set; }
 
         public double? Versement { get; set; }
 

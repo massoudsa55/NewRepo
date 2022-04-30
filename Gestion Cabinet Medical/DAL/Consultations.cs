@@ -39,8 +39,6 @@ namespace Gestion_Cabinet_Medical.DAL
 
         public string Note { get; set; }
 
-        public int? ID_Antecedent { get; set; }
-
         public virtual Antecedents Antecedents { get; set; }
 
         public virtual Motifs Motifs { get; set; }
