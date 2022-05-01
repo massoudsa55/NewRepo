@@ -22,6 +22,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
         int _ID_Civilite;
         int _ID_GroupeSanguin;
         int _ID_SituationFam;
+        int _ID_Consultation;
         public int _ID_Patient;
         string _PTN_Nom;
         string _PTN_Prenom;
@@ -37,6 +38,8 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             LoadPatient();
             DefultTextEdit();
             btn_New.Click += Btn_New_Click;
+            gridView1.FocusedRowChanged += GridView1_FocusedRowChanged;
+            gridView1.RowCellClick += GridView1_RowCellClick;
             #region Evants
             btn_EditData.Click += Btn_EditData_Click;
             slkp_Patient.CustomDisplayText += Slkp_Patient_CustomDisplayText;
@@ -50,6 +53,26 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             
         }
 
+        public void GetIdConsultation()
+        {
+            if (gridView1.GetFocusedRowCellValue(nameof(DAL.Consultations.ID_Consultation)) == null) return;
+            var id = int.Parse(gridView1.GetFocusedRowCellValue(nameof(DAL.Consultations.ID_Consultation)).ToString());
+            if (id != 0)
+                _ID_Consultation = id;
+        }
+
+        private void GridView1_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
+        {
+            GetIdConsultation();
+            DefultTextEdit(_ID_Consultation);
+        }
+
+        private void GridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            GetIdConsultation();
+            DefultTextEdit(_ID_Consultation);
+        }
+
         private void Btn_New_Click(object sender, EventArgs e)
         {
             if (slkp_Patient.Text == string.Empty)
@@ -59,6 +82,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
                 Nouvelle_Consultation nouvelle_Consultation = new Nouvelle_Consultation();
                 nouvelle_Consultation._ID_Patient = _ID_Patient;
                 nouvelle_Consultation.ShowDialog();
+                LoadConsultation(_ID_Patient);
             }
         }
 
@@ -105,7 +129,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
                     code += ptn.ToString()[i];
                     i++;
                 }
-                _ID_Patient = (int?)Master.db.Patient.FirstOrDefault(a => a.Code == code).ID_Patient ?? 1;
+                _ID_Patient = (int)Master.db.Patient.Where(a => a.Code == code).FirstOrDefault().ID_Patient;
                 _PTN_Nom = Master.db.Patient.First(a => a.ID_Patient == _ID_Patient).Nom;
                 _PTN_Prenom = Master.db.Patient.First(a => a.ID_Patient == _ID_Patient).Prenom;
                 e.DisplayText = string.Concat(_PTN_Nom, " ", _PTN_Prenom);
@@ -124,14 +148,16 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
                 gridControl_Consultation.DataSource = null;
                 return;
             }
-            var idConsult = Master.db.Consultations.FirstOrDefault(a => a.ID_Patient == id).ID_Consultation;
+            var idConsult = Master.db.Consultations.Where(a => a.ID_Patient == id).FirstOrDefault().ID_Consultation;
+            if (idConsult == 0)
+                return;
             DefultTextEdit(idConsult);
             var query = from consult in Master.db.Consultations
                         join paiment in Master.db.Paiement on consult.ID_Consultation equals paiment.ID_Consultation
                         into p from paiment in p.DefaultIfEmpty()
                         join motifs in Master.db.Motifs on consult.ID_Motifs equals motifs.ID_Motifs
                         into m from motifs in m.DefaultIfEmpty()
-                        where (consult.ID_Consultation == idConsult)
+                        where consult.ID_Patient==id
                         select new
                         {
                             consult.ID_Consultation,

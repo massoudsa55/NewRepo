@@ -16,8 +16,10 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
     {
         public int _ID_Patient;
         int _ID_Motif;
+        int _ID_Consultation;
         DAL.Patient patient;
         DAL.Consultations consultations;
+        DAL.Antecedents antecedents;
         public string _libelleMotif = "";
         public Nouvelle_Consultation()
         {
@@ -195,54 +197,63 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             }
         }
 
-        public void SetData()
+        public void GetIdConsultations()
+        {
+            var idConsult = Master.db.Consultations.Select(e => e.ID_Consultation).Max();
+            _ID_Consultation = (int?)idConsult ?? 1;
+        }
+
+        public void SetDataConsultation()
         {
             GetIdMotifs();
-            /*consultations = new DAL.Consultations
+            consultations = new DAL.Consultations
             {
-
                 ID_Patient = _ID_Patient,
                 DateTime = dateEdit1.DateTime,
                 ID_Motifs = _ID_Motif,
-                Poids = int.Parse(txt_Poids.Text),
-                Taille = int.Parse(txt_Taille.Text),
-                Temperature = int.Parse(txt_Temperator.Text),
-                FrequenceCardiaque = int.Parse(txt_FCardiaque.Text),
+                Poids = TextBoxIsNotDigit(txt_Poids) ? 0 : int.Parse(txt_Poids.Text),
+                Taille = TextBoxIsNotDigit(txt_Taille) ? 0 : int.Parse(txt_Taille.Text),
+                Temperature = TextBoxIsNotDigit(txt_Temperator) ? 0 : int.Parse(txt_Temperator.Text),
+                FrequenceCardiaque = TextBoxIsNotDigit(txt_FCardiaque) ? 0 : int.Parse(txt_FCardiaque.Text),
                 Glycecmie = txt_Glycemie.Text,
                 PressionArterielle = txt_PressionArterielle.Text,
-                Note = me_Note.Text,
-                Antecedents = new DAL.Antecedents
-                {
-                    Anti_Medicaux = me_Anti_Medicaux.Text,
-                    Anti_Chirurgicaux = me_Anti_Chirurgicaux.Text,
-                    Anti_Familiales = me_Anti_Familiale.Text,
-                    Autres_Anti = me_Anti_Autre.Text
-                }
-            };*/
-            consultations = new DAL.Consultations();
-            consultations.ID_Patient = _ID_Patient;
-            consultations.DateTime = dateEdit1.DateTime;
-            consultations.ID_Motifs = _ID_Motif;
-            consultations.Poids = int.Parse(txt_Poids.Text);
-            consultations.Taille = int.Parse(txt_Taille.Text);
-            consultations.Temperature = TextBoxIsNotDigit(txt_Temperator) ? 0 : int.Parse(txt_Temperator.Text);
-            consultations.FrequenceCardiaque = TextBoxIsNotDigit(txt_FCardiaque) ? 0 : int.Parse(txt_FCardiaque.Text);
-            consultations.Glycecmie = txt_Glycemie.Text;
-            consultations.PressionArterielle = txt_PressionArterielle.Text;
-            consultations.Note = me_Note.Text;
-            consultations.Antecedents.Anti_Medicaux = me_Anti_Medicaux.Text;
-            consultations.Antecedents.Anti_Chirurgicaux = me_Anti_Chirurgicaux.Text;
-            consultations.Antecedents.Anti_Familiales = me_Anti_Familiale.Text;
-            consultations.Antecedents.Autres_Anti = me_Anti_Autre.Text;
+                Note = me_Note.Text
+            };
         }
-                
 
+        public void SetDataAntecedent()
+        {
+            GetIdConsultations();
+            antecedents = new DAL.Antecedents
+            {
+                ID_Consultation = _ID_Consultation,
+                Anti_Medicaux = me_Anti_Medicaux.Text,
+                Anti_Chirurgicaux = me_Anti_Chirurgicaux.Text,
+                Anti_Familiales = me_Anti_Familiale.Text,
+                Autres_Anti = me_Anti_Autre.Text
+            };
+        }
         public void Save()
         {
-            SetData();
+            if (!IsDataValide())
+                return;
+            SetDataConsultation();
             Master.db.Consultations.Add(consultations);
+            Master.db.SaveChanges();
+            SetDataAntecedent();
+            MessageBox.Show("ID_Consultation = "+_ID_Consultation, "msg", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Master.db.Antecedents.Add(antecedents);
             Master.db.SaveChanges();
             MessageBox.Show("Saved Succesffuly", "Save", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        //NumberOfErrors += Master.IsEditValueValideAndNotZero(loo)
+        public bool IsDataValide()
+        {
+            int NumberOfErrors = 0;
+            NumberOfErrors += Master.IsEditValueValideAndNotZero(lookUpEdit1) ? 0 : 1;
+            return (NumberOfErrors == 0);
+        }
+
     }
 }
