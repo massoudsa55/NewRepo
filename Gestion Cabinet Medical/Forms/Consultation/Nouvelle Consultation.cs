@@ -171,30 +171,35 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
 
         public string GetMotifs(int ID_Motif)
         {
-            var motif = Master.db.Motifs.Where(a => a.ID_Motifs == ID_Motif).Select(b => b.Libelle).ToString();
+            var motif = Master.db.Motifs.First(a => a.ID_Motifs == ID_Motif).Libelle.ToString();
             return motif != string.Empty ? motif : "";
         }
         public void LaodDataForEdit(int ID_Consult)
         {
             LoadData();
             var consultation = Master.db.Consultations.First(a => a.ID_Consultation == ID_Consult);
-            var antecedent = Master.db.Antecedents.First(a => a.ID_Consultation == ID_Consult);
-            lookUpEdit1.EditValue = GetMotifs((int)consultation.ID_Motifs);
+            GetAntecedent(ID_Consult);
+            lookUpEdit1.Text = GetMotifs((int)consultation.ID_Motifs);
             txt_Poids.Text = consultation.Poids.ToString();
             txt_Taille.Text = consultation.Taille.ToString();
             txt_Temperator.Text = consultation.Temperature.ToString();
             txt_FCardiaque.Text = consultation.FrequenceCardiaque.ToString();
             txt_Glycemie.Text = consultation.Glycecmie.ToString();
             txt_PressionArterielle.Text = consultation.PressionArterielle.ToString();
-            me_Note.Text = consultation.Note.ToString();
-            if (antecedent == null)
+            me_Note.Text = (consultation.Note == null) ? "" : consultation.Note.ToString();
+        }
+
+        public void GetAntecedent(int ID_Consult)
+        {
+            if (!Master.db.Antecedents.Any(a => a.ID_Consultation == ID_Consult))
                 return;
+            var antecedent = Master.db.Antecedents.First(a => a.ID_Consultation == ID_Consult);
+            MessageBox.Show("Antecedent = " + antecedent.ID_Consultation.ToString());
             me_Anti_Medicaux.Text = antecedent.Anti_Medicaux.ToString();
             me_Anti_Chirurgicaux.Text = antecedent.Anti_Chirurgicaux.ToString();
             me_Anti_Familiale.Text = antecedent.Anti_Familiales.ToString();
             me_Anti_Autre.Text = antecedent.Autres_Anti.ToString();
         }
-
         public bool TextBoxIsNotDigit(TextEdit textEdit) => System.Text.RegularExpressions.Regex.IsMatch(textEdit.Text, "[^0-9]");
 
         public void calcIMC()

@@ -29,6 +29,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
@@ -138,6 +139,10 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.tabNavigationPage5 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.tabNavigationPage6 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.tabNavigationPage8 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.slkp_Patient.Properties)).BeginInit();
@@ -224,6 +229,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             ((System.ComponentModel.ISupportInitialize)(this.txt_Poids.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Temperator.Properties)).BeginInit();
             this.panel4.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelControl1
@@ -1128,6 +1134,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             // 
             // gridControl_Consultation
             // 
+            this.gridControl_Consultation.ContextMenuStrip = this.contextMenuStrip1;
             this.gridControl_Consultation.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl_Consultation.Location = new System.Drawing.Point(0, 97);
             this.gridControl_Consultation.MainView = this.gridView1;
@@ -1506,6 +1513,33 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.tabNavigationPage8.Properties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.ImageAndText;
             this.tabNavigationPage8.Size = new System.Drawing.Size(1368, 649);
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
+            this.toolStripMenuItem2,
+            this.toolStripMenuItem3});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 92);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem1.Text = "New";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem2.Text = "Edit";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem3.Text = "Delete";
+            // 
             // Consultation_Management
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1608,6 +1642,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             ((System.ComponentModel.ISupportInitialize)(this.txt_Poids.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Temperator.Properties)).EndInit();
             this.panel4.ResumeLayout(false);
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1717,5 +1752,9 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
         private DevExpress.XtraEditors.PictureEdit pic_Refresh;
         private DevExpress.XtraEditors.PictureEdit pic_Cancel;
         private DevExpress.XtraEditors.SimpleButton btn_DossierPatient;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
     }
 }
