@@ -59,13 +59,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
 
         private void ToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            Nouvelle_Consultation nouvelle_Consultation = new Nouvelle_Consultation();
-            nouvelle_Consultation._ID_Patient = _ID_Patient;
-            nouvelle_Consultation.EditOrAdd = "Edit";
-            nouvelle_Consultation._ID_Consultation = _ID_Consultation;
-            MessageBox.Show("id consultation avant transfre  =  " + _ID_Consultation);
-            nouvelle_Consultation.ShowDialog();
-            LoadConsultation(_ID_Patient);
+            Btn_Edit_Click(null, null);
         }
 
         private void Btn_Print_Click(object sender, EventArgs e)
@@ -90,23 +84,21 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
 
         private void Btn_Edit_Click(object sender, EventArgs e)
         {
-            if (slkp_Patient.Text == string.Empty)
-                MessageBox.Show("Choisire un sule patient s'il vous plait", "msg", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            else
-            {
-                Nouvelle_Consultation nouvelle_Consultation = new Nouvelle_Consultation();
-                nouvelle_Consultation._ID_Patient = _ID_Patient;
-                nouvelle_Consultation.EditOrAdd = "Edit";
-                nouvelle_Consultation._ID_Consultation = _ID_Consultation;
-                MessageBox.Show("id consultation avant transfre  =  "+_ID_Consultation);
-                nouvelle_Consultation.ShowDialog();
-                LoadConsultation(_ID_Patient);
-            }
+            if (gridView1.DataSource == null)
+                return;
+            Nouvelle_Consultation nouvelle_Consultation = new Nouvelle_Consultation();
+            nouvelle_Consultation._ID_Patient = _ID_Patient;
+            nouvelle_Consultation.EditOrAdd = "Edit";
+            nouvelle_Consultation._ID_Consultation = _ID_Consultation;
+            MessageBox.Show("id consultation avant transfre  =  " + _ID_Consultation);
+            nouvelle_Consultation.ShowDialog();
+            LoadConsultation(_ID_Patient);
         }
 
         public void GetIdConsultation()
         {
-            if (gridView1.GetFocusedRowCellValue(nameof(DAL.Consultations.ID_Consultation)) == null) return;
+            if (gridView1.GetFocusedRowCellValue(nameof(DAL.Consultations.ID_Consultation)) == null
+                || (Master.db.Consultations.Count(a => a.ID_Patient == _ID_Patient) == 0)) return;
             var id = int.Parse(gridView1.GetFocusedRowCellValue(nameof(DAL.Consultations.ID_Consultation)).ToString());
             if (id != 0)
                 _ID_Consultation = id;
@@ -185,6 +177,10 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
                 _PTN_Nom = Master.db.Patient.First(a => a.ID_Patient == _ID_Patient).Nom;
                 _PTN_Prenom = Master.db.Patient.First(a => a.ID_Patient == _ID_Patient).Prenom;
                 e.DisplayText = string.Concat(_PTN_Nom, " ", _PTN_Prenom);
+                if (Master.db.Consultations.Count(a => a.ID_Patient == _ID_Patient) >= 1)
+                    _ID_Consultation = (int?)Master.db.Consultations.Select(a => a.ID_Consultation).Max() ?? 1;
+                else
+                    _ID_Consultation = 1;
                 EditData(_ID_Patient);
                 LoadConsultation(_ID_Patient);
             }

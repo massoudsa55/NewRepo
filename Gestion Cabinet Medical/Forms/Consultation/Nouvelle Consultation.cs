@@ -83,6 +83,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
                 return; ;
             SetData();
             Master.db.Entry(consultations).State = EntityState.Modified;
+            Master.db.SaveChanges();
             Master.db.Entry(antecedents).State = EntityState.Modified;
             Master.db.SaveChanges();
             MessageBox.Show("Edited Succesffuly", "Edit", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -180,6 +181,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             var consultation = Master.db.Consultations.First(a => a.ID_Consultation == ID_Consult);
             GetAntecedent(ID_Consult);
             lookUpEdit1.Text = GetMotifs((int)consultation.ID_Motifs);
+            dateEdit1.DateTime = consultation.DateTime.Date;
             txt_Poids.Text = consultation.Poids.ToString();
             txt_Taille.Text = consultation.Taille.ToString();
             txt_Temperator.Text = consultation.Temperature.ToString();
@@ -264,34 +266,33 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
 
         public void GetIdConsultations()
         {
-            var idConsult = Master.db.Consultations.Select(e => e.ID_Consultation).Max();
+            var idConsult = Master.db.Consultations.Select(a => a.ID_Consultation).Max();
             _ID_Consultation = (int?)idConsult ?? 1;
         }
 
         public void SetData()
         {
             GetIdMotifs();
-            consultations = new DAL.Consultations
+            if (EditOrAdd == "New")
             {
-                ID_Patient = _ID_Patient,
-                DateTime = dateEdit1.DateTime,
-                ID_Motifs = _ID_Motif,
-                Poids = TextBoxIsNotDigit(txt_Poids) ? 0 : int.Parse(txt_Poids.Text),
-                Taille = TextBoxIsNotDigit(txt_Taille) ? 0 : int.Parse(txt_Taille.Text),
-                Temperature = TextBoxIsNotDigit(txt_Temperator) ? 0 : int.Parse(txt_Temperator.Text),
-                FrequenceCardiaque = TextBoxIsNotDigit(txt_FCardiaque) ? 0 : int.Parse(txt_FCardiaque.Text),
-                Glycecmie = txt_Glycemie.Text,
-                PressionArterielle = txt_PressionArterielle.Text,
-                Note = me_Note.Text
-            };
-            antecedents = new DAL.Antecedents
-            {
-                ID_Consultation = _ID_Consultation,
-                Anti_Medicaux = me_Anti_Medicaux.Text,
-                Anti_Chirurgicaux = me_Anti_Chirurgicaux.Text,
-                Anti_Familiales = me_Anti_Familiale.Text,
-                Autres_Anti = me_Anti_Autre.Text
-            };
+                consultations = new DAL.Consultations();
+                antecedents = new DAL.Antecedents();
+            }
+            consultations.DateTime = dateEdit1.DateTime.Date;
+            consultations.ID_Motifs = _ID_Motif;
+            consultations.Poids = TextBoxIsNotDigit(txt_Poids) ? 0 : int.Parse(txt_Poids.Text);
+            consultations.Taille = TextBoxIsNotDigit(txt_Taille) ? 0 : int.Parse(txt_Taille.Text);
+            consultations.Temperature = TextBoxIsNotDigit(txt_Temperator) ? 0 : int.Parse(txt_Temperator.Text);
+            consultations.FrequenceCardiaque = TextBoxIsNotDigit(txt_FCardiaque) ? 0 : int.Parse(txt_FCardiaque.Text);
+            consultations.Glycecmie = txt_Glycemie.Text;
+            consultations.PressionArterielle = txt_PressionArterielle.Text;
+            consultations.Note = me_Note.Text;
+            //antecedents.ID_Consultation = _ID_Consultation;
+            antecedents.Anti_Medicaux = me_Anti_Medicaux.Text;
+            antecedents.Anti_Chirurgicaux = me_Anti_Chirurgicaux.Text;
+            antecedents.Anti_Familiales = me_Anti_Familiale.Text;
+            antecedents.Autres_Anti = me_Anti_Autre.Text;
+            
         }
 
         public void SetDataAntecedent()
