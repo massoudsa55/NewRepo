@@ -130,10 +130,10 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Print = new DevExpress.XtraEditors.SimpleButton();
             this.btn_New = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_Paiement = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_Home = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Delete = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Edit = new DevExpress.XtraEditors.SimpleButton();
             this.tabNavigationPage3 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.tabNavigationPage5 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.tabNavigationPage6 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
@@ -1396,30 +1396,30 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.simpleButton2);
+            this.panel4.Controls.Add(this.btn_Print);
             this.panel4.Controls.Add(this.btn_New);
-            this.panel4.Controls.Add(this.btn_Paiement);
-            this.panel4.Controls.Add(this.btn_Home);
+            this.panel4.Controls.Add(this.btn_Delete);
+            this.panel4.Controls.Add(this.btn_Edit);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1368, 57);
             this.panel4.TabIndex = 0;
             // 
-            // simpleButton2
+            // btn_Print
             // 
-            this.simpleButton2.AllowFocus = false;
-            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Nirmala UI", 11F, System.Drawing.FontStyle.Bold);
-            this.simpleButton2.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
-            this.simpleButton2.Appearance.Options.UseFont = true;
-            this.simpleButton2.Appearance.Options.UseForeColor = true;
-            this.simpleButton2.ImageOptions.Image = global::Gestion_Cabinet_Medical.Properties.Resources.print_plue_32px;
-            this.simpleButton2.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.RightCenter;
-            this.simpleButton2.Location = new System.Drawing.Point(1227, 7);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(127, 40);
-            this.simpleButton2.TabIndex = 21;
-            this.simpleButton2.Text = "Imprimer    ";
+            this.btn_Print.AllowFocus = false;
+            this.btn_Print.Appearance.Font = new System.Drawing.Font("Nirmala UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btn_Print.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
+            this.btn_Print.Appearance.Options.UseFont = true;
+            this.btn_Print.Appearance.Options.UseForeColor = true;
+            this.btn_Print.ImageOptions.Image = global::Gestion_Cabinet_Medical.Properties.Resources.print_plue_32px;
+            this.btn_Print.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.RightCenter;
+            this.btn_Print.Location = new System.Drawing.Point(1227, 7);
+            this.btn_Print.Name = "btn_Print";
+            this.btn_Print.Size = new System.Drawing.Size(127, 40);
+            this.btn_Print.TabIndex = 21;
+            this.btn_Print.Text = "Imprimer    ";
             // 
             // btn_New
             // 
@@ -1437,38 +1437,38 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.btn_New.TabIndex = 20;
             this.btn_New.Text = "Nouveau";
             // 
-            // btn_Paiement
+            // btn_Delete
             // 
-            this.btn_Paiement.AllowFocus = false;
-            this.btn_Paiement.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(67)))), ((int)(((byte)(70)))));
-            this.btn_Paiement.Appearance.Font = new System.Drawing.Font("Nirmala UI", 11F, System.Drawing.FontStyle.Bold);
-            this.btn_Paiement.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(232)))), ((int)(((byte)(235)))));
-            this.btn_Paiement.Appearance.Options.UseBackColor = true;
-            this.btn_Paiement.Appearance.Options.UseFont = true;
-            this.btn_Paiement.Appearance.Options.UseForeColor = true;
-            this.btn_Paiement.ImageOptions.Image = global::Gestion_Cabinet_Medical.Properties.Resources.trash_can_32px;
-            this.btn_Paiement.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.RightCenter;
-            this.btn_Paiement.Location = new System.Drawing.Point(1094, 7);
-            this.btn_Paiement.Name = "btn_Paiement";
-            this.btn_Paiement.Size = new System.Drawing.Size(127, 40);
-            this.btn_Paiement.TabIndex = 19;
-            this.btn_Paiement.Text = "Supprimer  ";
+            this.btn_Delete.AllowFocus = false;
+            this.btn_Delete.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(67)))), ((int)(((byte)(70)))));
+            this.btn_Delete.Appearance.Font = new System.Drawing.Font("Nirmala UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btn_Delete.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(232)))), ((int)(((byte)(235)))));
+            this.btn_Delete.Appearance.Options.UseBackColor = true;
+            this.btn_Delete.Appearance.Options.UseFont = true;
+            this.btn_Delete.Appearance.Options.UseForeColor = true;
+            this.btn_Delete.ImageOptions.Image = global::Gestion_Cabinet_Medical.Properties.Resources.trash_can_32px;
+            this.btn_Delete.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.RightCenter;
+            this.btn_Delete.Location = new System.Drawing.Point(1094, 7);
+            this.btn_Delete.Name = "btn_Delete";
+            this.btn_Delete.Size = new System.Drawing.Size(127, 40);
+            this.btn_Delete.TabIndex = 19;
+            this.btn_Delete.Text = "Supprimer  ";
             // 
-            // btn_Home
+            // btn_Edit
             // 
-            this.btn_Home.AllowFocus = false;
-            this.btn_Home.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
-            this.btn_Home.Appearance.Font = new System.Drawing.Font("Nirmala UI", 11F, System.Drawing.FontStyle.Bold);
-            this.btn_Home.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(232)))), ((int)(((byte)(235)))));
-            this.btn_Home.Appearance.Options.UseBackColor = true;
-            this.btn_Home.Appearance.Options.UseFont = true;
-            this.btn_Home.Appearance.Options.UseForeColor = true;
-            this.btn_Home.ImageOptions.Image = global::Gestion_Cabinet_Medical.Properties.Resources.edit_32px;
-            this.btn_Home.Location = new System.Drawing.Point(961, 7);
-            this.btn_Home.Name = "btn_Home";
-            this.btn_Home.Size = new System.Drawing.Size(127, 40);
-            this.btn_Home.TabIndex = 18;
-            this.btn_Home.Text = "Modifier";
+            this.btn_Edit.AllowFocus = false;
+            this.btn_Edit.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
+            this.btn_Edit.Appearance.Font = new System.Drawing.Font("Nirmala UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btn_Edit.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(232)))), ((int)(((byte)(235)))));
+            this.btn_Edit.Appearance.Options.UseBackColor = true;
+            this.btn_Edit.Appearance.Options.UseFont = true;
+            this.btn_Edit.Appearance.Options.UseForeColor = true;
+            this.btn_Edit.ImageOptions.Image = global::Gestion_Cabinet_Medical.Properties.Resources.edit_32px;
+            this.btn_Edit.Location = new System.Drawing.Point(961, 7);
+            this.btn_Edit.Name = "btn_Edit";
+            this.btn_Edit.Size = new System.Drawing.Size(127, 40);
+            this.btn_Edit.TabIndex = 18;
+            this.btn_Edit.Text = "Modifier";
             // 
             // tabNavigationPage3
             // 
@@ -1697,8 +1697,8 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private DevExpress.XtraEditors.SimpleButton btn_New;
-        private DevExpress.XtraEditors.SimpleButton btn_Paiement;
-        private DevExpress.XtraEditors.SimpleButton btn_Home;
+        private DevExpress.XtraEditors.SimpleButton btn_Delete;
+        private DevExpress.XtraEditors.SimpleButton btn_Edit;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
@@ -1706,7 +1706,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.SimpleButton btn_Print;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem21;

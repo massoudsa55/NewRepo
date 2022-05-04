@@ -38,6 +38,9 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             LoadPatient();
             DefultTextEdit();
             btn_New.Click += Btn_New_Click;
+            btn_Edit.Click += Btn_Edit_Click;
+            btn_Delete.Click += Btn_Delete_Click;
+            btn_Print.Click += Btn_Print_Click;
             gridView1.FocusedRowChanged += GridView1_FocusedRowChanged;
             gridView1.RowCellClick += GridView1_RowCellClick;
             #region Evants
@@ -51,6 +54,41 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             txt_PressionArterielle.GotFocus += TextEdit_GotFocus;
             #endregion
             
+        }
+
+        private void Btn_Print_Click(object sender, EventArgs e)
+        {
+            Print();
+        }
+
+        public void Print()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void Btn_Delete_Click(object sender, EventArgs e)
+        {
+            Delete();
+        }
+
+        public void Delete()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void Btn_Edit_Click(object sender, EventArgs e)
+        {
+            if (slkp_Patient.Text == string.Empty)
+                MessageBox.Show("Choisire un sule patient s'il vous plait", "msg", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+            {
+                Nouvelle_Consultation nouvelle_Consultation = new Nouvelle_Consultation();
+                nouvelle_Consultation._ID_Patient = _ID_Patient;
+                nouvelle_Consultation.EditOrAdd = "Edit";
+                nouvelle_Consultation._ID_Consultation = _ID_Consultation;
+                nouvelle_Consultation.ShowDialog();
+                LoadConsultation(_ID_Patient);
+            }
         }
 
         public void GetIdConsultation()
@@ -81,6 +119,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             {
                 Nouvelle_Consultation nouvelle_Consultation = new Nouvelle_Consultation();
                 nouvelle_Consultation._ID_Patient = _ID_Patient;
+                nouvelle_Consultation.EditOrAdd = "New";
                 nouvelle_Consultation.ShowDialog();
                 LoadConsultation(_ID_Patient);
             }

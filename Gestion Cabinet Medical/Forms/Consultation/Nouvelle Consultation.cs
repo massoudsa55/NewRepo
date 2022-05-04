@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,7 +17,8 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
     {
         public int _ID_Patient;
         int _ID_Motif;
-        int _ID_Consultation;
+        public int _ID_Consultation;
+        public string EditOrAdd;
         DAL.Patient patient;
         DAL.Consultations consultations;
         DAL.Antecedents antecedents;
@@ -28,7 +30,17 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
 
         private void Nouvelle_Consultation_Load(object sender, EventArgs e)
         {
-            LoadData();
+            switch (EditOrAdd)
+            {
+                case "New":
+                    LoadData();
+                    break;
+                case "Edit":
+                    LaodDataForEdit(_ID_Consultation);
+                    break;
+                default:
+                    break;
+            }
             pic_AddMotifs.Click += Pic_AddMotifs_Click;
             txt_Taille.KeyUp += Txt_Taille_KeyUp;
             btn_CalcIMC.Click += Btn_CalcIMC_Click;
@@ -51,7 +63,29 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
 
         private void Btn_Valid_Click(object sender, EventArgs e)
         {
-            Save();
+            switch (EditOrAdd)
+            {
+                case "New":
+                    Save();
+                    break;
+                case "Edit":
+                    Edit();
+                    break;
+                default:
+                    break;
+            }
+            Close();
+        }
+
+        public void Edit()
+        {
+            if (!IsDataValide())
+                return; ;
+            SetData();
+            Master.db.Entry(consultations).State = EntityState.Modified;
+            Master.db.Entry(antecedents).State = EntityState.Modified;
+            Master.db.SaveChanges();
+            MessageBox.Show("Edited Succesffuly", "Edit", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void Btn_CalcIMC_Click(object sender, EventArgs e)
@@ -135,6 +169,32 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
                 label_SalleAttente.Text = "Non";
         }
 
+        public string GetMotifs(int ID_Motif)
+        {
+            var motif = Master.db.Motifs.Where(a => a.ID_Motifs == ID_Motif).Select(b => b.Libelle).ToString();
+            return motif != string.Empty ? motif : "";
+        }
+        public void LaodDataForEdit(int ID_Consult)
+        {
+            LoadData();
+            var consultation = Master.db.Consultations.First(a => a.ID_Consultation == ID_Consult);
+            var antecedent = Master.db.Antecedents.First(a => a.ID_Consultation == ID_Consult);
+            lookUpEdit1.EditValue = GetMotifs((int)consultation.ID_Motifs);
+            txt_Poids.Text = consultation.Poids.ToString();
+            txt_Taille.Text = consultation.Taille.ToString();
+            txt_Temperator.Text = consultation.Temperature.ToString();
+            txt_FCardiaque.Text = consultation.FrequenceCardiaque.ToString();
+            txt_Glycemie.Text = consultation.Glycecmie.ToString();
+            txt_PressionArterielle.Text = consultation.PressionArterielle.ToString();
+            me_Note.Text = consultation.Note.ToString();
+            if (antecedent == null)
+                return;
+            me_Anti_Medicaux.Text = antecedent.Anti_Medicaux.ToString();
+            me_Anti_Chirurgicaux.Text = antecedent.Anti_Chirurgicaux.ToString();
+            me_Anti_Familiale.Text = antecedent.Anti_Familiales.ToString();
+            me_Anti_Autre.Text = antecedent.Autres_Anti.ToString();
+        }
+
         public bool TextBoxIsNotDigit(TextEdit textEdit) => System.Text.RegularExpressions.Regex.IsMatch(textEdit.Text, "[^0-9]");
 
         public void calcIMC()
@@ -203,7 +263,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             _ID_Consultation = (int?)idConsult ?? 1;
         }
 
-        public void SetDataConsultation()
+        public void SetData()
         {
             GetIdMotifs();
             consultations = new DAL.Consultations
@@ -219,11 +279,6 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
                 PressionArterielle = txt_PressionArterielle.Text,
                 Note = me_Note.Text
             };
-        }
-
-        public void SetDataAntecedent()
-        {
-            GetIdConsultations();
             antecedents = new DAL.Antecedents
             {
                 ID_Consultation = _ID_Consultation,
@@ -233,15 +288,20 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
                 Autres_Anti = me_Anti_Autre.Text
             };
         }
+
+        public void SetDataAntecedent()
+        {
+            GetIdConsultations();
+            SetData();
+        }
         public void Save()
         {
             if (!IsDataValide())
                 return;
-            SetDataConsultation();
+            SetData();
             Master.db.Consultations.Add(consultations);
             Master.db.SaveChanges();
             SetDataAntecedent();
-            MessageBox.Show("ID_Consultation = "+_ID_Consultation, "msg", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Master.db.Antecedents.Add(antecedents);
             Master.db.SaveChanges();
             MessageBox.Show("Saved Succesffuly", "Save", MessageBoxButtons.OK, MessageBoxIcon.Information);
