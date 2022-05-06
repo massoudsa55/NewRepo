@@ -80,10 +80,11 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
         public void Edit()
         {
             if (!IsDataValide())
-                return; ;
-            SetData();
+                return;
+            SetDataConsultation();
             Master.db.Entry(consultations).State = EntityState.Modified;
             Master.db.SaveChanges();
+            SetDataAntecedent();
             Master.db.Entry(antecedents).State = EntityState.Modified;
             Master.db.SaveChanges();
             MessageBox.Show("Edited Succesffuly", "Edit", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -196,7 +197,6 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             if (!Master.db.Antecedents.Any(a => a.ID_Consultation == ID_Consult))
                 return;
             var antecedent = Master.db.Antecedents.First(a => a.ID_Consultation == ID_Consult);
-            MessageBox.Show("Antecedent = " + antecedent.ID_Consultation.ToString());
             me_Anti_Medicaux.Text = antecedent.Anti_Medicaux.ToString();
             me_Anti_Chirurgicaux.Text = antecedent.Anti_Chirurgicaux.ToString();
             me_Anti_Familiale.Text = antecedent.Anti_Familiales.ToString();
@@ -270,14 +270,14 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             _ID_Consultation = (int?)idConsult ?? 1;
         }
 
-        public void SetData()
+        public void SetDataConsultation()
         {
             GetIdMotifs();
             if (EditOrAdd == "New")
-            {
-                consultations = new DAL.Consultations();
-                antecedents = new DAL.Antecedents();
-            }
+                consultations = new DAL.Consultations
+                {
+                    ID_Patient = _ID_Patient
+                };
             consultations.DateTime = dateEdit1.DateTime.Date;
             consultations.ID_Motifs = _ID_Motif;
             consultations.Poids = TextBoxIsNotDigit(txt_Poids) ? 0 : int.Parse(txt_Poids.Text);
@@ -287,24 +287,26 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             consultations.Glycecmie = txt_Glycemie.Text;
             consultations.PressionArterielle = txt_PressionArterielle.Text;
             consultations.Note = me_Note.Text;
-            //antecedents.ID_Consultation = _ID_Consultation;
-            antecedents.Anti_Medicaux = me_Anti_Medicaux.Text;
-            antecedents.Anti_Chirurgicaux = me_Anti_Chirurgicaux.Text;
-            antecedents.Anti_Familiales = me_Anti_Familiale.Text;
-            antecedents.Autres_Anti = me_Anti_Autre.Text;
-            
         }
 
         public void SetDataAntecedent()
         {
             GetIdConsultations();
-            SetData();
+            if (EditOrAdd == "New")
+            {
+                antecedents = new DAL.Antecedents();
+                antecedents.ID_Consultation = _ID_Consultation;
+            }
+            antecedents.Anti_Medicaux = me_Anti_Medicaux.Text;
+            antecedents.Anti_Chirurgicaux = me_Anti_Chirurgicaux.Text;
+            antecedents.Anti_Familiales = me_Anti_Familiale.Text;
+            antecedents.Autres_Anti = me_Anti_Autre.Text;
         }
         public void Save()
         {
             if (!IsDataValide())
                 return;
-            SetData();
+            SetDataConsultation();
             Master.db.Consultations.Add(consultations);
             Master.db.SaveChanges();
             SetDataAntecedent();

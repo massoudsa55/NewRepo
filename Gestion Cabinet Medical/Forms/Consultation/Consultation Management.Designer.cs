@@ -110,6 +110,10 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.tabNavigationPage2 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.panel3 = new System.Windows.Forms.Panel();
             this.gridControl_Consultation = new DevExpress.XtraGrid.GridControl();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -139,10 +143,6 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.tabNavigationPage5 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.tabNavigationPage6 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.tabNavigationPage8 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.slkp_Patient.Properties)).BeginInit();
@@ -216,6 +216,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.tabNavigationPage2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_Consultation)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.panel8.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -229,7 +230,6 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             ((System.ComponentModel.ISupportInitialize)(this.txt_Poids.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Temperator.Properties)).BeginInit();
             this.panel4.SuspendLayout();
-            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelControl1
@@ -501,13 +501,13 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             // 
             // lkp_Sexe
             // 
-            this.lkp_Sexe.Location = new System.Drawing.Point(114, 164);
+            this.lkp_Sexe.Location = new System.Drawing.Point(275, 205);
             this.lkp_Sexe.Name = "lkp_Sexe";
             this.lkp_Sexe.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.lkp_Sexe.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.SpinDown)});
             this.lkp_Sexe.Properties.NullText = "";
-            this.lkp_Sexe.Size = new System.Drawing.Size(551, 20);
+            this.lkp_Sexe.Size = new System.Drawing.Size(66, 20);
             this.lkp_Sexe.StyleController = this.layoutControl1;
             this.lkp_Sexe.TabIndex = 5;
             // 
@@ -574,19 +574,19 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             // 
             // lkp_GroupSanguin
             // 
-            this.lkp_GroupSanguin.Location = new System.Drawing.Point(114, 229);
+            this.lkp_GroupSanguin.Location = new System.Drawing.Point(114, 205);
             this.lkp_GroupSanguin.Name = "lkp_GroupSanguin";
             this.lkp_GroupSanguin.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.lkp_GroupSanguin.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.SpinDown)});
             this.lkp_GroupSanguin.Properties.NullText = "";
-            this.lkp_GroupSanguin.Size = new System.Drawing.Size(227, 20);
+            this.lkp_GroupSanguin.Size = new System.Drawing.Size(66, 20);
             this.lkp_GroupSanguin.StyleController = this.layoutControl1;
             this.lkp_GroupSanguin.TabIndex = 13;
             // 
             // txt_Prefession3
             // 
-            this.txt_Prefession3.Location = new System.Drawing.Point(345, 229);
+            this.txt_Prefession3.Location = new System.Drawing.Point(345, 205);
             this.txt_Prefession3.Name = "txt_Prefession3";
             this.txt_Prefession3.Size = new System.Drawing.Size(320, 20);
             this.txt_Prefession3.StyleController = this.layoutControl1;
@@ -686,7 +686,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             // dateEdit_DOB1
             // 
             this.dateEdit_DOB1.EditValue = null;
-            this.dateEdit_DOB1.Location = new System.Drawing.Point(114, 253);
+            this.dateEdit_DOB1.Location = new System.Drawing.Point(114, 229);
             this.dateEdit_DOB1.Name = "dateEdit_DOB1";
             this.dateEdit_DOB1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -742,13 +742,12 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.layoutControlItem3,
             this.layoutControlItem4,
             this.layoutControlItem5,
-            this.layoutControlItem6,
             this.layoutControlItem15,
             this.layoutControlItem16});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "layoutControlGroup2";
             this.layoutControlGroup2.Padding = new DevExpress.XtraLayout.Utils.Padding(9, 9, 9, 9);
-            this.layoutControlGroup2.Size = new System.Drawing.Size(668, 187);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(668, 163);
             this.layoutControlGroup2.Text = "Informations générales";
             // 
             // layoutControlItem1
@@ -812,9 +811,9 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.layoutControlItem6.Control = this.lkp_Sexe;
             this.layoutControlItem6.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutControlItem6.CustomizationFormText = "Sexe";
-            this.layoutControlItem6.Location = new System.Drawing.Point(0, 122);
+            this.layoutControlItem6.Location = new System.Drawing.Point(161, 0);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(646, 24);
+            this.layoutControlItem6.Size = new System.Drawing.Size(161, 24);
             this.layoutControlItem6.Text = "Sexe";
             this.layoutControlItem6.TextSize = new System.Drawing.Size(88, 13);
             // 
@@ -967,11 +966,12 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.layoutControlGroup7.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem28,
             this.layoutControlItem30,
-            this.layoutControlItem18});
-            this.layoutControlGroup7.Location = new System.Drawing.Point(0, 187);
+            this.layoutControlItem18,
+            this.layoutControlItem6});
+            this.layoutControlGroup7.Location = new System.Drawing.Point(0, 163);
             this.layoutControlGroup7.Name = "layoutControlGroup7";
             this.layoutControlGroup7.Padding = new DevExpress.XtraLayout.Utils.Padding(9, 9, 9, 9);
-            this.layoutControlGroup7.Size = new System.Drawing.Size(668, 128);
+            this.layoutControlGroup7.Size = new System.Drawing.Size(668, 152);
             this.layoutControlGroup7.Text = "Groupage";
             // 
             // layoutControlItem28
@@ -981,7 +981,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.layoutControlItem28.CustomizationFormText = "Groupe sanguin";
             this.layoutControlItem28.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem28.Name = "layoutControlItem28";
-            this.layoutControlItem28.Size = new System.Drawing.Size(322, 24);
+            this.layoutControlItem28.Size = new System.Drawing.Size(161, 24);
             this.layoutControlItem28.Text = "Groupe sanguin";
             this.layoutControlItem28.TextSize = new System.Drawing.Size(88, 13);
             // 
@@ -1005,7 +1005,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.layoutControlItem18.CustomizationFormText = "Groupé le";
             this.layoutControlItem18.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItem18.Name = "layoutControlItem18";
-            this.layoutControlItem18.Size = new System.Drawing.Size(646, 63);
+            this.layoutControlItem18.Size = new System.Drawing.Size(646, 87);
             this.layoutControlItem18.Text = "Groupé le";
             this.layoutControlItem18.TextSize = new System.Drawing.Size(88, 13);
             // 
@@ -1143,6 +1143,33 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.gridControl_Consultation.TabIndex = 4;
             this.gridControl_Consultation.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
+            this.toolStripMenuItem2,
+            this.toolStripMenuItem3});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(108, 70);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(107, 22);
+            this.toolStripMenuItem1.Text = "New";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(107, 22);
+            this.toolStripMenuItem2.Text = "Edit";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(107, 22);
+            this.toolStripMenuItem3.Text = "Delete";
             // 
             // gridView1
             // 
@@ -1513,33 +1540,6 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.tabNavigationPage8.Properties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.ImageAndText;
             this.tabNavigationPage8.Size = new System.Drawing.Size(1368, 649);
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
-            this.toolStripMenuItem2,
-            this.toolStripMenuItem3});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 92);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem1.Text = "New";
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem2.Text = "Edit";
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem3.Text = "Delete";
-            // 
             // Consultation_Management
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1627,6 +1627,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             this.tabNavigationPage2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_Consultation)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
@@ -1642,7 +1643,6 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             ((System.ComponentModel.ISupportInitialize)(this.txt_Poids.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Temperator.Properties)).EndInit();
             this.panel4.ResumeLayout(false);
-            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

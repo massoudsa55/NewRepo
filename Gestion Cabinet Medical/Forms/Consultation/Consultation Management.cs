@@ -294,12 +294,12 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             slkp_Pays.Properties.DataSource = Pays;
         }
 
-        public void EditData(int id)
+        public void EditData(int idPatient)
         {
             GetData();
-            if (id == 0)
+            if (idPatient == 0)
                 return;
-            patient = Master.db.Patient.First(a => a.ID_Patient == id);
+            patient = Master.db.Patient.First(a => a.ID_Patient == idPatient);
             if (patient == null)
                 return;
             txt_Code.Text = patient.Code;
