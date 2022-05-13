@@ -63,6 +63,8 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
 
         private void Btn_Valid_Click(object sender, EventArgs e)
         {
+            if (!IsDataValide())
+                return;
             switch (EditOrAdd)
             {
                 case "New":
@@ -79,15 +81,12 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
 
         public void Edit()
         {
-            if (!IsDataValide())
-                return;
             SetDataConsultation();
-            Master.db.Entry(consultations).State = EntityState.Modified;
-            Master.db.SaveChanges();
             SetDataAntecedent();
+            Master.db.Entry(consultations).State = EntityState.Modified;
             Master.db.Entry(antecedents).State = EntityState.Modified;
             Master.db.SaveChanges();
-            MessageBox.Show("Edited Succesffuly", "Edit", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            XtraMessageBox.Show("Edited Succesffuly", "Edit", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void Btn_CalcIMC_Click(object sender, EventArgs e)
@@ -179,28 +178,35 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
         public void LaodDataForEdit(int ID_Consult)
         {
             LoadData();
-            var consultation = Master.db.Consultations.First(a => a.ID_Consultation == ID_Consult);
+            GetConsultation(ID_Consult);
             GetAntecedent(ID_Consult);
-            lookUpEdit1.Text = GetMotifs((int)consultation.ID_Motifs);
-            dateEdit1.DateTime = consultation.DateTime.Date;
-            txt_Poids.Text = consultation.Poids.ToString();
-            txt_Taille.Text = consultation.Taille.ToString();
-            txt_Temperator.Text = consultation.Temperature.ToString();
-            txt_FCardiaque.Text = consultation.FrequenceCardiaque.ToString();
-            txt_Glycemie.Text = consultation.Glycecmie.ToString();
-            txt_PressionArterielle.Text = consultation.PressionArterielle.ToString();
-            me_Note.Text = (consultation.Note == null) ? "" : consultation.Note.ToString();
         }
 
         public void GetAntecedent(int ID_Consult)
         {
+            if (!Master.db.Consultations.Any(a => a.ID_Consultation == ID_Consult))
+                return;
+            consultations = Master.db.Consultations.First(a => a.ID_Consultation == ID_Consult);
+            lookUpEdit1.Text = GetMotifs((int)consultations.ID_Motifs);
+            dateEdit1.DateTime = consultations.DateTime.Date;
+            txt_Poids.Text = consultations.Poids.ToString();
+            txt_Taille.Text = consultations.Taille.ToString();
+            txt_Temperator.Text = consultations.Temperature.ToString();
+            txt_FCardiaque.Text = consultations.FrequenceCardiaque.ToString();
+            txt_Glycemie.Text = consultations.Glycecmie.ToString();
+            txt_PressionArterielle.Text = consultations.PressionArterielle.ToString();
+            me_Note.Text = (consultations.Note == null) ? "" : consultations.Note.ToString();
+        }
+
+        public void GetConsultation(int ID_Consult)
+        {
             if (!Master.db.Antecedents.Any(a => a.ID_Consultation == ID_Consult))
                 return;
-            var antecedent = Master.db.Antecedents.First(a => a.ID_Consultation == ID_Consult);
-            me_Anti_Medicaux.Text = antecedent.Anti_Medicaux.ToString();
-            me_Anti_Chirurgicaux.Text = antecedent.Anti_Chirurgicaux.ToString();
-            me_Anti_Familiale.Text = antecedent.Anti_Familiales.ToString();
-            me_Anti_Autre.Text = antecedent.Autres_Anti.ToString();
+            antecedents = Master.db.Antecedents.First(a => a.ID_Consultation == ID_Consult);
+            me_Anti_Medicaux.Text = antecedents.Anti_Medicaux.ToString();
+            me_Anti_Chirurgicaux.Text = antecedents.Anti_Chirurgicaux.ToString();
+            me_Anti_Familiale.Text = antecedents.Anti_Familiales.ToString();
+            me_Anti_Autre.Text = antecedents.Autres_Anti.ToString();
         }
         public bool TextBoxIsNotDigit(TextEdit textEdit) => System.Text.RegularExpressions.Regex.IsMatch(textEdit.Text, "[^0-9]");
 
@@ -293,10 +299,8 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
         {
             GetIdConsultations();
             if (EditOrAdd == "New")
-            {
                 antecedents = new DAL.Antecedents();
-                antecedents.ID_Consultation = _ID_Consultation;
-            }
+            antecedents.ID_Consultation = _ID_Consultation;
             antecedents.Anti_Medicaux = me_Anti_Medicaux.Text;
             antecedents.Anti_Chirurgicaux = me_Anti_Chirurgicaux.Text;
             antecedents.Anti_Familiales = me_Anti_Familiale.Text;
@@ -304,15 +308,13 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
         }
         public void Save()
         {
-            if (!IsDataValide())
-                return;
             SetDataConsultation();
             Master.db.Consultations.Add(consultations);
             Master.db.SaveChanges();
             SetDataAntecedent();
             Master.db.Antecedents.Add(antecedents);
             Master.db.SaveChanges();
-            MessageBox.Show("Saved Succesffuly", "Save", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            XtraMessageBox.Show("Saved Succesffuly", "Save", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         //NumberOfErrors += Master.IsEditValueValideAndNotZero(loo)

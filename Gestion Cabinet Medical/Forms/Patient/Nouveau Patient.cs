@@ -672,20 +672,20 @@ namespace Gestion_Cabinet_Medical.Forms.Patient
                 imageEdit_Image.Image = Master.GetImageFromByteArray(patient.Image);
         }
 
-        public void Save()
+        public async void Save()
         {
             SetData();
             Master.db.Patient.Add(patient);
-            Master.db.SaveChanges();
+            await Master.db.SaveChangesAsync();
             MessageBox.Show("Saved Succesffuly", "Save", MessageBoxButtons.OK, MessageBoxIcon.Information);
             ClearBoxes();
         }
 
-        public void Edit()
+        public async void Edit()
         {
             SetData();
             Master.db.Entry(patient).State = EntityState.Modified;
-            Master.db.SaveChanges();
+            await Master.db.SaveChangesAsync();
             MessageBox.Show("Edited Succesffuly", "Edit", MessageBoxButtons.OK, MessageBoxIcon.Information);
             ClearBoxes();
         }

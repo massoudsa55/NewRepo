@@ -69,7 +69,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
 
         public void Print()
         {
-            throw new NotImplementedException();
+            
         }
 
         private void Btn_Delete_Click(object sender, EventArgs e)
@@ -79,7 +79,30 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
 
         public void Delete()
         {
-            throw new NotImplementedException();
+            if (gridView1.DataSource == null)
+                return;
+            DeleteConsultation();
+
+        }
+
+        private void DeleteConsultation()
+        {
+            if (_ID_Patient != 0)
+            {
+                var consult = Master.db.Consultations.First(a => a.ID_Consultation == _ID_Consultation);
+                if (consult != null)
+                {
+                    if (XtraMessageBox.Show("Est ce que vous supprimier cette patient ?", "Supprission", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                    {
+                        Master.db.Consultations.Remove(consult);
+                        Master.db.SaveChanges();
+                        XtraMessageBox.Show("Supprission Succse", "Supprission", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LoadConsultation(_ID_Patient);
+                    }
+                    else
+                        return;
+                }
+            }
         }
 
         private void Btn_Edit_Click(object sender, EventArgs e)
@@ -184,19 +207,17 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
                 EditData(_ID_Patient);
                 LoadConsultation(_ID_Patient);
             }
-
-
         }
 
-        public void LoadConsultation(int id)
+        public void LoadConsultation(int idPatient)
         {
             DefultTextEdit();
-            if (!Master.db.Consultations.Any(a => a.ID_Patient == id)) 
+            if (!Master.db.Consultations.Any(a => a.ID_Patient == idPatient)) 
             {
                 gridControl_Consultation.DataSource = null;
                 return;
             }
-            var idConsult = Master.db.Consultations.Where(a => a.ID_Patient == id).FirstOrDefault().ID_Consultation;
+            var idConsult = Master.db.Consultations.Where(a => a.ID_Patient == idPatient).FirstOrDefault().ID_Consultation;
             if (idConsult == 0)
                 return;
             DefultTextEdit(idConsult);
@@ -205,7 +226,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
                         into p from paiment in p.DefaultIfEmpty()
                         join motifs in Master.db.Motifs on consult.ID_Motifs equals motifs.ID_Motifs
                         into m from motifs in m.DefaultIfEmpty()
-                        where consult.ID_Patient==id
+                        where consult.ID_Patient == idPatient
                         select new
                         {
                             consult.ID_Consultation,
