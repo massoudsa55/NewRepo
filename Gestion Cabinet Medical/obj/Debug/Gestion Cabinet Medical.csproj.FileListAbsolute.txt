@@ -632,4 +632,6 @@ C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.Consultation.Nouvelle_Consultation.resources
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.Consultation.Nouveau_Motif.resources
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.Bilans.Fiche_Bilan.resources
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.DemoReports.v19.2.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.DemoData.v19.2.dll
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion Cabinet Medical.csproj.AssemblyReference.cache

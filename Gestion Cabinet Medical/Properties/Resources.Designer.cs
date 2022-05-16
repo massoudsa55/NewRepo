@@ -103,6 +103,16 @@ namespace Gestion_Cabinet_Medical.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap chemical_test_20px {
+            get {
+                object obj = ResourceManager.GetObject("chemical_test_20px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap close_32px {
             get {
                 object obj = ResourceManager.GetObject("close_32px", resourceCulture);

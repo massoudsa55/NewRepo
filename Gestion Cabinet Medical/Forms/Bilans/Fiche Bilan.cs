@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
         public int _ID_Patient = 3;
         public int _ID_Consultation;
         public int _ID_FA;
+        public int _ID_BilanCatigoty;
         DAL.Patient patient;
         public Fiche_Bilan()
         {
@@ -28,12 +30,13 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
         private void Fiche_Bilan_Load(object sender, EventArgs e)
         {
             dateEdit1.DateTime = DateTime.Now.Date;
+            LoadFamBilan();
             LoadTypeBilan();
             GetBilanSelected();
             GetBilanForPatientAdd();
             LoadConsultation(_ID_Patient);
             EditableGridControl();
-            //LoadPatientInfo(_ID_Patient);
+            LoadPatientInfo(_ID_Patient);
             #region Evants Button Click
             btn_AddBialnSelected.Click += All_Buttons_Clicks;
             btn_BilanStandard.Click += All_Buttons_Clicks;
@@ -46,66 +49,98 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             #endregion
             #region RepositoryItem
             RepositoryItemCheckEdit repoItemCheckBilan = new RepositoryItemCheckEdit();
+            repoItemCheckBilan.NullStyle = DevExpress.XtraEditors.Controls.StyleIndeterminate.Unchecked;
+            repoItemCheckBilan.CheckStyle = DevExpress.XtraEditors.Controls.CheckStyles.Standard;
+            repoItemCheckBilan.ValueChecked = true;
+            repoItemCheckBilan.ValueUnchecked =false;
             gridControl_ForSelect.RepositoryItems.Add(repoItemCheckBilan);
             gridView_ForSelect.Columns["Action"].ColumnEdit = repoItemCheckBilan;
+            repoItemCheckBilan.QueryCheckStateByValue += RepoItemCheckBilan_QueryCheckStateByValue;
             repoItemCheckBilan.CheckedChanged += RepoItemCheckBilan_CheckedChanged;
             #endregion
-            gridView_ForSelect.Columns["Action"].UnboundType = DevExpress.Data.UnboundColumnType.Boolean;
-            gridView_ForSelect.OptionsSelection.MultiSelect = true;
-            gridView_ForSelect.OptionsSelection.MultiSelectMode = GridMultiSelectMode.CheckBoxRowSelect;
-            gridView_ForSelect.OptionsSelection.ResetSelectionClickOutsideCheckboxSelector = true;
-
-
+            lkp_FamBilan.EditValueChanged += Lkp_FamBilan_EditValueChanged;
+            lkp_TypeBilan.EditValueChanged += Lkp_TypeBilan_EditValueChanged;
         }
 
-        public void code()
+        private void RepoItemCheckBilan_QueryCheckStateByValue(object sender, DevExpress.XtraEditors.Controls.QueryCheckStateByValueEventArgs e)
         {
-            /*void repchkCheckbox_CellValueChanged(object sender, DevExpress.XtraGrid.Views.Base.CellValueChangedEventArgs e)
+            if (e.Value == null)
             {
-                DataTable dt_check = new DataTable();
-                dt_check = (DataTable)gridControl_ForSelect.DataSource;
-                Int64 sItemId = Convert.ToInt64(gridControl_ForSelect.GetRowCellValue(gridControl_ForSelect.FocusedRowHandle, gridControl_ForSelect.Columns["ItemID"]));
-                bool bDiscount = Convert.ToBoolean(e.Value);
-                int iItemcount = (from DataRow row in dt_check.Rows where (string)row["ItemID"] == "1" select row).Count();
-                int iRowHandle = gridControl_ForSelect.FocusedRowHandle;
-                for (int i = 0; i < iItemcount; i++)
-                {
-                    if (bDiscount)
-                        gridControl_ForSelect.SetRowCellValue(iRowHandle, gridControl_ForSelect.Columns["AllowDiscount"], true);
-                    else
-                        gridControl_ForSelect.SetRowCellValue(iRowHandle, gridControl_ForSelect.Columns["AllowDiscount"], false);
-
-                    iRowHandle++;
-                }
+                e.CheckState = CheckState.Unchecked;
+                e.Handled = true;
             }
+        }
 
-            Int64 iItemId = Convert.ToInt64(gridControl_ForSelect.GetRowCellValue(e.RowHandle, "ItemID"));
-            bool bDiscount = Convert.ToBoolean(e.Value);
-
-            for (int i = 0; i < gridControl_ForSelect.DataRowCount; i++)
+        private void Lkp_TypeBilan_EditValueChanged(object sender, EventArgs e)
+        {
+            GetIdBilanCatigory();
+            gridControl_ForSelect.DataSource = null;
+            using (DAL.Database db = new DAL.Database())
             {
-                Int64 id = Convert.ToInt64(gridControl_ForSelect.GetRowCellValue(i, "ItemID"));
-                if (id == iItemId)
-                {
-                    if (bDiscount)
-                        gridControl_ForSelect.SetRowCellValue(i, gridControl_ForSelect.Columns["" + sColumn.Replace(" ", "") + ""], true);
-                    else
-                        gridControl_ForSelect.SetRowCellValue(i, gridControl_ForSelect.Columns["" + sColumn.Replace(" ", "") + ""], false);
-                }
-            }*/
+                var checkedBilanCatigory = sender as DAL.BilansCategories;
+
+                var getBilanOfChckedType = from analyse in db.Analyse
+                                           join bilan in db.Bilans on analyse.ID_Analyse 
+                                           equals bilan.ID_Analyse
+                                           join bilanCatigotry in db.BilansCategories on bilan.ID_Cat_Bilans 
+                                           equals bilanCatigotry.ID_Cat_Bilans
+                                           where bilanCatigotry.ID_Cat_Bilans == _ID_BilanCatigoty
+                                           select new
+                                           {
+                                               analyse.ID_Analyse,
+                                               analyse.Nome
+                                           };
+                gridControl_ForSelect.DataSource = getBilanOfChckedType.ToList();
+            }
+        }
+
+        private void Lkp_FamBilan_EditValueChanged(object sender, EventArgs e)
+        {
+            GetIdFamAnalyse();
+            gridControl_ForSelect.DataSource = null;
+            using (DAL.Database db = new DAL.Database())
+            {
+                var checkedFamAnalyse = sender as DAL.FamAnalyse;
+
+                var getBilanOfChckedType = from analyse in db.Analyse
+                                           join famAnalyse in db.FamAnalyse on analyse.ID_FA equals famAnalyse.ID_FA
+                                           where analyse.ID_FA == _ID_FA
+                                           select new
+                                           {
+                                               analyse.ID_Analyse,
+                                               analyse.Nome
+                                           };
+                gridControl_ForSelect.DataSource = getBilanOfChckedType.ToList();
+            }
         }
 
         private void RepoItemCheckBilan_CheckedChanged(object sender, EventArgs e)
         {
-            //XtraMessageBox.Show("Bilan selected");
+           /* var obj = sender as CheckEdit;
+            if (obj.Tag != null)
+            {
+                obj.Checked = true;
+                repoItemCheckBilan.Enabled = false;
+            }
+            else
+            {
+                if (obj.Checked)
+                {
+                    obj.Tag = true;
+                    repositoryItemCheckEdit1.Enabled = false;
+                }
+            }*/
+
         }
 
         private void EditableGridControl()
         {
-            gridView_ForSelect.FocusRectStyle = DrawFocusRectStyle.RowFullFocus;
+            gridView_ForSelect.FocusRectStyle = DrawFocusRectStyle.RowFocus;
             gridView_ForSelect.Columns.ColumnByName("gridColumn1").FieldName = "Action";
             gridView_ForSelect.Columns["Action"].OptionsColumn.AllowEdit = true;
             gridView_ForSelect.Columns["Nome"].OptionsColumn.AllowEdit = false;
+
+
         }
 
         public void All_Buttons_Clicks(object sender, EventArgs e)
@@ -144,13 +179,13 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
 
         private void LoadBilanSelected()
         {
-            gridControl_ForSelect.DataSource = null;
+            /*gridControl_ForSelect.DataSource = null;
             GetIdFamAnalyse();
             using (DAL.Database db = new DAL.Database())
             {
                 var bilanSelected = db.Analyse.Select(a => a.ID_FA == _ID_FA).ToList();
                 gridControl_ForSelect.DataSource = bilanSelected;
-            }
+            }*/
         }
 
         private void LoadBilanStandard()
@@ -226,9 +261,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
         public void LoadConsultation(int iD_Patient)
         {
             using (DAL.Database db = new DAL.Database())
-            {
-
-
+            { 
                 var query = from consult in db.Consultations
                             join motifs in db.Motifs on consult.ID_Motifs equals motifs.ID_Motifs
                             into m
@@ -254,30 +287,50 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
 
         public void GetIdFamAnalyse()
         {
-            if (lkp_TypeBilan.EditValue != null && lkp_TypeBilan.Text != string.Empty)
+            if (lkp_FamBilan.EditValue != null && lkp_FamBilan.Text != string.Empty)
             {
                 using (DAL.Database db = new DAL.Database())
                 {
-                    var id_FamAnalyse = (int?)db.FamAnalyse.First(a => a.Categorie == lkp_TypeBilan.Text).ID_FA ?? 0;
+                    var id_FamAnalyse = (int?)db.FamAnalyse.First(a => a.Categorie == lkp_FamBilan.Text).ID_FA ?? 0;
                     if (id_FamAnalyse > 0)
                         _ID_FA = id_FamAnalyse;
                 }
             }
         }
 
-        public void LoadTypeBilan()
+        public void GetIdBilanCatigory()
+        {
+            if (lkp_TypeBilan.EditValue != null && lkp_TypeBilan.Text != string.Empty)
+            {
+                using (DAL.Database db = new DAL.Database())
+                {
+                    var id_BilanCatigory = (int?)db.BilansCategories.First(a => a.Libelle == lkp_TypeBilan.Text).ID_Cat_Bilans ?? 0;
+                    if (id_BilanCatigory > 0)
+                        _ID_BilanCatigoty = id_BilanCatigory;
+                }
+            }
+        }
+
+        public async void LoadFamBilan()
         {
             using (DAL.Database db = new DAL.Database())
             {
-                var query = from famAnalayse in Master.db.FamAnalyse
-                            select new
-                            {
-                                famAnalayse.ID_FA,
-                                famAnalayse.Categorie
-                            };
+                await db.FamAnalyse.LoadAsync();
+                var query = db.FamAnalyse.Select(a => a.Categorie);
+                lkp_FamBilan.Properties.DataSource = query.ToList();
+                //lkp_FamBilan.Properties.ValueMember = nameof(DAL.FamAnalyse.ID_FA);
+                //lkp_FamBilan.Properties.DisplayMember = nameof(DAL.FamAnalyse.Categorie);
+            }
+
+        }
+
+        public async void LoadTypeBilan()
+        {
+            using (DAL.Database db = new DAL.Database())
+            {
+                await db.BilansCategories.LoadAsync();
+                var query = db.BilansCategories.Select(a => a.Libelle);
                 lkp_TypeBilan.Properties.DataSource = query.ToList();
-                lkp_TypeBilan.Properties.ValueMember = nameof(DAL.FamAnalyse.ID_FA);
-                lkp_TypeBilan.Properties.DisplayMember = nameof(DAL.FamAnalyse.Categorie);
             }
         }
     }
