@@ -37,6 +37,15 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             LoadConsultation(_ID_Patient);
             EditableGridControl();
             LoadPatientInfo(_ID_Patient);
+            /// Enabling the bound check column
+            gridView_ForSelect.OptionsSelection.MultiSelect = true;
+            gridView_ForSelect.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
+            //gridView_ForSelect.OptionsSelection.CheckBoxSelectorField = "Actin"; // Field name
+
+            RepositoryItemCheckEdit edit = new RepositoryItemCheckEdit(); // Your editor
+            // Obtaining the column and changing its editor
+            var checkColumn = gridView_ForSelect.VisibleColumns[0];
+            checkColumn.ColumnEdit = edit;
             #region Evants Button Click
             btn_AddBialnSelected.Click += All_Buttons_Clicks;
             btn_BilanStandard.Click += All_Buttons_Clicks;
@@ -52,7 +61,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             repoItemCheckBilan.NullStyle = DevExpress.XtraEditors.Controls.StyleIndeterminate.Unchecked;
             repoItemCheckBilan.CheckStyle = DevExpress.XtraEditors.Controls.CheckStyles.Standard;
             repoItemCheckBilan.ValueChecked = true;
-            repoItemCheckBilan.ValueUnchecked =false;
+            repoItemCheckBilan.ValueUnchecked = false;
             gridControl_ForSelect.RepositoryItems.Add(repoItemCheckBilan);
             gridView_ForSelect.Columns["Action"].ColumnEdit = repoItemCheckBilan;
             repoItemCheckBilan.QueryCheckStateByValue += RepoItemCheckBilan_QueryCheckStateByValue;
