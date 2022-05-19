@@ -272,6 +272,7 @@
       <DependentUpon>User Management.cs</DependentUpon>
     </Compile>
     <Compile Include="Functions\Master.cs" />
+    <Compile Include="Functions\SelectedCellsBorderHelper.cs" />
     <Compile Include="Medical_DBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

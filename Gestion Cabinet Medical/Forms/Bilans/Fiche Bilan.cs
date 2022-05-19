@@ -1,5 +1,8 @@
-﻿using DevExpress.XtraEditors;
+﻿using DevExpress.Utils;
+using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Repository;
+using DevExpress.XtraGrid;
+using DevExpress.XtraGrid.Views.Base;
 using DevExpress.XtraGrid.Views.Grid;
 using Gestion_Cabinet_Medical.Functions;
 using System;
@@ -37,15 +40,16 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             LoadConsultation(_ID_Patient);
             EditableGridControl();
             LoadPatientInfo(_ID_Patient);
-            /// Enabling the bound check column
-            gridView_ForSelect.OptionsSelection.MultiSelect = true;
-            gridView_ForSelect.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
             //gridView_ForSelect.OptionsSelection.CheckBoxSelectorField = "Actin"; // Field name
 
             RepositoryItemCheckEdit edit = new RepositoryItemCheckEdit(); // Your editor
             // Obtaining the column and changing its editor
             var checkColumn = gridView_ForSelect.VisibleColumns[0];
             checkColumn.ColumnEdit = edit;
+
+            gridView_ForSelect.SelectionChanged += GridView_ForSelect_SelectionChanged;
+            gridView_ForSelect.MasterRowExpanded += GridView_ForSelect_MasterRowExpanded;
+
             #region Evants Button Click
             btn_AddBialnSelected.Click += All_Buttons_Clicks;
             btn_BilanStandard.Click += All_Buttons_Clicks;
@@ -57,18 +61,58 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             btn_Valid.Click += All_Buttons_Clicks;
             #endregion
             #region RepositoryItem
-            RepositoryItemCheckEdit repoItemCheckBilan = new RepositoryItemCheckEdit();
-            repoItemCheckBilan.NullStyle = DevExpress.XtraEditors.Controls.StyleIndeterminate.Unchecked;
-            repoItemCheckBilan.CheckStyle = DevExpress.XtraEditors.Controls.CheckStyles.Standard;
-            repoItemCheckBilan.ValueChecked = true;
-            repoItemCheckBilan.ValueUnchecked = false;
-            gridControl_ForSelect.RepositoryItems.Add(repoItemCheckBilan);
-            gridView_ForSelect.Columns["Action"].ColumnEdit = repoItemCheckBilan;
-            repoItemCheckBilan.QueryCheckStateByValue += RepoItemCheckBilan_QueryCheckStateByValue;
-            repoItemCheckBilan.CheckedChanged += RepoItemCheckBilan_CheckedChanged;
+            //RepositoryItemCheckEdit repoItemCheckBilan = new RepositoryItemCheckEdit();
+            //repoItemCheckBilan.NullStyle = DevExpress.XtraEditors.Controls.StyleIndeterminate.Unchecked;
+            //repoItemCheckBilan.CheckStyle = DevExpress.XtraEditors.Controls.CheckStyles.Standard;
+            //repoItemCheckBilan.ValueChecked = true;
+            //repoItemCheckBilan.ValueUnchecked = false;
+            //gridControl_ForSelect.RepositoryItems.Add(repoItemCheckBilan);
+            //gridView_ForSelect.Columns["Action"].ColumnEdit = repoItemCheckBilan;
+            //repoItemCheckBilan.QueryCheckStateByValue += RepoItemCheckBilan_QueryCheckStateByValue;
+            //repoItemCheckBilan.CheckedChanged += RepoItemCheckBilan_CheckedChanged;
             #endregion
             lkp_FamBilan.EditValueChanged += Lkp_FamBilan_EditValueChanged;
             lkp_TypeBilan.EditValueChanged += Lkp_TypeBilan_EditValueChanged;
+        }
+
+        private void GridView_ForSelect_MasterRowExpanded(object sender, CustomMasterRowEventArgs e)
+        {
+            UpdateSelection(e.RowHandle);
+        }
+
+        private void GridView_ForSelect_SelectionChanged(object sender, DevExpress.Data.SelectionChangedEventArgs e)
+        {
+            if (gridView_ForSelect.IsDetailView)
+            {
+                int masterRowHandle = gridView_ForSelect.SourceRowHandle;
+                if (gridView_ForSelect.GetSelectedRows().Length == gridView_ForSelect.RowCount)
+                    (gridView_ForSelect.ParentView as GridView).SelectRow(masterRowHandle);
+                else 
+                if (gridView_ForSelect.GetSelectedRows().Length == 0)
+                    (gridView_ForSelect.ParentView as GridView).UnselectRow(masterRowHandle);
+            }
+            if (gridView_ForSelect.IsMasterRow(e.ControllerRow) || e.ControllerRow == GridControl.InvalidRowHandle)
+                UpdateSelection(e.ControllerRow);
+            if (e.Action == CollectionChangeAction.Refresh)
+                foreach (BaseView baseView in gridView_ForSelect.GridControl.Views)
+                {
+                    int masterRowHandle = baseView.SourceRowHandle;
+                    UpdateSelection(masterRowHandle);
+                }
+            /*if (gridView_ForSelect.GetFocusedRowCellValue(nameof(DAL.Analyse.ID_Analyse)) == null) return;
+            var id = int.Parse(gridView_ForSelect.GetFocusedRowCellValue(nameof(DAL.Analyse.ID_Analyse)).ToString());
+            if (id != 0)
+            XtraMessageBox.Show("ID_Analyse : " + id);*/
+        }
+
+        private void UpdateSelection(int controllerRow)
+        {
+            GridView view = gridView_ForSelect.GetDetailView(controllerRow, 0) as GridView;
+            if (view != null)
+                if (gridView_ForSelect.IsRowSelected(controllerRow))
+                    view.SelectAll();
+                else
+                    view.ClearSelection();
         }
 
         private void RepoItemCheckBilan_QueryCheckStateByValue(object sender, DevExpress.XtraEditors.Controls.QueryCheckStateByValueEventArgs e)
@@ -144,10 +188,13 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
 
         private void EditableGridControl()
         {
+            gridView_ForSelect.OptionsBehavior.Editable = false;
+            gridView_ForSelect.OptionsSelection.MultiSelect = true;
+            gridView_ForSelect.OptionsSelection.MultiSelectMode = GridMultiSelectMode.CheckBoxRowSelect;
             gridView_ForSelect.FocusRectStyle = DrawFocusRectStyle.RowFocus;
-            gridView_ForSelect.Columns.ColumnByName("gridColumn1").FieldName = "Action";
-            gridView_ForSelect.Columns["Action"].OptionsColumn.AllowEdit = true;
-            gridView_ForSelect.Columns["Nome"].OptionsColumn.AllowEdit = false;
+            //gridView_ForSelect.Columns.ColumnByName("gridColumn1").FieldName = "Action";
+            //gridView_ForSelect.Columns["Action"].OptionsColumn.AllowEdit = true;
+            //gridView_ForSelect.Columns["Nome"].OptionsColumn.AllowEdit = false;
 
 
         }
