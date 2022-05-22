@@ -20,6 +20,7 @@ namespace Gestion_Cabinet_Medical
         [STAThread]
         static void Main()
         {
+            DevExpress.ExpressApp.FrameworkSettings.DefaultSettingsCompatibilityMode = DevExpress.ExpressApp.FrameworkSettingsCompatibilityMode.v20_1;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Forms.SplashScrean.SplashScreen());

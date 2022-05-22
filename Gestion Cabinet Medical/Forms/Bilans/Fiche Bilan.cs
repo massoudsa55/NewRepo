@@ -1,5 +1,6 @@
 ﻿using DevExpress.Utils;
 using DevExpress.XtraEditors;
+using DevExpress.XtraEditors.Controls;
 using DevExpress.XtraEditors.Repository;
 using DevExpress.XtraGrid;
 using DevExpress.XtraGrid.Views.Base;
@@ -25,7 +26,10 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
         public int _ID_Consultation;
         public int _ID_FA;
         public int _ID_BilanCatigoty;
-        DAL.Patient patient;
+        DAL.Patient _Patient;
+        DAL.Analyse _Analyse;
+        DAL.Test _Test;
+        List<DAL.Analyse> bilanSelected;
         public Fiche_Bilan()
         {
             InitializeComponent();
@@ -42,11 +46,21 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             EditableGridControl();
             LoadPatientInfo(_ID_Patient);
 
-            RepositoryItemCheckEdit edit = new RepositoryItemCheckEdit(); 
+            #region RepositoryItem
+
+            RepositoryItemCheckEdit edit = new RepositoryItemCheckEdit();
             // Obtaining the column and changing its editor
             var checkColumn = gridView_ForSelect.VisibleColumns[0];
             checkColumn.ColumnEdit = edit;
 
+            RepositoryItemButtonEdit riButton = new RepositoryItemButtonEdit();
+            riButton.TextEditStyle = TextEditStyles.HideTextEditor;
+            riButton.Buttons[0].Kind = ButtonPredefines.Glyph;
+            riButton.Buttons[0].Image = Properties.Resources.Delete_16px;
+            gridControl_ForPatient.RepositoryItems.Add(riButton);
+            gridView_ForPatient.Columns["Action"].ColumnEdit = riButton;
+            riButton.ButtonPressed += RiButton_ButtonPressed;
+            #endregion
             #region Evants Button Click
             btn_AddBialnSelected.Click += All_Buttons_Clicks;
             btn_BilanStandard.Click += All_Buttons_Clicks;
@@ -63,13 +77,11 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             #endregion
         }
 
-        private void RepoItemCheckBilan_QueryCheckStateByValue(object sender, DevExpress.XtraEditors.Controls.QueryCheckStateByValueEventArgs e)
+        private void RiButton_ButtonPressed(object sender, ButtonPressedEventArgs e)
         {
-            if (e.Value == null)
-            {
-                e.CheckState = CheckState.Unchecked;
-                e.Handled = true;
-            }
+            ButtonEdit btnEdit = sender as ButtonEdit;
+            if (e.Button == btnEdit.Properties.Buttons[0])
+                gridView_ForPatient.DeleteSelectedRows();
         }
 
         private void Lkp_TypeBilan_EditValueChanged(object sender, EventArgs e)
@@ -117,6 +129,9 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
 
         private void EditableGridControl()
         {
+            gridView_ForPatient.FocusRectStyle = DrawFocusRectStyle.RowFullFocus;
+            gridView_ForPatient.Columns["Action"].OptionsColumn.AllowEdit = true;
+            gridView_ForPatient.Columns["Nome"].OptionsColumn.AllowEdit = false;
             gridView_ForSelect.OptionsBehavior.Editable = false;
             gridView_ForSelect.OptionsSelection.MultiSelect = true;
             gridView_ForSelect.OptionsSelection.MultiSelectMode = GridMultiSelectMode.CheckBoxRowSelect;
@@ -159,15 +174,27 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
 
         private void LoadBilanSelected()
         {
+            
+            bilanSelected = new List<DAL.Analyse>();
             for (int i = 0; i < gridView_ForSelect.DataRowCount; i++)
             {
                 if (gridView_ForSelect.IsRowSelected(i))
                 {
                     // show who ID_Analyse is selected
-                    XtraMessageBox.Show("ID_Analyse '" + i + "' = " +
-                        gridView_ForSelect.GetRowCellValue(i, gridView_ForSelect.Columns[nameof(DAL.Analyse.ID_Analyse)]));
+                    var id = (int)gridView_ForSelect.GetRowCellValue(i, gridView_ForSelect.Columns[nameof(DAL.Analyse.ID_Analyse)]);
+                    var name = (string)gridView_ForSelect.GetRowCellValue(i, gridView_ForSelect.Columns[nameof(DAL.Analyse.Nome)]) ?? "";
+                    if (id != 0 || name != string.Empty)
+                    {
+                        _Analyse = new DAL.Analyse
+                        {
+                            ID_Analyse = id,
+                            Nome = name
+                        };
+                        bilanSelected.Add(_Analyse);
+                    }
                 }
             }
+            gridControl_ForPatient.DataSource = bilanSelected;
         }
 
         private void LoadBilanStandard()
@@ -218,6 +245,30 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
 
         private void Save()
         {
+            using (DAL.Database db = new DAL.Database())
+            {
+                if (db.Consultations.Last(a => a.ID_Patient == _ID_Patient).ID_Consultation != 0)
+                    _ID_Consultation = db.Consultations.Last(a => a.ID_Patient == _ID_Patient).ID_Consultation;
+                for (int i = 0; i < gridView_ForPatient.DataRowCount; i++)
+                {
+                    var idAnalyse = (int)gridView_ForSelect.GetRowCellValue(i, gridView_ForSelect.Columns[nameof(DAL.Analyse.ID_Analyse)]);
+                    if (idAnalyse != 0 && _ID_Consultation != 0)
+                    {
+                        _Test = new DAL.Test
+                        {
+                            ID_Consultation = _ID_Consultation,
+                            IsAnalyse = true,
+                            ID_Analyse = idAnalyse,
+                            IsRadiographie = false,
+                            IsRadiologie = false
+                        };
+                        db.Test.Add(_Test);
+                    }
+                }
+                db.SaveChanges();
+                XtraMessageBox.Show("Saved Succesffuly", "Save", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Close();
+            }
         }
 
         private void LoadPatientInfo(int iD_Patient)
@@ -225,13 +276,13 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             using (DAL.Database db = new DAL.Database())
             {
 
-                patient = db.Patient.First(a => a.ID_Patient == _ID_Patient);
-                if (patient == null)
+                _Patient = db.Patient.First(a => a.ID_Patient == _ID_Patient);
+                if (_Patient == null)
                     return;
-                label_NomPrenom.Text = patient.Nom + " " + patient.Prenom;
-                layoutControlGroup_PatientInfo.Text = patient.Nom + " " + patient.Prenom;
-                if (patient.Image != null)
-                    pic_ImagePatient.Image = Master.GetImageFromByteArray(patient.Image);
+                label_NomPrenom.Text = _Patient.Nom + " " + _Patient.Prenom;
+                layoutControlGroup_PatientInfo.Text = _Patient.Nom + " " + _Patient.Prenom;
+                if (_Patient.Image != null)
+                    pic_ImagePatient.Image = Master.GetImageFromByteArray(_Patient.Image);
                 label_NumbreConsultation.Text = db.Consultations.Count(a => a.ID_Patient == _ID_Patient).ToString();
                 if (db.Attende.Any(a => a.ID_Patient == _ID_Patient))
                     label_SalleAttente.Text = "Oui";

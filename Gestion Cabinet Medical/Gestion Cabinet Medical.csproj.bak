@@ -1,0 +1,518 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A033AEF0-0F2B-4B0C-AA92-8505E37E8844}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gestion_Cabinet_Medical</RootNamespace>
+    <AssemblyName>Gestion Cabinet Medical</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="Bunifu.Dataviz.WinForms, Version=2.2.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.Dataviz.WinForms.2.2.0\lib\Bunifu.Dataviz.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.Charts.WinForms.1.1.5\lib\net40\Bunifu.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.2.3\lib\net40\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\packages\Bunifu.UI.WinForms.2.0.3\lib\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v19.2" />
+    <Reference Include="DevExpress.Charts.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v19.2" />
+    <Reference Include="DevExpress.DataAccess.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v19.2.UI, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DemoReports.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=4c3bc44151be4b47, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Persistent.Base.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.2" />
+    <Reference Include="DevExpress.Sparkline.v19.2.Core" />
+    <Reference Include="DevExpress.Utils.v19.2.UI, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v19.2.Extensions, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v19.2.Wizard, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v19.2" />
+    <Reference Include="DevExpress.Printing.v19.2.Core" />
+    <Reference Include="DevExpress.XtraGauges.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v19.2.Extensions, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL\Analyse.cs" />
+    <Compile Include="DAL\Antecedents.cs" />
+    <Compile Include="DAL\Attende.cs" />
+    <Compile Include="DAL\Bilans.cs" />
+    <Compile Include="DAL\BilansCategories.cs" />
+    <Compile Include="DAL\CabientMedical.cs" />
+    <Compile Include="DAL\Civilite.cs" />
+    <Compile Include="DAL\Consultations.cs" />
+    <Compile Include="DAL\Daira.cs" />
+    <Compile Include="DAL\Database.cs" />
+    <Compile Include="DAL\EtatMaladie.cs" />
+    <Compile Include="DAL\FamAnalyse.cs" />
+    <Compile Include="DAL\GroupeSanguin.cs" />
+    <Compile Include="DAL\Medicament.cs" />
+    <Compile Include="DAL\ModePaiement.cs" />
+    <Compile Include="DAL\Motifs.cs" />
+    <Compile Include="DAL\Ordonnances.cs" />
+    <Compile Include="DAL\Paiement.cs" />
+    <Compile Include="DAL\Patient.cs" />
+    <Compile Include="DAL\Pays.cs" />
+    <Compile Include="DAL\Permissions.cs" />
+    <Compile Include="DAL\Posologies.cs" />
+    <Compile Include="DAL\Quantites.cs" />
+    <Compile Include="DAL\Radiographie.cs" />
+    <Compile Include="DAL\Radiologie.cs" />
+    <Compile Include="DAL\RanduFaut.cs" />
+    <Compile Include="DAL\Sexe.cs" />
+    <Compile Include="DAL\SituationFam.cs" />
+    <Compile Include="DAL\StatusAttende.cs" />
+    <Compile Include="DAL\sysdiagrams.cs" />
+    <Compile Include="DAL\Test.cs" />
+    <Compile Include="DAL\TypePaiement.cs" />
+    <Compile Include="DAL\TypeRanduFaut.cs" />
+    <Compile Include="DAL\TypeUser.cs" />
+    <Compile Include="DAL\Users.cs" />
+    <Compile Include="DAL\Vaccins.cs" />
+    <Compile Include="DAL\Wilaya.cs" />
+    <Compile Include="Forms\Bilans\Fiche Bilan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bilans\Fiche Bilan.Designer.cs">
+      <DependentUpon>Fiche Bilan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Consultation\Consultation Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Consultation\Consultation Management.Designer.cs">
+      <DependentUpon>Consultation Management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Consultation\Motifs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Consultation\Motifs.Designer.cs">
+      <DependentUpon>Motifs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Consultation\Nouveau Motif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Consultation\Nouveau Motif.Designer.cs">
+      <DependentUpon>Nouveau Motif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Consultation\Nouvelle Consultation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Consultation\Nouvelle Consultation.Designer.cs">
+      <DependentUpon>Nouvelle Consultation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Home\Agenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Home\Agenda.Designer.cs">
+      <DependentUpon>Agenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Home\Menu Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Home\Menu Principal.Designer.cs">
+      <DependentUpon>Menu Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Home\Statistique d%27accueil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Home\Statistique d%27accueil.Designer.cs">
+      <DependentUpon>Statistique d%27accueil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login\Login Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login\Login Form.Designer.cs">
+      <DependentUpon>Login Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Patient\Fiche Patient Attente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Patient\Fiche Patient Attente.Designer.cs">
+      <DependentUpon>Fiche Patient Attente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Patient\Nouveau Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Patient\Nouveau Patient.Designer.cs">
+      <DependentUpon>Nouveau Patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Patient\Patient Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Patient\Patient Management.Designer.cs">
+      <DependentUpon>Patient Management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Patient\Recherche Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Patient\Recherche Patient.Designer.cs">
+      <DependentUpon>Recherche Patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Patient\Salle d%27attente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Patient\Salle d%27attente.Designer.cs">
+      <DependentUpon>Salle d%27attente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Principale Form\Principal Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Principale Form\Principal Form.Designer.cs">
+      <DependentUpon>Principal Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SplashScrean\SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SplashScrean\SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\User\Add User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\User\Add User.Designer.cs">
+      <DependentUpon>Add User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\User\User Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\User\User Management.Designer.cs">
+      <DependentUpon>User Management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions\Master.cs" />
+    <Compile Include="Functions\SelectedCellsBorderHelper.cs" />
+    <Compile Include="Medical_DBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Medical_DBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Bilans\Fiche Bilan.resx">
+      <DependentUpon>Fiche Bilan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Consultation\Consultation Management.resx">
+      <DependentUpon>Consultation Management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Consultation\Nouveau Motif.resx">
+      <DependentUpon>Nouveau Motif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Consultation\Nouvelle Consultation.resx">
+      <DependentUpon>Nouvelle Consultation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login\Login Form.resx">
+      <DependentUpon>Login Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Patient\Fiche Patient Attente.resx">
+      <DependentUpon>Fiche Patient Attente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Patient\Nouveau Patient.resx">
+      <DependentUpon>Nouveau Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Patient\Patient Management.resx">
+      <DependentUpon>Patient Management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Patient\Recherche Patient.resx">
+      <DependentUpon>Recherche Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Patient\Salle d%27attente.resx">
+      <DependentUpon>Salle d%27attente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Principale Form\Principal Form.resx">
+      <DependentUpon>Principal Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SplashScrean\SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\User\Add User.resx">
+      <DependentUpon>Add User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\User\User Management.resx">
+      <DependentUpon>User Management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Medical_DBDataSet.xsc">
+      <DependentUpon>Medical_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Medical_DBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Medical_DBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Medical_DBDataSet.xss">
+      <DependentUpon>Medical_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-anna-shvets-3786157.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\authentication_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_key_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\statistics_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\number_2_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\health_book_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart_with_pulse_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treatment_list_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+    <Folder Include="Forms\Consultation\UserControl\" />
+    <Folder Include="Reporting\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RDV_event_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_group_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\verified_account_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\currency_exchange_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Confirm_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recovery_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\health_book_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus_math_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\todo_list_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\consultation_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\radiographie_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\radiologie_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RDV_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treatment_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\documents_folder_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart_with_pulse_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_plue_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash_can_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_folder_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMC_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chemical_test_20px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
