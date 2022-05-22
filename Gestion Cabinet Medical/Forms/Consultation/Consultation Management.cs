@@ -3,14 +3,9 @@ using DevExpress.XtraEditors.Controls;
 using DevExpress.XtraEditors.Repository;
 using Gestion_Cabinet_Medical.Functions;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.Entity;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Gestion_Cabinet_Medical.Forms.Consultation
@@ -54,7 +49,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             txt_Glycemie.GotFocus += TextEdit_GotFocus;
             txt_PressionArterielle.GotFocus += TextEdit_GotFocus;
             #endregion
-            
+
         }
 
         private void ToolStripMenuItem2_Click(object sender, EventArgs e)
@@ -69,7 +64,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
 
         public void Print()
         {
-            
+
         }
 
         private void Btn_Delete_Click(object sender, EventArgs e)
@@ -212,7 +207,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
         public void LoadConsultation(int idPatient)
         {
             DefultTextEdit();
-            if (!Master.db.Consultations.Any(a => a.ID_Patient == idPatient)) 
+            if (!Master.db.Consultations.Any(a => a.ID_Patient == idPatient))
             {
                 gridControl_Consultation.DataSource = null;
                 return;
@@ -223,9 +218,11 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             DefultTextEdit(idConsult);
             var query = from consult in Master.db.Consultations
                         join paiment in Master.db.Paiement on consult.ID_Consultation equals paiment.ID_Consultation
-                        into p from paiment in p.DefaultIfEmpty()
+                        into p
+                        from paiment in p.DefaultIfEmpty()
                         join motifs in Master.db.Motifs on consult.ID_Motifs equals motifs.ID_Motifs
-                        into m from motifs in m.DefaultIfEmpty()
+                        into m
+                        from motifs in m.DefaultIfEmpty()
                         where consult.ID_Patient == idPatient
                         select new
                         {
@@ -281,7 +278,7 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
         }
 
         public void ClearTextFromBox(TextEdit text) => text.Text = string.Empty;
-        
+
         private void LoadPatient()
         {
             var query = from patient in Master.db.Patient
@@ -441,6 +438,6 @@ namespace Gestion_Cabinet_Medical.Forms.Consultation
             patient.ID_SF = _ID_SituationFam;
             patient.Profession = txt_Prefession.Text;
             patient.Note = txt_Note.Text;
-        } 
-    } 
+        }
+    }
 }

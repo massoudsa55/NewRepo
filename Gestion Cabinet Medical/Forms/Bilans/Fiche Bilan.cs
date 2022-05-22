@@ -1,21 +1,13 @@
-﻿using DevExpress.Utils;
-using DevExpress.XtraEditors;
+﻿using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Controls;
 using DevExpress.XtraEditors.Repository;
-using DevExpress.XtraGrid;
-using DevExpress.XtraGrid.Views.Base;
 using DevExpress.XtraGrid.Views.Grid;
 using Gestion_Cabinet_Medical.Functions;
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.Entity;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Gestion_Cabinet_Medical.Forms.Bilans
@@ -25,6 +17,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
         public int _ID_Patient = 3;
         public int _ID_Consultation;
         public int _ID_FA;
+        public int _ID_Aanalyse;
         public int _ID_BilanCatigoty;
         DAL.Patient _Patient;
         DAL.Analyse _Analyse;
@@ -45,7 +38,10 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             LoadConsultation(_ID_Patient);
             EditableGridControl();
             LoadPatientInfo(_ID_Patient);
-
+            #region Evants GridControl
+            gridView_ForSelect.RowCellClick += GridView_ForSelect_RowCellClick;
+            gridView_ForSelect.FocusedRowChanged += GridView_ForSelect_FocusedRowChanged;
+            #endregion
             #region RepositoryItem
 
             RepositoryItemCheckEdit edit = new RepositoryItemCheckEdit();
@@ -77,6 +73,16 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             #endregion
         }
 
+        private void GridView_ForSelect_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            GetIdAnalyse();
+        }
+
+        private void GridView_ForSelect_RowCellClick(object sender, RowCellClickEventArgs e)
+        {
+            GetIdAnalyse();
+        }
+
         private void RiButton_ButtonPressed(object sender, ButtonPressedEventArgs e)
         {
             ButtonEdit btnEdit = sender as ButtonEdit;
@@ -93,9 +99,9 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
                 var checkedBilanCatigory = sender as DAL.BilansCategories;
 
                 var getBilanOfChckedType = from analyse in db.Analyse
-                                           join bilan in db.Bilans on analyse.ID_Analyse 
+                                           join bilan in db.Bilans on analyse.ID_Analyse
                                            equals bilan.ID_Analyse
-                                           join bilanCatigotry in db.BilansCategories on bilan.ID_Cat_Bilans 
+                                           join bilanCatigotry in db.BilansCategories on bilan.ID_Cat_Bilans
                                            equals bilanCatigotry.ID_Cat_Bilans
                                            where bilanCatigotry.ID_Cat_Bilans == _ID_BilanCatigoty
                                            select new
@@ -140,7 +146,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
 
         public void All_Buttons_Clicks(object sender, EventArgs e)
         {
-            if (sender is SimpleButton sendBTN && sendBTN != null) 
+            if (sender is SimpleButton sendBTN && sendBTN != null)
                 switch (sendBTN.Name)
                 {
                     case "btn_AddBialnSelected":
@@ -174,7 +180,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
 
         private void LoadBilanSelected()
         {
-            
+
             bilanSelected = new List<DAL.Analyse>();
             for (int i = 0; i < gridView_ForSelect.DataRowCount; i++)
             {
@@ -222,8 +228,8 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             using (DAL.Database db = new DAL.Database())
             {
                 var toutBilan = from evryBilan in db.Analyse
-                                select new 
-                                { 
+                                select new
+                                {
                                     evryBilan.ID_Analyse,
                                     evryBilan.Nome
                                 };
@@ -233,10 +239,30 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
 
         private void NewBilan()
         {
+            Nouveau_Bilan nouveau_Bilan = new Nouveau_Bilan();
+            nouveau_Bilan.EditOrAdd = "New";
+            nouveau_Bilan.ShowDialog();
         }
 
         private void EditBilan()
         {
+            if(_ID_Aanalyse==0)
+            {
+                XtraMessageBox.Show("Sélectionnez au moins un bilan s'il vous plaît", "msg", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            Nouveau_Bilan nouveau_Bilan = new Nouveau_Bilan();
+            nouveau_Bilan._ID_Aanalyse = _ID_Aanalyse;
+            nouveau_Bilan.EditOrAdd = "Edit";
+            nouveau_Bilan.ShowDialog();
+        }
+
+        public void GetIdAnalyse()
+        {
+            if (gridView_ForSelect.GetFocusedRowCellValue(nameof(DAL.Analyse.ID_Analyse)) == null) return;
+            var id = int.Parse(gridView_ForSelect.GetFocusedRowCellValue(nameof(DAL.Analyse.ID_Analyse)).ToString());
+            if (id != 0)
+                _ID_Aanalyse = id;
         }
 
         private void DeleteBilan()
@@ -245,10 +271,17 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
 
         private void Save()
         {
+
+            if (gridView_ForPatient.RowCount == 0)
+                return;
             using (DAL.Database db = new DAL.Database())
             {
-                if (db.Consultations.Last(a => a.ID_Patient == _ID_Patient).ID_Consultation != 0)
-                    _ID_Consultation = db.Consultations.Last(a => a.ID_Patient == _ID_Patient).ID_Consultation;
+                if (_ID_Consultation == 0 || lkp_Consultation.EditValue == null)
+                {
+                    if (db.Consultations.Where(a => a.ID_Patient == _ID_Patient).Select(a => a.ID_Consultation).Max() != 0)
+                        _ID_Consultation = db.Consultations.Where(a => a.ID_Patient == _ID_Patient).Select(a => a.ID_Consultation).Max();
+                    XtraMessageBox.Show("Vous n'avez pas choisi l'un des consultations, donc nous choisirons automatiquement le dernier");
+                }
                 for (int i = 0; i < gridView_ForPatient.DataRowCount; i++)
                 {
                     var idAnalyse = (int)gridView_ForSelect.GetRowCellValue(i, gridView_ForSelect.Columns[nameof(DAL.Analyse.ID_Analyse)]);
@@ -260,12 +293,13 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
                             IsAnalyse = true,
                             ID_Analyse = idAnalyse,
                             IsRadiographie = false,
-                            IsRadiologie = false
+                            IsRadiologie = false,
+                            Date = dateEdit1.DateTime
                         };
                         db.Test.Add(_Test);
+                        db.SaveChanges();
                     }
                 }
-                db.SaveChanges();
                 XtraMessageBox.Show("Saved Succesffuly", "Save", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Close();
             }
@@ -294,7 +328,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
         public void LoadConsultation(int iD_Patient)
         {
             using (DAL.Database db = new DAL.Database())
-            { 
+            {
                 var query = from consult in db.Consultations
                             join motifs in db.Motifs on consult.ID_Motifs equals motifs.ID_Motifs
                             into m
@@ -315,7 +349,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
 
         public void GetBilanSelected()
         {
-            
+
         }
 
         public void GetIdFamAnalyse()

@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Windows.Forms;
-using DevExpress.UserSkins;
-using DevExpress.Skins;
-using DevExpress.LookAndFeel;
-using System.Threading;
-using System.Globalization;
-using System.Drawing;
 
 namespace Gestion_Cabinet_Medical
 {

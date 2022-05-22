@@ -1,15 +1,7 @@
-﻿using DevExpress.XtraBars.Ribbon;
-using DevExpress.XtraBars.Ribbon.ViewInfo;
-using Gestion_Cabinet_Medical.Forms.Patient;
+﻿using Gestion_Cabinet_Medical.Forms.Patient;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Gestion_Cabinet_Medical.Forms.Principale_Form

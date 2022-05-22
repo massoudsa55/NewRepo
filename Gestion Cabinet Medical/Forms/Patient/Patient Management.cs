@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DevExpress.Utils;
+﻿using DevExpress.Utils;
 using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraGrid.Views.Grid.ViewInfo;
 using Gestion_Cabinet_Medical.Functions;
+using System;
+using System.Drawing;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace Gestion_Cabinet_Medical.Forms.Patient
 {
@@ -98,17 +93,23 @@ namespace Gestion_Cabinet_Medical.Forms.Patient
         {
             var query = from patient in Master.db.Patient
                         join sexe in Master.db.Sexe on patient.ID_Sexe equals sexe.ID_Sexe
-                        into s from sexe in s.DefaultIfEmpty()
+                        into s
+                        from sexe in s.DefaultIfEmpty()
                         join civilite in Master.db.Civilite on patient.ID_Civilite equals civilite.ID_Civilite
-                        into c from civilite in c.DefaultIfEmpty()
+                        into c
+                        from civilite in c.DefaultIfEmpty()
                         join groupeSanguin in Master.db.GroupeSanguin on patient.ID_GroupeSanguin equals groupeSanguin.ID_GroupeSanguin
-                        into gs from groupeSanguin in gs.DefaultIfEmpty()
+                        into gs
+                        from groupeSanguin in gs.DefaultIfEmpty()
                         join situatioFam in Master.db.SituationFam on patient.ID_SF equals situatioFam.ID_SF
-                        into sf from situatioFam in sf.DefaultIfEmpty()
+                        into sf
+                        from situatioFam in sf.DefaultIfEmpty()
                         join daira in Master.db.Daira on patient.ID_Daira equals daira.ID_Daira
-                        into d from daira in d.DefaultIfEmpty()
+                        into d
+                        from daira in d.DefaultIfEmpty()
                         join wilaya in Master.db.Wilaya on daira.ID_Wilaya equals wilaya.ID_Wilaya
-                        into w from wilaya in w.DefaultIfEmpty()
+                        into w
+                        from wilaya in w.DefaultIfEmpty()
                         select new
                         {
                             patient.ID_Patient,
@@ -162,7 +163,7 @@ namespace Gestion_Cabinet_Medical.Forms.Patient
         public void Edit()
         {
             Nouveau_Patient ptn = new Nouveau_Patient();
-            ptn.Text = "Modifier le Patient : "+ptn.GetFirsname(_ID_Patient);
+            ptn.Text = "Modifier le Patient : " + ptn.GetFirsname(_ID_Patient);
             ptn._ID_Patient = _ID_Patient;
             ptn.EditOrAdd = "Edit";
             ptn.ShowDialog();

@@ -1,11 +1,7 @@
 ﻿using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Controls;
-using DevExpress.XtraEditors.CustomEditor;
 using DevExpress.XtraEditors.Repository;
-using DevExpress.XtraEditors.ViewInfo;
-using DevExpress.XtraGrid.Columns;
 using DevExpress.XtraGrid.Views.Grid;
-using DevExpress.XtraGrid.Views.Grid.ViewInfo;
 using Gestion_Cabinet_Medical.Functions;
 using System;
 using System.Data;
@@ -306,18 +302,24 @@ namespace Gestion_Cabinet_Medical.Forms.Patient
         public void LoadData()
         {
             var query = from patient in Master.db.Patient
-                        join sexe in Master.db.Sexe on patient.ID_Sexe equals sexe.ID_Sexe 
-                        into s from sexe in s.DefaultIfEmpty()
-                        join civilite in Master.db.Civilite on patient.ID_Civilite equals civilite.ID_Civilite 
-                        into c from civilite in c.DefaultIfEmpty()
-                        join groupeSanguin in Master.db.GroupeSanguin on patient.ID_GroupeSanguin equals groupeSanguin.ID_GroupeSanguin 
-                        into gs from groupeSanguin in gs.DefaultIfEmpty()
-                        join situatioFam in Master.db.SituationFam on patient.ID_SF equals situatioFam.ID_SF 
-                        into sf  from situatioFam in sf.DefaultIfEmpty()
-                        join daira in Master.db.Daira on patient.ID_Daira equals daira.ID_Daira 
-                        into d from daira in d.DefaultIfEmpty()
+                        join sexe in Master.db.Sexe on patient.ID_Sexe equals sexe.ID_Sexe
+                        into s
+                        from sexe in s.DefaultIfEmpty()
+                        join civilite in Master.db.Civilite on patient.ID_Civilite equals civilite.ID_Civilite
+                        into c
+                        from civilite in c.DefaultIfEmpty()
+                        join groupeSanguin in Master.db.GroupeSanguin on patient.ID_GroupeSanguin equals groupeSanguin.ID_GroupeSanguin
+                        into gs
+                        from groupeSanguin in gs.DefaultIfEmpty()
+                        join situatioFam in Master.db.SituationFam on patient.ID_SF equals situatioFam.ID_SF
+                        into sf
+                        from situatioFam in sf.DefaultIfEmpty()
+                        join daira in Master.db.Daira on patient.ID_Daira equals daira.ID_Daira
+                        into d
+                        from daira in d.DefaultIfEmpty()
                         join wilaya in Master.db.Wilaya on daira.ID_Wilaya equals wilaya.ID_Wilaya
-                        into w from wilaya in w.DefaultIfEmpty()
+                        into w
+                        from wilaya in w.DefaultIfEmpty()
                         select new
                         {
                             patient.ID_Patient,
@@ -333,7 +335,7 @@ namespace Gestion_Cabinet_Medical.Forms.Patient
                             patient.Phone1,
                             patient.Phone2,
                             patient.Email,
-                            Address = patient.Address+" "+ daira.NameDaira+ " "+wilaya.NameWilaya,
+                            Address = patient.Address + " " + daira.NameDaira + " " + wilaya.NameWilaya,
                             patient.Profession,
                             patient.Note
                         };
@@ -344,17 +346,23 @@ namespace Gestion_Cabinet_Medical.Forms.Patient
         {
             var query = from patient in Master.db.Patient
                         join sexe in Master.db.Sexe on patient.ID_Sexe equals sexe.ID_Sexe
-                        into s from sexe in s.DefaultIfEmpty()
+                        into s
+                        from sexe in s.DefaultIfEmpty()
                         join civilite in Master.db.Civilite on patient.ID_Civilite equals civilite.ID_Civilite
-                        into c from civilite in c.DefaultIfEmpty()
+                        into c
+                        from civilite in c.DefaultIfEmpty()
                         join groupeSanguin in Master.db.GroupeSanguin on patient.ID_GroupeSanguin equals groupeSanguin.ID_GroupeSanguin
-                        into gs from groupeSanguin in gs.DefaultIfEmpty()
+                        into gs
+                        from groupeSanguin in gs.DefaultIfEmpty()
                         join situatioFam in Master.db.SituationFam on patient.ID_SF equals situatioFam.ID_SF
-                        into sf from situatioFam in sf.DefaultIfEmpty()
+                        into sf
+                        from situatioFam in sf.DefaultIfEmpty()
                         join daira in Master.db.Daira on patient.ID_Daira equals daira.ID_Daira
-                        into d from daira in d.DefaultIfEmpty()
+                        into d
+                        from daira in d.DefaultIfEmpty()
                         join wilaya in Master.db.Wilaya on daira.ID_Wilaya equals wilaya.ID_Wilaya
-                        into w from wilaya in w.DefaultIfEmpty()
+                        into w
+                        from wilaya in w.DefaultIfEmpty()
                         where (patient.Code.Contains(txtSearch.Text) || patient.Nom.Contains(txtSearch.Text)
                         || patient.Prenom.Contains(txtSearch.Text) || patient.DOB.ToString().Contains(txtSearch.Text)
                         || patient.Age.ToString().Contains(txtSearch.Text) || sexe.Type.Contains(txtSearch.Text)

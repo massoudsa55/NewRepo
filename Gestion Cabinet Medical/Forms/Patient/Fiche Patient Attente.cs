@@ -2,13 +2,8 @@
 using DevExpress.XtraGrid.Views.Grid;
 using Gestion_Cabinet_Medical.Functions;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Gestion_Cabinet_Medical.Forms.Patient
@@ -29,7 +24,7 @@ namespace Gestion_Cabinet_Medical.Forms.Patient
         }
 
         public void GetIdPatient()
-        { 
+        {
             if (Prenom != string.Empty || Nom != string.Empty)
             {
                 var id_patient = (int?)Master.db.Patient.First(a => a.Nom == Nom || a.Prenom == Prenom).ID_Patient ?? 0;

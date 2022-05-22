@@ -1,13 +1,9 @@
 ﻿using DevExpress.XtraEditors;
 using System;
-using System.Collections.Generic;
-using System.Collections.Specialized;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Gestion_Cabinet_Medical.Functions
 {
@@ -16,7 +12,7 @@ namespace Gestion_Cabinet_Medical.Functions
         //  'db'  Object of Database
         public static DAL.Database db = new DAL.Database();
 
-        public static byte [] GetByteFromImage(Image image)
+        public static byte[] GetByteFromImage(Image image)
         {
             using (MemoryStream stream = new MemoryStream())
             {
@@ -79,7 +75,7 @@ namespace Gestion_Cabinet_Medical.Functions
 
         public static bool IsEditValueValideAndNotZero(LookUpEditBase lkp)
         {
-            if (lkp.Properties.NullText == string.Empty || (lkp.Text == string.Empty || lkp.EditValue == null))
+            if (lkp.Properties.NullText == string.Empty || (IsEditValueValide(lkp)))
             {
                 lkp.ErrorText = Properties.Settings.Default.ErrorText;
                 return false;

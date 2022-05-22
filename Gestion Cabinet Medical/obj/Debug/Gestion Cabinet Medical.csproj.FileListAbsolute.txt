@@ -431,6 +431,7 @@ C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.DataAccess.v21.2.dll
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.DataAccess.v21.2.UI.dll
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.ExpressApp.v21.2.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.ExpressApp.Win.v21.2.dll
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Office.v21.2.Core.dll
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Persistent.Base.v21.2.dll
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.PivotGrid.v21.2.Core.dll
@@ -470,6 +471,7 @@ C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.DataAccess.v21.2.xml
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.DataAccess.v21.2.UI.xml
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.ExpressApp.v21.2.xml
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.ExpressApp.Win.v21.2.xml
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Office.v21.2.Core.xml
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.Persistent.Base.v21.2.xml
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\DevExpress.PivotGrid.v21.2.Core.xml
@@ -517,6 +519,10 @@ C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.ExpressApp.v21.2.resources.dll
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.ExpressApp.v21.2.resources.dll
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.ExpressApp.v21.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.ExpressApp.Win.v21.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.ExpressApp.Win.v21.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.ExpressApp.Win.v21.2.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.ExpressApp.Win.v21.2.resources.dll
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\de\DevExpress.Office.v21.2.Core.resources.dll
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.Office.v21.2.Core.resources.dll
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.Office.v21.2.Core.resources.dll
@@ -621,6 +627,7 @@ C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.Pdf.v21.2.Core.resources.dll
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.Pdf.v21.2.Core.resources.dll
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.Pdf.v21.2.Core.resources.dll
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion Cabinet Medical.csproj.AssemblyReference.cache
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.Bilans.Fiche_Bilan.resources
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.Consultation.Consultation_Management.resources
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.Consultation.Nouveau_Motif.resources
@@ -642,4 +649,4 @@ C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion Cabinet Medical.csproj.CopyComplete
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion Cabinet Medical.exe
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion Cabinet Medical.pdb
-C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion Cabinet Medical.csproj.AssemblyReference.cache
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.Bilans.Nouveau_Bilan.resources
