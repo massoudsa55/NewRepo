@@ -286,6 +286,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.lkp_Consultation.Properties.Appearance.Options.UseFont = true;
             this.lkp_Consultation.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lkp_Consultation.Properties.DisplayMember = "Note";
             this.lkp_Consultation.Properties.NullText = "Load Consultation";
             this.lkp_Consultation.Size = new System.Drawing.Size(354, 24);
             this.lkp_Consultation.StyleController = this.layoutControl1;

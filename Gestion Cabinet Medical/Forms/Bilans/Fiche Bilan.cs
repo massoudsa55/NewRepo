@@ -68,9 +68,17 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             btn_Valid.Click += All_Buttons_Clicks;
             #endregion
             #region Evants LookUpEdit EditValueChanged
+            lkp_Consultation.EditValueChanged += Lkp_Consultation_EditValueChanged;
             lkp_FamBilan.EditValueChanged += Lkp_FamBilan_EditValueChanged;
             lkp_TypeBilan.EditValueChanged += Lkp_TypeBilan_EditValueChanged;
             #endregion
+        }
+
+
+        private void Lkp_Consultation_EditValueChanged(object sender, EventArgs e)
+        {
+            lkp_Consultation.Properties.Columns[nameof(DAL.Consultations.ID_Consultation)].Visible = false;
+            _ID_Consultation = (int)lkp_Consultation.EditValue;
         }
 
         private void GridView_ForSelect_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
@@ -242,19 +250,23 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             Nouveau_Bilan nouveau_Bilan = new Nouveau_Bilan();
             nouveau_Bilan.EditOrAdd = "New";
             nouveau_Bilan.ShowDialog();
+            LoadToutBilans();
         }
 
         private void EditBilan()
         {
-            if(_ID_Aanalyse==0)
+            if (_ID_Aanalyse == 0)
             {
                 XtraMessageBox.Show("Sélectionnez au moins un bilan s'il vous plaît", "msg", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            Nouveau_Bilan nouveau_Bilan = new Nouveau_Bilan();
-            nouveau_Bilan._ID_Aanalyse = _ID_Aanalyse;
-            nouveau_Bilan.EditOrAdd = "Edit";
+            Nouveau_Bilan nouveau_Bilan = new Nouveau_Bilan
+            {
+                _ID_Aanalyse = _ID_Aanalyse,
+                EditOrAdd = "Edit"
+            };
             nouveau_Bilan.ShowDialog();
+            LoadToutBilans();
         }
 
         public void GetIdAnalyse()
@@ -267,6 +279,25 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
 
         private void DeleteBilan()
         {
+            if (_ID_Aanalyse != 0)
+            {
+                using (DAL.Database db = new DAL.Database())
+                {
+                    var analyse = db.Analyse.Single(a => a.ID_Analyse == _ID_Aanalyse);
+                    if (analyse != null)
+                    {
+                        if (XtraMessageBox.Show("Attention, vous perdrez beaucoup de données lors de la suppristion.\n Est ce que vous supprimier cette analyse ?", "Supprission", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                        {
+                            db.Analyse.Remove(analyse);
+                            db.SaveChanges();
+                            XtraMessageBox.Show("Supprission Succse", "Supprission", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                            return;
+                    }
+                }
+            }
+            LoadToutBilans();
         }
 
         private void Save()
@@ -284,20 +315,25 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
                 }
                 for (int i = 0; i < gridView_ForPatient.DataRowCount; i++)
                 {
-                    var idAnalyse = (int)gridView_ForSelect.GetRowCellValue(i, gridView_ForSelect.Columns[nameof(DAL.Analyse.ID_Analyse)]);
+                    var idAnalyse = (int)gridView_ForPatient.GetRowCellValue(i, gridView_ForPatient.Columns[nameof(DAL.Analyse.ID_Analyse)]);
                     if (idAnalyse != 0 && _ID_Consultation != 0)
                     {
-                        _Test = new DAL.Test
+                        if (!db.Test.Where(b => b.ID_Consultation == _ID_Consultation).Any(a => a.ID_Analyse == idAnalyse))
                         {
-                            ID_Consultation = _ID_Consultation,
-                            IsAnalyse = true,
-                            ID_Analyse = idAnalyse,
-                            IsRadiographie = false,
-                            IsRadiologie = false,
-                            Date = dateEdit1.DateTime
-                        };
-                        db.Test.Add(_Test);
-                        db.SaveChanges();
+                            _Test = new DAL.Test
+                            {
+                                ID_Consultation = _ID_Consultation,
+                                IsAnalyse = true,
+                                ID_Analyse = idAnalyse,
+                                IsRadiographie = false,
+                                IsRadiologie = false,
+                                Date = dateEdit1.DateTime
+                            };
+                            db.Test.Add(_Test);
+                            db.SaveChanges();
+                        }
+                        else
+                            continue;
                     }
                 }
                 XtraMessageBox.Show("Saved Succesffuly", "Save", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -336,11 +372,17 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
                             where consult.ID_Patient == iD_Patient
                             select new
                             {
+                                consult.ID_Consultation,
                                 consult.DateTime,
-                                Motifs = motifs.Libelle,
+                                motifs.Libelle
                             };
                 lkp_Consultation.Properties.DataSource = query.ToList();
+                lkp_Consultation.Properties.ValueMember = nameof(DAL.Consultations.ID_Consultation);
+                lkp_Consultation.Properties.DisplayMember = nameof(DAL.Consultations.Motifs.Libelle);
+                
             }
+            
+
         }
 
         public void GetBilanForPatientAdd()

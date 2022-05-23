@@ -26,7 +26,6 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
 
         private void Nouveau_Bilan_Load(object sender, EventArgs e)
         {
-            
             switch (EditOrAdd)
             {
                 case "New":
@@ -44,6 +43,8 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             lkp_FamAnalyse.EditValueChanged += Lkp_FamAnalyse_EditValueChanged;
             btn_Annuler.Click += Btn_Annuler_Click;
             btn_Valid.Click += Btn_Valid_Click;
+            label1.Text = lkp_FamAnalyse.Text;
+            label2.Text = _ID_FA.ToString();
         }
 
         private void LoadAnalyseFamilyForEdit()
@@ -52,8 +53,9 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             using (DAL.Database db = new DAL.Database())
             {
                 var query = db.Analyse.Single(a => a.ID_Analyse == _ID_Aanalyse);
-                analyseBindingSource.DataSource = query;
+                analyseBindingSource.DataSource = _Analyse = query;
                 lkp_FamAnalyse.EditValue = db.FamAnalyse.Single(a => a.ID_FA == query.ID_FA).Categorie;
+                _ID_FA = query.ID_FA;
             }
         }
 
@@ -79,9 +81,9 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
         {
             using (DAL.Database db = new DAL.Database())
             {
-                _Analyse.Nome = txt_NameAnalyse.Text;
-                _Analyse.Prix = (double?)txt_PrixAnalyse.EditValue ?? null;
-                _Analyse.ID_FA = db.FamAnalyse.First(a => a.Categorie == lkp_FamAnalyse.EditValue.ToString()).ID_FA;
+                _Analyse.Nome = txt_NameAnalyse.EditValue.ToString();
+                _Analyse.Prix = txt_PrixAnalyse.Text != string.Empty ? double.Parse(txt_PrixAnalyse.Text) : 0.00;
+                _Analyse.ID_FA = _ID_FA;
                 db.Entry(_Analyse).State = EntityState.Modified;
                 await db.SaveChangesAsync();
             }
@@ -95,8 +97,8 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             {
                 _Analyse = new DAL.Analyse()
                 {
-                    Nome = txt_NameAnalyse.Text,
-                    Prix = (double?)txt_PrixAnalyse.EditValue ?? null,
+                    Nome = txt_NameAnalyse.EditValue.ToString(),
+                    Prix = txt_PrixAnalyse.Text != string.Empty ? double.Parse(txt_PrixAnalyse.Text) : 0.00,
                     ID_FA = _ID_FA
                 };
                 db.Analyse.Add(_Analyse);
