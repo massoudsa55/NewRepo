@@ -627,7 +627,6 @@ C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\es\DevExpress.Pdf.v21.2.Core.resources.dll
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ja\DevExpress.Pdf.v21.2.Core.resources.dll
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\bin\Debug\ru\DevExpress.Pdf.v21.2.Core.resources.dll
-C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion Cabinet Medical.csproj.AssemblyReference.cache
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.Bilans.Fiche_Bilan.resources
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.Consultation.Consultation_Management.resources
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.Consultation.Nouveau_Motif.resources
@@ -650,3 +649,6 @@ C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion Cabinet Medical.exe
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion Cabinet Medical.pdb
 C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.Bilans.Nouveau_Bilan.resources
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.Bilans.Neauvou_Famille_Bilan.resources
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion_Cabinet_Medical.Forms.Bilans.Nouveau_Type_Bilan.resources
+C:\Users\masso\Desktop\Gestion Cabinet Medical\Gestion Cabinet Medical\obj\Debug\Gestion Cabinet Medical.csproj.AssemblyReference.cache

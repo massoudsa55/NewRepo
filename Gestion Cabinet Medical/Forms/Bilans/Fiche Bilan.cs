@@ -66,6 +66,8 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             btn_NewBilan.Click += All_Buttons_Clicks;
             btn_ToutBilans.Click += All_Buttons_Clicks;
             btn_Valid.Click += All_Buttons_Clicks;
+            pic_AddFamAnalyse.Click += Pic_AddFamAnalyse_Click;
+            pic_AddTypeAnalyse.Click += Pic_AddTypeAnalyse_Click;
             #endregion
             #region Evants LookUpEdit EditValueChanged
             lkp_Consultation.EditValueChanged += Lkp_Consultation_EditValueChanged;
@@ -74,6 +76,21 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             #endregion
         }
 
+        private void Pic_AddTypeAnalyse_Click(object sender, EventArgs e)
+        {
+            Nouveau_Type_Bilan nouveau_Type = new Nouveau_Type_Bilan();
+            nouveau_Type.ShowDialog();
+            lkp_TypeBilan.Properties.NullText = nouveau_Type.txt_BilanCategory.Text;
+            LoadTypeBilan();
+        }
+
+        private void Pic_AddFamAnalyse_Click(object sender, EventArgs e)
+        {
+            Neauvou_Famille_Bilan famille_Bilan = new Neauvou_Famille_Bilan();
+            famille_Bilan.ShowDialog();
+            lkp_FamBilan.Properties.NullText = famille_Bilan.txt_FamAnalyse.Text;
+            LoadFamBilan();
+        }
 
         private void Lkp_Consultation_EditValueChanged(object sender, EventArgs e)
         {
@@ -105,7 +122,6 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             using (DAL.Database db = new DAL.Database())
             {
                 var checkedBilanCatigory = sender as DAL.BilansCategories;
-
                 var getBilanOfChckedType = from analyse in db.Analyse
                                            join bilan in db.Bilans on analyse.ID_Analyse
                                            equals bilan.ID_Analyse
@@ -128,7 +144,6 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             using (DAL.Database db = new DAL.Database())
             {
                 var checkedFamAnalyse = sender as DAL.FamAnalyse;
-
                 var getBilanOfChckedType = from analyse in db.Analyse
                                            join famAnalyse in db.FamAnalyse on analyse.ID_FA equals famAnalyse.ID_FA
                                            where analyse.ID_FA == _ID_FA

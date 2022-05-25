@@ -170,11 +170,23 @@
     <Compile Include="Forms\Bilans\Fiche Bilan.Designer.cs">
       <DependentUpon>Fiche Bilan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Bilans\Nouveau Famille Bilan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bilans\Nouveau Famille Bilan.Designer.cs">
+      <DependentUpon>Nouveau Famille Bilan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Bilans\Nouveau Bilan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Bilans\Nouveau Bilan.Designer.cs">
       <DependentUpon>Nouveau Bilan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bilans\Nouveau Type Bilan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bilans\Nouveau Type Bilan.Designer.cs">
+      <DependentUpon>Nouveau Type Bilan.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Consultation\Consultation Management.cs">
       <SubType>Form</SubType>
@@ -291,6 +303,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Bilans\Nouveau Bilan.resx">
       <DependentUpon>Nouveau Bilan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bilans\Nouveau Famille Bilan.resx">
+      <DependentUpon>Nouveau Famille Bilan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bilans\Nouveau Type Bilan.resx">
+      <DependentUpon>Nouveau Type Bilan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Consultation\Consultation Management.resx">
       <DependentUpon>Consultation Management.cs</DependentUpon>

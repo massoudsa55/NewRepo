@@ -43,8 +43,6 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             lkp_FamAnalyse.EditValueChanged += Lkp_FamAnalyse_EditValueChanged;
             btn_Annuler.Click += Btn_Annuler_Click;
             btn_Valid.Click += Btn_Valid_Click;
-            label1.Text = lkp_FamAnalyse.Text;
-            label2.Text = _ID_FA.ToString();
         }
 
         private void LoadAnalyseFamilyForEdit()

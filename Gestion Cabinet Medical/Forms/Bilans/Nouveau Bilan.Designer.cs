@@ -32,43 +32,41 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Nouveau_Bilan));
             this.dataLayoutControl1 = new DevExpress.XtraDataLayout.DataLayoutControl();
-            this.lkp_FamAnalyse = new DevExpress.XtraEditors.LookUpEdit();
-            this.analyseBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.medical_DBDataSet = new Gestion_Cabinet_Medical.Medical_DBDataSet();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.analyseBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.medical_DBDataSet = new Gestion_Cabinet_Medical.Medical_DBDataSet();
+            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.analyseTableAdapter = new Gestion_Cabinet_Medical.Medical_DBDataSetTableAdapters.AnalyseTableAdapter();
+            this.lkp_FamAnalyse = new DevExpress.XtraEditors.LookUpEdit();
             this.btn_Annuler = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Valid = new DevExpress.XtraEditors.SimpleButton();
             this.txt_NameAnalyse = new DevExpress.XtraEditors.TextEdit();
             this.txt_PrixAnalyse = new DevExpress.XtraEditors.TextEdit();
-            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForNome = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForPrix = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.analyseTableAdapter = new Gestion_Cabinet_Medical.Medical_DBDataSetTableAdapters.AnalyseTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lkp_FamAnalyse.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.analyseBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medical_DBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_NameAnalyse.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_PrixAnalyse.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.analyseBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medical_DBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lkp_FamAnalyse.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_NameAnalyse.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_PrixAnalyse.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForNome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForPrix)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,29 +88,6 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.dataLayoutControl1.TabIndex = 0;
             this.dataLayoutControl1.Text = "dataLayoutControl1";
             // 
-            // lkp_FamAnalyse
-            // 
-            this.lkp_FamAnalyse.Location = new System.Drawing.Point(46, 106);
-            this.lkp_FamAnalyse.Name = "lkp_FamAnalyse";
-            this.lkp_FamAnalyse.Properties.Appearance.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lkp_FamAnalyse.Properties.Appearance.Options.UseFont = true;
-            this.lkp_FamAnalyse.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lkp_FamAnalyse.Properties.NullText = "";
-            this.lkp_FamAnalyse.Size = new System.Drawing.Size(331, 24);
-            this.lkp_FamAnalyse.StyleController = this.dataLayoutControl1;
-            this.lkp_FamAnalyse.TabIndex = 10;
-            // 
-            // analyseBindingSource
-            // 
-            this.analyseBindingSource.DataMember = "Analyse";
-            this.analyseBindingSource.DataSource = this.medical_DBDataSet;
-            // 
-            // medical_DBDataSet
-            // 
-            this.medical_DBDataSet.DataSetName = "Medical_DBDataSet";
-            this.medical_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // panelControl1
             // 
             this.panelControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -122,38 +97,12 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.panelControl1.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(172)))), ((int)(((byte)(217)))));
             this.panelControl1.Appearance.Options.UseBackColor = true;
             this.panelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.panelControl1.Controls.Add(this.label2);
-            this.panelControl1.Controls.Add(this.label1);
             this.panelControl1.Controls.Add(this.labelControl1);
             this.panelControl1.Controls.Add(this.panel1);
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(379, 46);
             this.panelControl1.TabIndex = 9;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(274, 22);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 17);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "label2";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(274, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 17);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
             // 
             // labelControl1
             // 
@@ -177,6 +126,69 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(379, 5);
             this.panel1.TabIndex = 2;
+            // 
+            // analyseBindingSource
+            // 
+            this.analyseBindingSource.DataMember = "Analyse";
+            this.analyseBindingSource.DataSource = this.medical_DBDataSet;
+            // 
+            // medical_DBDataSet
+            // 
+            this.medical_DBDataSet.DataSetName = "Medical_DBDataSet";
+            this.medical_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // Root
+            // 
+            this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.Root.GroupBordersVisible = false;
+            this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlGroup1});
+            this.Root.Name = "Root";
+            this.Root.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
+            this.Root.Size = new System.Drawing.Size(379, 160);
+            this.Root.TextVisible = false;
+            // 
+            // layoutControlGroup1
+            // 
+            this.layoutControlGroup1.AllowDrawBackground = false;
+            this.layoutControlGroup1.GroupBordersVisible = false;
+            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForNome,
+            this.ItemForPrix,
+            this.layoutControlItem1,
+            this.layoutControlItem2,
+            this.layoutControlItem3,
+            this.layoutControlItem4});
+            this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup1.Name = "autoGeneratedGroup0";
+            this.layoutControlGroup1.Size = new System.Drawing.Size(379, 160);
+            // 
+            // layoutControlItem3
+            // 
+            this.layoutControlItem3.Control = this.panelControl1;
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem3.Name = "layoutControlItem3";
+            this.layoutControlItem3.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 2);
+            this.layoutControlItem3.Size = new System.Drawing.Size(379, 48);
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem3.TextVisible = false;
+            // 
+            // analyseTableAdapter
+            // 
+            this.analyseTableAdapter.ClearBeforeFill = true;
+            // 
+            // lkp_FamAnalyse
+            // 
+            this.lkp_FamAnalyse.Location = new System.Drawing.Point(46, 106);
+            this.lkp_FamAnalyse.Name = "lkp_FamAnalyse";
+            this.lkp_FamAnalyse.Properties.Appearance.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lkp_FamAnalyse.Properties.Appearance.Options.UseFont = true;
+            this.lkp_FamAnalyse.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lkp_FamAnalyse.Properties.NullText = "";
+            this.lkp_FamAnalyse.Size = new System.Drawing.Size(331, 24);
+            this.lkp_FamAnalyse.StyleController = this.dataLayoutControl1;
+            this.lkp_FamAnalyse.TabIndex = 10;
             // 
             // btn_Annuler
             // 
@@ -231,32 +243,6 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.txt_PrixAnalyse.StyleController = this.dataLayoutControl1;
             this.txt_PrixAnalyse.TabIndex = 5;
             // 
-            // Root
-            // 
-            this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.Root.GroupBordersVisible = false;
-            this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlGroup1});
-            this.Root.Name = "Root";
-            this.Root.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.Root.Size = new System.Drawing.Size(379, 160);
-            this.Root.TextVisible = false;
-            // 
-            // layoutControlGroup1
-            // 
-            this.layoutControlGroup1.AllowDrawBackground = false;
-            this.layoutControlGroup1.GroupBordersVisible = false;
-            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForNome,
-            this.ItemForPrix,
-            this.layoutControlItem1,
-            this.layoutControlItem2,
-            this.layoutControlItem3,
-            this.layoutControlItem4});
-            this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup1.Name = "autoGeneratedGroup0";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(379, 160);
-            // 
             // ItemForNome
             // 
             this.ItemForNome.AppearanceItemCaption.Font = new System.Drawing.Font("Nirmala UI", 9.75F);
@@ -297,16 +283,6 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
-            // layoutControlItem3
-            // 
-            this.layoutControlItem3.Control = this.panelControl1;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 2);
-            this.layoutControlItem3.Size = new System.Drawing.Size(379, 48);
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem3.TextVisible = false;
-            // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.AppearanceItemCaption.Font = new System.Drawing.Font("Nirmala UI", 9.75F);
@@ -317,10 +293,6 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.layoutControlItem4.Size = new System.Drawing.Size(379, 28);
             this.layoutControlItem4.Text = "Famille";
             this.layoutControlItem4.TextSize = new System.Drawing.Size(40, 17);
-            // 
-            // analyseTableAdapter
-            // 
-            this.analyseTableAdapter.ClearBeforeFill = true;
             // 
             // Nouveau_Bilan
             // 
@@ -336,21 +308,20 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.Load += new System.EventHandler(this.Nouveau_Bilan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
             this.dataLayoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.lkp_FamAnalyse.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.analyseBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medical_DBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
-            this.panelControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_NameAnalyse.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_PrixAnalyse.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.analyseBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medical_DBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lkp_FamAnalyse.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_NameAnalyse.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_PrixAnalyse.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForNome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForPrix)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             this.ResumeLayout(false);
 
@@ -378,7 +349,5 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private DevExpress.XtraEditors.LookUpEdit lkp_FamAnalyse;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
     }
 }
