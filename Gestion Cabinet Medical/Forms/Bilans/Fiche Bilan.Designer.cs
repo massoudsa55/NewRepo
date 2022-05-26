@@ -54,6 +54,10 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.lkp_Consultation = new DevExpress.XtraEditors.LookUpEdit();
             this.btn_Cancel = new DevExpress.XtraEditors.SimpleButton();
             this.layoutControl2 = new DevExpress.XtraLayout.LayoutControl();
+            this.pic_EditTypeAnalyse = new DevExpress.XtraEditors.PictureEdit();
+            this.pic_DeleteTypeAnalyse = new DevExpress.XtraEditors.PictureEdit();
+            this.pic_DeleteFamAnalyse = new DevExpress.XtraEditors.PictureEdit();
+            this.pic_EditFamAnalyse = new DevExpress.XtraEditors.PictureEdit();
             this.pic_AddTypeAnalyse = new DevExpress.XtraEditors.PictureEdit();
             this.pic_AddFamAnalyse = new DevExpress.XtraEditors.PictureEdit();
             this.lkp_TypeBilan = new DevExpress.XtraEditors.LookUpEdit();
@@ -68,19 +72,23 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem14 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem15 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem17 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.simpleSeparator1 = new DevExpress.XtraLayout.SimpleSeparator();
-            this.simpleSeparator2 = new DevExpress.XtraLayout.SimpleSeparator();
-            this.layoutControlItem20 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem18 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup5 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem16 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem15 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem17 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.simpleSeparator1 = new DevExpress.XtraLayout.SimpleSeparator();
+            this.simpleSeparator2 = new DevExpress.XtraLayout.SimpleSeparator();
+            this.layoutControlItem19 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem20 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem18 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem23 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem21 = new DevExpress.XtraLayout.LayoutControlItem();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -125,6 +133,10 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             ((System.ComponentModel.ISupportInitialize)(this.lkp_Consultation.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).BeginInit();
             this.layoutControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_EditTypeAnalyse.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_DeleteTypeAnalyse.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_DeleteFamAnalyse.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_EditFamAnalyse.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_AddTypeAnalyse.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_AddFamAnalyse.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lkp_TypeBilan.Properties)).BeginInit();
@@ -135,19 +147,23 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
@@ -187,7 +203,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(101, 248, 650, 400);
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(1014, 512);
+            this.layoutControl1.Size = new System.Drawing.Size(1056, 512);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -197,7 +213,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.gridControl_ForSelect.Location = new System.Drawing.Point(353, 104);
             this.gridControl_ForSelect.MainView = this.gridView_ForSelect;
             this.gridControl_ForSelect.Name = "gridControl_ForSelect";
-            this.gridControl_ForSelect.Size = new System.Drawing.Size(354, 350);
+            this.gridControl_ForSelect.Size = new System.Drawing.Size(319, 350);
             this.gridControl_ForSelect.TabIndex = 18;
             this.gridControl_ForSelect.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView_ForSelect});
@@ -288,7 +304,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lkp_Consultation.Properties.DisplayMember = "Note";
             this.lkp_Consultation.Properties.NullText = "Load Consultation";
-            this.lkp_Consultation.Size = new System.Drawing.Size(354, 24);
+            this.lkp_Consultation.Size = new System.Drawing.Size(319, 24);
             this.lkp_Consultation.StyleController = this.layoutControl1;
             this.lkp_Consultation.TabIndex = 17;
             // 
@@ -311,6 +327,10 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             // 
             // layoutControl2
             // 
+            this.layoutControl2.Controls.Add(this.pic_EditTypeAnalyse);
+            this.layoutControl2.Controls.Add(this.pic_DeleteTypeAnalyse);
+            this.layoutControl2.Controls.Add(this.pic_DeleteFamAnalyse);
+            this.layoutControl2.Controls.Add(this.pic_EditFamAnalyse);
             this.layoutControl2.Controls.Add(this.pic_AddTypeAnalyse);
             this.layoutControl2.Controls.Add(this.pic_AddFamAnalyse);
             this.layoutControl2.Controls.Add(this.lkp_TypeBilan);
@@ -321,41 +341,98 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.layoutControl2.Controls.Add(this.dateEdit1);
             this.layoutControl2.Controls.Add(this.btn_NewBilan);
             this.layoutControl2.Controls.Add(this.btn_BilanStandard);
-            this.layoutControl2.Location = new System.Drawing.Point(717, 48);
+            this.layoutControl2.Location = new System.Drawing.Point(682, 48);
             this.layoutControl2.Name = "layoutControl2";
             this.layoutControl2.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(461, 273, 650, 402);
             this.layoutControl2.Root = this.layoutControlGroup1;
-            this.layoutControl2.Size = new System.Drawing.Size(295, 452);
+            this.layoutControl2.Size = new System.Drawing.Size(372, 452);
             this.layoutControl2.TabIndex = 14;
             this.layoutControl2.Text = "layoutControl2";
             // 
+            // pic_EditTypeAnalyse
+            // 
+            this.pic_EditTypeAnalyse.EditValue = global::Gestion_Cabinet_Medical.Properties.Resources.edit_16px;
+            this.pic_EditTypeAnalyse.Location = new System.Drawing.Point(320, 133);
+            this.pic_EditTypeAnalyse.Name = "pic_EditTypeAnalyse";
+            this.pic_EditTypeAnalyse.Properties.AllowFocused = false;
+            this.pic_EditTypeAnalyse.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pic_EditTypeAnalyse.Properties.Appearance.Options.UseBackColor = true;
+            this.pic_EditTypeAnalyse.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pic_EditTypeAnalyse.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pic_EditTypeAnalyse.Size = new System.Drawing.Size(20, 28);
+            this.pic_EditTypeAnalyse.StyleController = this.layoutControl2;
+            this.pic_EditTypeAnalyse.TabIndex = 26;
+            // 
+            // pic_DeleteTypeAnalyse
+            // 
+            this.pic_DeleteTypeAnalyse.EditValue = global::Gestion_Cabinet_Medical.Properties.Resources.Delete_16px;
+            this.pic_DeleteTypeAnalyse.Location = new System.Drawing.Point(344, 133);
+            this.pic_DeleteTypeAnalyse.Name = "pic_DeleteTypeAnalyse";
+            this.pic_DeleteTypeAnalyse.Properties.AllowFocused = false;
+            this.pic_DeleteTypeAnalyse.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pic_DeleteTypeAnalyse.Properties.Appearance.Options.UseBackColor = true;
+            this.pic_DeleteTypeAnalyse.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pic_DeleteTypeAnalyse.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pic_DeleteTypeAnalyse.Size = new System.Drawing.Size(20, 28);
+            this.pic_DeleteTypeAnalyse.StyleController = this.layoutControl2;
+            this.pic_DeleteTypeAnalyse.TabIndex = 25;
+            // 
+            // pic_DeleteFamAnalyse
+            // 
+            this.pic_DeleteFamAnalyse.EditValue = global::Gestion_Cabinet_Medical.Properties.Resources.Delete_16px;
+            this.pic_DeleteFamAnalyse.Location = new System.Drawing.Point(344, 91);
+            this.pic_DeleteFamAnalyse.Name = "pic_DeleteFamAnalyse";
+            this.pic_DeleteFamAnalyse.Properties.AllowAnimationOnValueChanged = DevExpress.Utils.DefaultBoolean.False;
+            this.pic_DeleteFamAnalyse.Properties.AllowFocused = false;
+            this.pic_DeleteFamAnalyse.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pic_DeleteFamAnalyse.Properties.Appearance.Options.UseBackColor = true;
+            this.pic_DeleteFamAnalyse.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pic_DeleteFamAnalyse.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pic_DeleteFamAnalyse.Size = new System.Drawing.Size(20, 28);
+            this.pic_DeleteFamAnalyse.StyleController = this.layoutControl2;
+            this.pic_DeleteFamAnalyse.TabIndex = 20;
+            // 
+            // pic_EditFamAnalyse
+            // 
+            this.pic_EditFamAnalyse.EditValue = global::Gestion_Cabinet_Medical.Properties.Resources.edit_16px;
+            this.pic_EditFamAnalyse.Location = new System.Drawing.Point(320, 91);
+            this.pic_EditFamAnalyse.Name = "pic_EditFamAnalyse";
+            this.pic_EditFamAnalyse.Properties.AllowAnimationOnValueChanged = DevExpress.Utils.DefaultBoolean.False;
+            this.pic_EditFamAnalyse.Properties.AllowFocused = false;
+            this.pic_EditFamAnalyse.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pic_EditFamAnalyse.Properties.Appearance.Options.UseBackColor = true;
+            this.pic_EditFamAnalyse.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pic_EditFamAnalyse.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pic_EditFamAnalyse.Size = new System.Drawing.Size(20, 28);
+            this.pic_EditFamAnalyse.StyleController = this.layoutControl2;
+            this.pic_EditFamAnalyse.TabIndex = 19;
+            // 
             // pic_AddTypeAnalyse
             // 
-            this.pic_AddTypeAnalyse.EditValue = ((object)(resources.GetObject("pic_AddTypeAnalyse.EditValue")));
-            this.pic_AddTypeAnalyse.Location = new System.Drawing.Point(257, 133);
+            this.pic_AddTypeAnalyse.EditValue = global::Gestion_Cabinet_Medical.Properties.Resources.add_16px;
+            this.pic_AddTypeAnalyse.Location = new System.Drawing.Point(296, 133);
             this.pic_AddTypeAnalyse.Name = "pic_AddTypeAnalyse";
             this.pic_AddTypeAnalyse.Properties.AllowFocused = false;
             this.pic_AddTypeAnalyse.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pic_AddTypeAnalyse.Properties.Appearance.Options.UseBackColor = true;
             this.pic_AddTypeAnalyse.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pic_AddTypeAnalyse.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pic_AddTypeAnalyse.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pic_AddTypeAnalyse.Size = new System.Drawing.Size(30, 28);
+            this.pic_AddTypeAnalyse.Size = new System.Drawing.Size(20, 28);
             this.pic_AddTypeAnalyse.StyleController = this.layoutControl2;
             this.pic_AddTypeAnalyse.TabIndex = 18;
             // 
             // pic_AddFamAnalyse
             // 
-            this.pic_AddFamAnalyse.EditValue = ((object)(resources.GetObject("pic_AddFamAnalyse.EditValue")));
-            this.pic_AddFamAnalyse.Location = new System.Drawing.Point(257, 91);
+            this.pic_AddFamAnalyse.EditValue = global::Gestion_Cabinet_Medical.Properties.Resources.add_16px;
+            this.pic_AddFamAnalyse.Location = new System.Drawing.Point(296, 91);
             this.pic_AddFamAnalyse.Name = "pic_AddFamAnalyse";
+            this.pic_AddFamAnalyse.Properties.AllowAnimationOnValueChanged = DevExpress.Utils.DefaultBoolean.False;
             this.pic_AddFamAnalyse.Properties.AllowFocused = false;
             this.pic_AddFamAnalyse.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pic_AddFamAnalyse.Properties.Appearance.Options.UseBackColor = true;
             this.pic_AddFamAnalyse.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pic_AddFamAnalyse.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pic_AddFamAnalyse.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pic_AddFamAnalyse.Size = new System.Drawing.Size(30, 28);
+            this.pic_AddFamAnalyse.Size = new System.Drawing.Size(20, 28);
             this.pic_AddFamAnalyse.StyleController = this.layoutControl2;
             this.pic_AddFamAnalyse.TabIndex = 17;
             // 
@@ -375,7 +452,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.lkp_TypeBilan.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.SpinDown, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.lkp_TypeBilan.Properties.NullText = "";
-            this.lkp_TypeBilan.Size = new System.Drawing.Size(176, 24);
+            this.lkp_TypeBilan.Size = new System.Drawing.Size(215, 24);
             this.lkp_TypeBilan.StyleController = this.layoutControl2;
             this.lkp_TypeBilan.TabIndex = 14;
             // 
@@ -390,7 +467,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.btn_ToutBilans.Location = new System.Drawing.Point(14, 205);
             this.btn_ToutBilans.Name = "btn_ToutBilans";
             this.btn_ToutBilans.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.btn_ToutBilans.Size = new System.Drawing.Size(267, 40);
+            this.btn_ToutBilans.Size = new System.Drawing.Size(344, 40);
             this.btn_ToutBilans.StyleController = this.layoutControl2;
             this.btn_ToutBilans.TabIndex = 13;
             this.btn_ToutBilans.Text = "Touts Bilans";
@@ -406,7 +483,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.btn_EditBilan.Location = new System.Drawing.Point(14, 337);
             this.btn_EditBilan.Name = "btn_EditBilan";
             this.btn_EditBilan.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.btn_EditBilan.Size = new System.Drawing.Size(267, 40);
+            this.btn_EditBilan.Size = new System.Drawing.Size(344, 40);
             this.btn_EditBilan.StyleController = this.layoutControl2;
             this.btn_EditBilan.TabIndex = 12;
             this.btn_EditBilan.Text = "Modifier Bilan";
@@ -422,7 +499,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.btn_DeleteBilan.Location = new System.Drawing.Point(14, 381);
             this.btn_DeleteBilan.Name = "btn_DeleteBilan";
             this.btn_DeleteBilan.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.btn_DeleteBilan.Size = new System.Drawing.Size(267, 40);
+            this.btn_DeleteBilan.Size = new System.Drawing.Size(344, 40);
             this.btn_DeleteBilan.StyleController = this.layoutControl2;
             this.btn_DeleteBilan.TabIndex = 11;
             this.btn_DeleteBilan.Text = "Supprimer Bilan";
@@ -443,7 +520,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.lkp_FamBilan.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.SpinDown, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.lkp_FamBilan.Properties.NullText = "";
-            this.lkp_FamBilan.Size = new System.Drawing.Size(176, 24);
+            this.lkp_FamBilan.Size = new System.Drawing.Size(215, 24);
             this.lkp_FamBilan.StyleController = this.layoutControl2;
             this.lkp_FamBilan.TabIndex = 10;
             // 
@@ -458,7 +535,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Size = new System.Drawing.Size(281, 24);
+            this.dateEdit1.Size = new System.Drawing.Size(358, 24);
             this.dateEdit1.StyleController = this.layoutControl2;
             this.dateEdit1.TabIndex = 9;
             // 
@@ -473,7 +550,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.btn_NewBilan.Location = new System.Drawing.Point(14, 293);
             this.btn_NewBilan.Name = "btn_NewBilan";
             this.btn_NewBilan.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.btn_NewBilan.Size = new System.Drawing.Size(267, 40);
+            this.btn_NewBilan.Size = new System.Drawing.Size(344, 40);
             this.btn_NewBilan.StyleController = this.layoutControl2;
             this.btn_NewBilan.TabIndex = 6;
             this.btn_NewBilan.Text = "Nouveau Bilan";
@@ -489,7 +566,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.btn_BilanStandard.Location = new System.Drawing.Point(14, 249);
             this.btn_BilanStandard.Name = "btn_BilanStandard";
             this.btn_BilanStandard.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.btn_BilanStandard.Size = new System.Drawing.Size(267, 40);
+            this.btn_BilanStandard.Size = new System.Drawing.Size(344, 40);
             this.btn_BilanStandard.StyleController = this.layoutControl2;
             this.btn_BilanStandard.TabIndex = 4;
             this.btn_BilanStandard.Text = "Bilans Standards";
@@ -501,11 +578,11 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.emptySpaceItem1,
             this.layoutControlGroup2,
-            this.layoutControlGroup3,
-            this.layoutControlGroup5});
+            this.layoutControlGroup5,
+            this.layoutControlGroup3});
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(295, 452);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(372, 452);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // emptySpaceItem1
@@ -513,7 +590,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.emptySpaceItem1.AllowHotTrack = false;
             this.emptySpaceItem1.Location = new System.Drawing.Point(0, 435);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(295, 17);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(372, 17);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlGroup2
@@ -527,7 +604,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "layoutControlGroup2";
             this.layoutControlGroup2.Padding = new DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3);
-            this.layoutControlGroup2.Size = new System.Drawing.Size(295, 61);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(372, 61);
             this.layoutControlGroup2.Text = "Date Bilan (*)";
             // 
             // layoutControlItem14
@@ -535,85 +612,9 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.layoutControlItem14.Control = this.dateEdit1;
             this.layoutControlItem14.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem14.Name = "layoutControlItem14";
-            this.layoutControlItem14.Size = new System.Drawing.Size(285, 28);
+            this.layoutControlItem14.Size = new System.Drawing.Size(362, 28);
             this.layoutControlItem14.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem14.TextVisible = false;
-            // 
-            // layoutControlGroup3
-            // 
-            this.layoutControlGroup3.AppearanceGroup.Font = new System.Drawing.Font("Nirmala UI", 9.75F);
-            this.layoutControlGroup3.AppearanceGroup.Options.UseFont = true;
-            this.layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem15,
-            this.layoutControlItem17,
-            this.simpleSeparator1,
-            this.simpleSeparator2,
-            this.layoutControlItem20,
-            this.layoutControlItem18});
-            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 61);
-            this.layoutControlGroup3.Name = "layoutControlGroup3";
-            this.layoutControlGroup3.Padding = new DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3);
-            this.layoutControlGroup3.Size = new System.Drawing.Size(295, 108);
-            this.layoutControlGroup3.Text = "Type Bilan";
-            // 
-            // layoutControlItem15
-            // 
-            this.layoutControlItem15.AppearanceItemCaption.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.layoutControlItem15.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem15.Control = this.lkp_FamBilan;
-            this.layoutControlItem15.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem15.Name = "layoutControlItem15";
-            this.layoutControlItem15.Padding = new DevExpress.XtraLayout.Utils.Padding(3, 3, 5, 3);
-            this.layoutControlItem15.Size = new System.Drawing.Size(249, 32);
-            this.layoutControlItem15.Text = "Par Famille";
-            this.layoutControlItem15.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutControlItem15.TextSize = new System.Drawing.Size(63, 17);
-            // 
-            // layoutControlItem17
-            // 
-            this.layoutControlItem17.AppearanceItemCaption.Font = new System.Drawing.Font("Nirmala UI", 9.75F);
-            this.layoutControlItem17.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem17.Control = this.lkp_TypeBilan;
-            this.layoutControlItem17.Location = new System.Drawing.Point(0, 42);
-            this.layoutControlItem17.Name = "layoutControlItem17";
-            this.layoutControlItem17.Padding = new DevExpress.XtraLayout.Utils.Padding(3, 3, 5, 3);
-            this.layoutControlItem17.Size = new System.Drawing.Size(249, 32);
-            this.layoutControlItem17.Text = "Par Type";
-            this.layoutControlItem17.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutControlItem17.TextSize = new System.Drawing.Size(63, 17);
-            // 
-            // simpleSeparator1
-            // 
-            this.simpleSeparator1.AllowHotTrack = false;
-            this.simpleSeparator1.Location = new System.Drawing.Point(0, 40);
-            this.simpleSeparator1.Name = "simpleSeparator1";
-            this.simpleSeparator1.Size = new System.Drawing.Size(283, 2);
-            // 
-            // simpleSeparator2
-            // 
-            this.simpleSeparator2.AllowHotTrack = false;
-            this.simpleSeparator2.Location = new System.Drawing.Point(0, 32);
-            this.simpleSeparator2.Name = "simpleSeparator2";
-            this.simpleSeparator2.Size = new System.Drawing.Size(283, 8);
-            this.simpleSeparator2.Spacing = new DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3);
-            // 
-            // layoutControlItem20
-            // 
-            this.layoutControlItem20.Control = this.pic_AddFamAnalyse;
-            this.layoutControlItem20.Location = new System.Drawing.Point(249, 0);
-            this.layoutControlItem20.Name = "layoutControlItem20";
-            this.layoutControlItem20.Size = new System.Drawing.Size(34, 32);
-            this.layoutControlItem20.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem20.TextVisible = false;
-            // 
-            // layoutControlItem18
-            // 
-            this.layoutControlItem18.Control = this.pic_AddTypeAnalyse;
-            this.layoutControlItem18.Location = new System.Drawing.Point(249, 42);
-            this.layoutControlItem18.Name = "layoutControlItem18";
-            this.layoutControlItem18.Size = new System.Drawing.Size(34, 32);
-            this.layoutControlItem18.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem18.TextVisible = false;
             // 
             // layoutControlGroup5
             // 
@@ -627,7 +628,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.layoutControlItem9});
             this.layoutControlGroup5.Location = new System.Drawing.Point(0, 169);
             this.layoutControlGroup5.Name = "layoutControlGroup5";
-            this.layoutControlGroup5.Size = new System.Drawing.Size(295, 266);
+            this.layoutControlGroup5.Size = new System.Drawing.Size(372, 266);
             this.layoutControlGroup5.Text = "Actions";
             // 
             // layoutControlItem11
@@ -635,7 +636,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.layoutControlItem11.Control = this.btn_NewBilan;
             this.layoutControlItem11.Location = new System.Drawing.Point(0, 88);
             this.layoutControlItem11.Name = "layoutControlItem11";
-            this.layoutControlItem11.Size = new System.Drawing.Size(271, 44);
+            this.layoutControlItem11.Size = new System.Drawing.Size(348, 44);
             this.layoutControlItem11.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem11.TextVisible = false;
             // 
@@ -644,7 +645,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.layoutControlItem12.Control = this.btn_ToutBilans;
             this.layoutControlItem12.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem12.Name = "layoutControlItem12";
-            this.layoutControlItem12.Size = new System.Drawing.Size(271, 44);
+            this.layoutControlItem12.Size = new System.Drawing.Size(348, 44);
             this.layoutControlItem12.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem12.TextVisible = false;
             // 
@@ -653,7 +654,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.layoutControlItem16.Control = this.btn_DeleteBilan;
             this.layoutControlItem16.Location = new System.Drawing.Point(0, 176);
             this.layoutControlItem16.Name = "layoutControlItem16";
-            this.layoutControlItem16.Size = new System.Drawing.Size(271, 44);
+            this.layoutControlItem16.Size = new System.Drawing.Size(348, 44);
             this.layoutControlItem16.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem16.TextVisible = false;
             // 
@@ -662,7 +663,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.layoutControlItem13.Control = this.btn_EditBilan;
             this.layoutControlItem13.Location = new System.Drawing.Point(0, 132);
             this.layoutControlItem13.Name = "layoutControlItem13";
-            this.layoutControlItem13.Size = new System.Drawing.Size(271, 44);
+            this.layoutControlItem13.Size = new System.Drawing.Size(348, 44);
             this.layoutControlItem13.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem13.TextVisible = false;
             // 
@@ -671,9 +672,131 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.layoutControlItem9.Control = this.btn_BilanStandard;
             this.layoutControlItem9.Location = new System.Drawing.Point(0, 44);
             this.layoutControlItem9.Name = "layoutControlItem9";
-            this.layoutControlItem9.Size = new System.Drawing.Size(271, 44);
+            this.layoutControlItem9.Size = new System.Drawing.Size(348, 44);
             this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem9.TextVisible = false;
+            // 
+            // layoutControlGroup3
+            // 
+            this.layoutControlGroup3.AppearanceGroup.Font = new System.Drawing.Font("Nirmala UI", 9.75F);
+            this.layoutControlGroup3.AppearanceGroup.Options.UseFont = true;
+            this.layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem15,
+            this.layoutControlItem17,
+            this.simpleSeparator1,
+            this.simpleSeparator2,
+            this.layoutControlItem19,
+            this.layoutControlItem20,
+            this.layoutControlItem18,
+            this.layoutControlItem2,
+            this.layoutControlItem23,
+            this.layoutControlItem21});
+            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 61);
+            this.layoutControlGroup3.Name = "layoutControlGroup3";
+            this.layoutControlGroup3.Padding = new DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3);
+            this.layoutControlGroup3.Size = new System.Drawing.Size(372, 108);
+            this.layoutControlGroup3.Text = "Type Bilan";
+            // 
+            // layoutControlItem15
+            // 
+            this.layoutControlItem15.AppearanceItemCaption.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.layoutControlItem15.AppearanceItemCaption.Options.UseFont = true;
+            this.layoutControlItem15.Control = this.lkp_FamBilan;
+            this.layoutControlItem15.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem15.MinSize = new System.Drawing.Size(123, 32);
+            this.layoutControlItem15.Name = "layoutControlItem15";
+            this.layoutControlItem15.Padding = new DevExpress.XtraLayout.Utils.Padding(3, 3, 5, 3);
+            this.layoutControlItem15.Size = new System.Drawing.Size(288, 32);
+            this.layoutControlItem15.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem15.Text = "Par Famille";
+            this.layoutControlItem15.TextLocation = DevExpress.Utils.Locations.Left;
+            this.layoutControlItem15.TextSize = new System.Drawing.Size(63, 17);
+            // 
+            // layoutControlItem17
+            // 
+            this.layoutControlItem17.AppearanceItemCaption.Font = new System.Drawing.Font("Nirmala UI", 9.75F);
+            this.layoutControlItem17.AppearanceItemCaption.Options.UseFont = true;
+            this.layoutControlItem17.Control = this.lkp_TypeBilan;
+            this.layoutControlItem17.Location = new System.Drawing.Point(0, 42);
+            this.layoutControlItem17.MinSize = new System.Drawing.Size(123, 32);
+            this.layoutControlItem17.Name = "layoutControlItem17";
+            this.layoutControlItem17.Padding = new DevExpress.XtraLayout.Utils.Padding(3, 3, 5, 3);
+            this.layoutControlItem17.Size = new System.Drawing.Size(288, 32);
+            this.layoutControlItem17.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem17.Text = "Par Type";
+            this.layoutControlItem17.TextLocation = DevExpress.Utils.Locations.Left;
+            this.layoutControlItem17.TextSize = new System.Drawing.Size(63, 17);
+            // 
+            // simpleSeparator1
+            // 
+            this.simpleSeparator1.AllowHotTrack = false;
+            this.simpleSeparator1.Location = new System.Drawing.Point(0, 32);
+            this.simpleSeparator1.Name = "simpleSeparator1";
+            this.simpleSeparator1.Size = new System.Drawing.Size(360, 2);
+            // 
+            // simpleSeparator2
+            // 
+            this.simpleSeparator2.AllowHotTrack = false;
+            this.simpleSeparator2.Location = new System.Drawing.Point(0, 34);
+            this.simpleSeparator2.Name = "simpleSeparator2";
+            this.simpleSeparator2.Size = new System.Drawing.Size(360, 8);
+            this.simpleSeparator2.Spacing = new DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3);
+            // 
+            // layoutControlItem19
+            // 
+            this.layoutControlItem19.Control = this.pic_DeleteFamAnalyse;
+            this.layoutControlItem19.Location = new System.Drawing.Point(336, 0);
+            this.layoutControlItem19.Name = "layoutControlItem19";
+            this.layoutControlItem19.Size = new System.Drawing.Size(24, 32);
+            this.layoutControlItem19.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem19.TextVisible = false;
+            // 
+            // layoutControlItem20
+            // 
+            this.layoutControlItem20.Control = this.pic_AddFamAnalyse;
+            this.layoutControlItem20.Location = new System.Drawing.Point(288, 0);
+            this.layoutControlItem20.MinSize = new System.Drawing.Size(24, 24);
+            this.layoutControlItem20.Name = "layoutControlItem20";
+            this.layoutControlItem20.Size = new System.Drawing.Size(24, 32);
+            this.layoutControlItem20.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem20.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem20.TextVisible = false;
+            // 
+            // layoutControlItem18
+            // 
+            this.layoutControlItem18.Control = this.pic_AddTypeAnalyse;
+            this.layoutControlItem18.Location = new System.Drawing.Point(288, 42);
+            this.layoutControlItem18.Name = "layoutControlItem18";
+            this.layoutControlItem18.Size = new System.Drawing.Size(24, 32);
+            this.layoutControlItem18.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem18.TextVisible = false;
+            // 
+            // layoutControlItem2
+            // 
+            this.layoutControlItem2.Control = this.pic_EditFamAnalyse;
+            this.layoutControlItem2.Location = new System.Drawing.Point(312, 0);
+            this.layoutControlItem2.Name = "layoutControlItem2";
+            this.layoutControlItem2.Size = new System.Drawing.Size(24, 32);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem2.TextVisible = false;
+            // 
+            // layoutControlItem23
+            // 
+            this.layoutControlItem23.Control = this.pic_DeleteTypeAnalyse;
+            this.layoutControlItem23.Location = new System.Drawing.Point(336, 42);
+            this.layoutControlItem23.Name = "layoutControlItem23";
+            this.layoutControlItem23.Size = new System.Drawing.Size(24, 32);
+            this.layoutControlItem23.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem23.TextVisible = false;
+            // 
+            // layoutControlItem21
+            // 
+            this.layoutControlItem21.Control = this.pic_EditTypeAnalyse;
+            this.layoutControlItem21.Location = new System.Drawing.Point(312, 42);
+            this.layoutControlItem21.Name = "layoutControlItem21";
+            this.layoutControlItem21.Size = new System.Drawing.Size(24, 32);
+            this.layoutControlItem21.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem21.TextVisible = false;
             // 
             // panelControl1
             // 
@@ -689,7 +812,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Margin = new System.Windows.Forms.Padding(0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(1014, 46);
+            this.panelControl1.Size = new System.Drawing.Size(1056, 46);
             this.panelControl1.TabIndex = 12;
             // 
             // labelControl1
@@ -712,7 +835,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 41);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1014, 5);
+            this.panel1.Size = new System.Drawing.Size(1056, 5);
             this.panel1.TabIndex = 1;
             // 
             // btn_AddBialnSelected
@@ -726,7 +849,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.btn_AddBialnSelected.Location = new System.Drawing.Point(353, 458);
             this.btn_AddBialnSelected.Name = "btn_AddBialnSelected";
             this.btn_AddBialnSelected.Padding = new System.Windows.Forms.Padding(0, 1, 0, 0);
-            this.btn_AddBialnSelected.Size = new System.Drawing.Size(354, 39);
+            this.btn_AddBialnSelected.Size = new System.Drawing.Size(319, 39);
             this.btn_AddBialnSelected.StyleController = this.layoutControl1;
             this.btn_AddBialnSelected.TabIndex = 5;
             this.btn_AddBialnSelected.Text = "Ajouter les Bilans Choisire";
@@ -928,7 +1051,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.layoutControlGroup6});
             this.Root.Name = "Root";
             this.Root.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 10);
-            this.Root.Size = new System.Drawing.Size(1014, 512);
+            this.Root.Size = new System.Drawing.Size(1056, 512);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem3
@@ -949,16 +1072,16 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.layoutControlItem5.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem5.Name = "layoutControlItem5";
             this.layoutControlItem5.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlItem5.Size = new System.Drawing.Size(1014, 46);
+            this.layoutControlItem5.Size = new System.Drawing.Size(1056, 46);
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
             // 
             // layoutControlItem8
             // 
             this.layoutControlItem8.Control = this.layoutControl2;
-            this.layoutControlItem8.Location = new System.Drawing.Point(715, 46);
+            this.layoutControlItem8.Location = new System.Drawing.Point(680, 46);
             this.layoutControlItem8.Name = "layoutControlItem8";
-            this.layoutControlItem8.Size = new System.Drawing.Size(299, 456);
+            this.layoutControlItem8.Size = new System.Drawing.Size(376, 456);
             this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem8.TextVisible = false;
             // 
@@ -1015,7 +1138,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.layoutControlGroup6.Location = new System.Drawing.Point(345, 46);
             this.layoutControlGroup6.Name = "layoutControlGroup6";
             this.layoutControlGroup6.Padding = new DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 0);
-            this.layoutControlGroup6.Size = new System.Drawing.Size(370, 456);
+            this.layoutControlGroup6.Size = new System.Drawing.Size(335, 456);
             this.layoutControlGroup6.Text = "Test";
             // 
             // layoutControlItem7
@@ -1023,7 +1146,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.layoutControlItem7.Control = this.lkp_Consultation;
             this.layoutControlItem7.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(358, 28);
+            this.layoutControlItem7.Size = new System.Drawing.Size(323, 28);
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
             // 
@@ -1031,8 +1154,11 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             // 
             this.layoutControlItem1.Control = this.gridControl_ForSelect;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 28);
+            this.layoutControlItem1.MaxSize = new System.Drawing.Size(323, 354);
+            this.layoutControlItem1.MinSize = new System.Drawing.Size(323, 354);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(358, 354);
+            this.layoutControlItem1.Size = new System.Drawing.Size(323, 354);
+            this.layoutControlItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
@@ -1041,7 +1167,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             this.layoutControlItem10.Control = this.btn_AddBialnSelected;
             this.layoutControlItem10.Location = new System.Drawing.Point(0, 382);
             this.layoutControlItem10.Name = "layoutControlItem10";
-            this.layoutControlItem10.Size = new System.Drawing.Size(358, 43);
+            this.layoutControlItem10.Size = new System.Drawing.Size(323, 43);
             this.layoutControlItem10.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem10.TextVisible = false;
             // 
@@ -1067,7 +1193,7 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1014, 512);
+            this.ClientSize = new System.Drawing.Size(1056, 512);
             this.Controls.Add(this.layoutControl1);
             this.Name = "Fiche_Bilan";
             this.Text = "Fiche_Bilan";
@@ -1081,6 +1207,10 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             ((System.ComponentModel.ISupportInitialize)(this.lkp_Consultation.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).EndInit();
             this.layoutControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pic_EditTypeAnalyse.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_DeleteTypeAnalyse.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_DeleteFamAnalyse.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_EditFamAnalyse.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_AddTypeAnalyse.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_AddFamAnalyse.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lkp_TypeBilan.Properties)).EndInit();
@@ -1091,19 +1221,23 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
@@ -1207,5 +1341,13 @@ namespace Gestion_Cabinet_Medical.Forms.Bilans
         private DevExpress.XtraGrid.Columns.GridColumn colPrix1;
         private DevExpress.XtraGrid.Columns.GridColumn colID_FA1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
+        private DevExpress.XtraEditors.PictureEdit pic_DeleteFamAnalyse;
+        private DevExpress.XtraEditors.PictureEdit pic_EditFamAnalyse;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem19;
+        private DevExpress.XtraEditors.PictureEdit pic_DeleteTypeAnalyse;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem23;
+        private DevExpress.XtraEditors.PictureEdit pic_EditTypeAnalyse;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem21;
     }
 }
