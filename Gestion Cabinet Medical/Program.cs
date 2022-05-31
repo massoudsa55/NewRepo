@@ -15,9 +15,9 @@ namespace Gestion_Cabinet_Medical
             DevExpress.ExpressApp.FrameworkSettings.DefaultSettingsCompatibilityMode = DevExpress.ExpressApp.FrameworkSettingsCompatibilityMode.v20_1;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Forms.SplashScrean.SplashScreen());
+            Application.Run(new Forms.SplashScrean.SplashScreen());
             //Application.Run(new Forms.Consultation.Consultation_Management());
-            Application.Run(new Forms.Bilans.Fiche_Bilan());
+            //Application.Run(new Forms.Bilans.Fiche_Bilan());
         }
     }
 }
